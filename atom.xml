@@ -6,7 +6,7 @@
   <link href="https://wuwuarandhg.github.io/atom.xml" rel="self"/>
   
   <link href="https://wuwuarandhg.github.io/"/>
-  <updated>2022-06-10T05:08:10.868Z</updated>
+  <updated>2022-06-10T23:13:39.246Z</updated>
   <id>https://wuwuarandhg.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>javascript的使用</title>
+    <link href="https://wuwuarandhg.github.io/2022/061160379.html"/>
+    <id>https://wuwuarandhg.github.io/2022/061160379.html</id>
+    <published>2022-06-10T23:07:26.000Z</published>
+    <updated>2022-06-10T23:13:39.246Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;1-注册事件（绑定事件）&quot;&gt;&lt;a href=&quot;#1-注册事件（绑定事件）&quot; class=&quot;headerlink&quot; title=&quot;1. 注册事件（绑定事件）&quot;&gt;&lt;/a&gt;1. 注册事件（绑定事件）&lt;/h4&gt;&lt;h5</summary>
+        
+      
+    
+    
+    
+    <category term="javascript" scheme="https://wuwuarandhg.github.io/categories/javascript/"/>
+    
+    
+    <category term="javascript" scheme="https://wuwuarandhg.github.io/tags/javascript/"/>
+    
+  </entry>
   
   <entry>
     <title>Django第三天</title>
