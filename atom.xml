@@ -6,7 +6,7 @@
   <link href="https://wuwuarandhg.github.io/atom.xml" rel="self"/>
   
   <link href="https://wuwuarandhg.github.io/"/>
-  <updated>2022-06-10T04:45:47.615Z</updated>
+  <updated>2022-06-10T05:07:35.433Z</updated>
   <id>https://wuwuarandhg.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Django第三天</title>
+    <link href="https://wuwuarandhg.github.io/2022/061060844.html"/>
+    <id>https://wuwuarandhg.github.io/2022/061060844.html</id>
+    <published>2022-06-10T05:02:58.000Z</published>
+    <updated>2022-06-10T05:07:35.433Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Django第三天&quot;&gt;&lt;a href=&quot;#Django第三天&quot; class=&quot;headerlink&quot; title=&quot;Django第三天&quot;&gt;&lt;/a&gt;Django第三天&lt;/h2&gt;&lt;h3 id=&quot;Django的站点&quot;&gt;&lt;a href=&quot;#Django的站点&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Django" scheme="https://wuwuarandhg.github.io/categories/Django/"/>
+    
+    
+    <category term="Django" scheme="https://wuwuarandhg.github.io/tags/Django/"/>
+    
+  </entry>
   
   <entry>
     <title>Django第一天</title>

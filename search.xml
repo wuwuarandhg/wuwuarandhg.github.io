@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Django第三天</title>
+      <link href="/2022/061060844.html"/>
+      <url>/2022/061060844.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="Django第三天"><a href="#Django第三天" class="headerlink" title="Django第三天"></a>Django第三天</h2><h3 id="Django的站点"><a href="#Django的站点" class="headerlink" title="Django的站点"></a>Django的站点</h3><ul><li><p><strong>站点</strong>: 分为内容发布和公共访问两部分</p></li><li><p><strong>内容发布</strong>的部分由网站的管理员负责查看、添加、修改、删除数据</p></li><li><p><code>Django</code>能够根据定义的模型类自动地生成管理模块</p></li><li><p>使用</p><p>Django的管理模块, 需要按照如下步骤操作 :</p><ul><li>1.管理界面本地化</li></ul></li><li><p>2.创建管理员</p><ul><li>3.注册模型类</li></ul></li><li><p>4.发布内容到数据库</p></li></ul><h4 id="1-管理界面本地化"><a href="#1-管理界面本地化" class="headerlink" title="1 . 管理界面本地化"></a>1 . 管理界面本地化</h4><ul><li>本地化是将显示的语言、时间等使用本地的习惯，这里的本地化就是进行中国化.</li><li>中国大陆地区使用<code>简体中文</code>, 时区使用<code>亚洲/上海时区</code>, 注意这里不使用北京时区.</li><li>本地化前</li></ul><p><img src="https://s2.loli.net/2022/06/03/hgLFEWBicodCvKl.png" alt="img"></p><ul><li><p>本地化后</p><p><img src="https://s2.loli.net/2022/06/03/vyIJsl2E4Qt5xnc.png" alt="img"></p></li></ul><h4 id="2-创建管理员"><a href="#2-创建管理员" class="headerlink" title="2 . 创建管理员"></a>2 . 创建管理员</h4><ol><li><p>创建管理员的命令 :</p><pre class=" language-python"><code class="language-python">python manage<span class="token punctuation">.</span>py createsuperuser</code></pre></li><li><p>按提示输入用户名、邮箱、密码</p><p><img src="https://s2.loli.net/2022/06/03/BgzstbfiIo2jrEN.png" alt="img"></p></li><li><p>重置密码</p><pre class=" language-python"><code class="language-python">python manager<span class="token punctuation">.</span>py changepassword 用户名</code></pre></li><li><p>登陆站点 :<code>http://127.0.0.1:8000/admin</code></p><p>需要服务器是启动状态</p><p><img src="https://s2.loli.net/2022/06/03/Gc12RUhjEd6lwFW.png" alt="img"></p></li></ol><h4 id="3-注册模型类"><a href="#3-注册模型类" class="headerlink" title="3.注册模型类"></a>3.注册模型类</h4><p>   在<code>应用</code>的<code>admin.py</code>文件中注册模型类</p><ul><li>需要导入模型模块 :<code>from book.models import BookInfo,PeopleInfo</code></li></ul><p>   <img src="https://s2.loli.net/2022/06/03/uS6QZMYiLsNTDCv.png" alt="img"></p><p>   <strong>注册模型成功后, 就可以在站点管理界面方便快速的管理数据.</strong></p><h4 id="4-发布内容到数据库"><a href="#4-发布内容到数据库" class="headerlink" title="4.发布内容到数据库"></a>4.发布内容到数据库</h4><p><img src="https://s2.loli.net/2022/06/03/kEmeILMaGDO7rtQ.gif" alt="img"></p><ul><li>发布内容后，优化模型类展示</li></ul><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 准备书籍列表信息的模型类</span><span class="token keyword">class</span> <span class="token class-name">BookInfo</span><span class="token punctuation">(</span>models<span class="token punctuation">.</span>Model<span class="token punctuation">)</span><span class="token punctuation">:</span>    <span class="token comment" spellcheck="true"># 创建字段，字段类型...</span>    name <span class="token operator">=</span> models<span class="token punctuation">.</span>CharField<span class="token punctuation">(</span>max_length<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">)</span>    <span class="token keyword">def</span> <span class="token function">__str__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>        <span class="token triple-quoted-string string">"""将模型类以字符串的方式输出"""</span>        <span class="token keyword">return</span> self<span class="token punctuation">.</span>name</code></pre><p><img src="https://s2.loli.net/2022/06/03/9FjULvonzdeHpr3.png" alt="img"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Django </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Django </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Django第一天</title>
       <link href="/2022/061029103.html"/>
       <url>/2022/061029103.html</url>
