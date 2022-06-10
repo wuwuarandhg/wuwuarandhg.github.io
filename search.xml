@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Django第一天</title>
+      <link href="/2022/061029103.html"/>
+      <url>/2022/061029103.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Django"><a href="#Django" class="headerlink" title="Django"></a>Django</h1><h2 id="Django的使用"><a href="#Django的使用" class="headerlink" title="Django的使用"></a>Django的使用</h2><h3 id="1-MVT流程-掌握M-V-T的每个模块的功能-了解MVT的流程"><a href="#1-MVT流程-掌握M-V-T的每个模块的功能-了解MVT的流程" class="headerlink" title="1.MVT流程:掌握M,V,T的每个模块的功能,了解MVT的流程"></a>1.MVT流程:掌握M,V,T的每个模块的功能,了解MVT的流程</h3><img src="https://s2.loli.net/2022/05/30/Pr5eL4XWuD279JK.png#pic_center=" alt="image-20220530225441259" style="zoom:75%;" /><h3 id="2-创建Django项目和应用"><a href="#2-创建Django项目和应用" class="headerlink" title="2.创建Django项目和应用"></a>2.创建Django项目和应用</h3><h4 id="1-创建Django项目"><a href="#1-创建Django项目" class="headerlink" title="1.创建Django项目"></a>1.创建Django项目</h4><pre><code>django-admin startproject name    </code></pre><p>1.例如：想要在桌面的code目录中创建一个名为bookmanager的项目工程，可执行如下命令：</p><pre class=" language-bash"><code class="language-bash"><span class="token function">cd</span> ~/Desktop/Codedjango-admin startproject bookmanager</code></pre><p>执行后，会多出一个新目录名为bookmanager，此即为新创建的工程目录。</p><ol start="2"><li>工程目录说明</li></ol><p><img src="https://s2.loli.net/2022/05/30/jrf1MtiqlxepTws.png" alt="img"></p><pre><code>与项目同名的目录，此处为bookmanager。settings.py是项目的整体配置文件。urls.py是项目的URL配置文件。wsgi.py是项目与WSGI兼容的Web服务器入口。manage.py是项目管理文件，通过它管理项目。</code></pre><ol start="3"><li>运行开发服务器</li></ol><p>​在开发阶段，为了能够快速预览到开发的效果，django提供了一个纯python编写的轻量级web服务器，仅在开发阶段使用。</p><p>​运行服务器命令如下：</p><pre class=" language-python"><code class="language-python">python manage<span class="token punctuation">.</span>py runserver ip<span class="token punctuation">:</span>端口或：python manage<span class="token punctuation">.</span>py runserver</code></pre><p>​<strong>可以不写IP和端口，默认IP是127.0.0.1，默认端口为8000</strong>。</p><p>​启动后可见如下信息：</p><p>​<img src="https://s2.loli.net/2022/05/30/sdpwLn2WCtzlVac.png" alt="img"></p><p>在浏览器中输入网址“127.0.0.1:8000”便可看到效果。</p><p><img src="https://s2.loli.net/2022/05/30/A36jc8eRpbFznMf.png" alt="img"></p><ul><li>django默认工作在调式Debug模式下，如果增加、修改、删除文件，服务器会自动重启。</li><li>按ctrl+c停止服务器。</li></ul><p>####2.创建当前Django子的应用</p><pre><code>python manage.py startapp name  //</code></pre><ol><li><strong>manage.py</strong>为上述创建工程时自动生成的管理文件。</li></ol><p>例如，在刚才创建的bookmanager工程中，想要创建一个用户book子应用模块，可执行：</p><pre class=" language-bash"><code class="language-bash"><span class="token function">cd</span> ~/Desktop/code/bookpython manage.py startapp book</code></pre><p>执行后，可以看到工程目录中多出了一个名为book的子目录。</p><p>2.子应用目录说明</p><p>查看此时的工程目录，结构如下：</p><p><img src="https://s2.loli.net/2022/05/30/JX6vBKbgqaQSmej.png" alt="img"></p><ul><li><strong>admin.py</strong>文件跟网站的后台管理站点配置相关。</li><li><strong>apps.py</strong>文件用于配置当前子应用的相关信息。</li><li><strong>migrations</strong>目录用于存放数据库迁移历史文件。</li><li><strong>models.py</strong>文件用户保存数据库模型类。</li><li><strong>tests.py</strong>文件用于开发测试用例，编写单元测试。</li><li><strong>views.py</strong>文件用于编写Web应用视图。</li></ul><ol start="3"><li><p>注册安装子应用</p><p>创建出来的子应用目录文件虽然被放到了工程项目目录中，但是django工程并不能立即直接使用该子应用，需要注册安装后才能使用。</p><p>在工程配置文件settings.py中，<strong>INSTALLED_APPS</strong>项保存了工程中已经注册安装的子应用，初始工程中的INSTALLED_APPS如下：</p><p><img src="https://s2.loli.net/2022/06/03/Uc4gCahGqxtz6He.png" alt="img"></p></li></ol><p>​<strong>注册安装一个子应用的方法，即是将子应用的配置信息文件apps.py中的Config类添加到INSTALLED_APPS列表中。</strong></p><p>​例如，将刚创建的book子应用添加到工程中，可在INSTALLED_APPS列表中添加**’book.apps.BookConfig’**。</p><p>​   <img src="https://s2.loli.net/2022/06/03/aq5PuDGJvpZUr29.png"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2022/061016107.html"/>
       <url>/2022/061016107.html</url>
