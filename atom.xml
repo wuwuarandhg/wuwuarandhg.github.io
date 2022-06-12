@@ -6,7 +6,7 @@
   <link href="https://wuwuarandhg.github.io/atom.xml" rel="self"/>
   
   <link href="https://wuwuarandhg.github.io/"/>
-  <updated>2022-06-12T09:56:22.539Z</updated>
+  <updated>2022-06-12T11:20:23.286Z</updated>
   <id>https://wuwuarandhg.github.io/</id>
   
   <author>
@@ -17,11 +17,28 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>javascript高级用法</title>
+    <link href="https://wuwuarandhg.github.io/2022/061262836.html"/>
+    <id>https://wuwuarandhg.github.io/2022/061262836.html</id>
+    <published>2022-06-12T11:19:05.000Z</published>
+    <updated>2022-06-12T11:20:23.286Z</updated>
+    
+    
+    
+    
+    <category term="javascript" scheme="https://wuwuarandhg.github.io/categories/javascript/"/>
+    
+    
+    <category term="javascript" scheme="https://wuwuarandhg.github.io/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>javascript数组的总结</title>
     <link href="https://wuwuarandhg.github.io/2022/061251457.html"/>
     <id>https://wuwuarandhg.github.io/2022/061251457.html</id>
     <published>2022-06-12T08:25:00.000Z</published>
-    <updated>2022-06-12T09:56:22.539Z</updated>
+    <updated>2022-06-12T11:27:40.321Z</updated>
     
     
       
