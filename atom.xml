@@ -6,7 +6,7 @@
   <link href="https://wuwuarandhg.github.io/atom.xml" rel="self"/>
   
   <link href="https://wuwuarandhg.github.io/"/>
-  <updated>2022-06-10T23:13:39.246Z</updated>
+  <updated>2022-06-12T09:56:22.539Z</updated>
   <id>https://wuwuarandhg.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>javascript数组的总结</title>
+    <link href="https://wuwuarandhg.github.io/2022/061251457.html"/>
+    <id>https://wuwuarandhg.github.io/2022/061251457.html</id>
+    <published>2022-06-12T08:25:00.000Z</published>
+    <updated>2022-06-12T09:56:22.539Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;迭代(遍历)方法：forEach()、map()、filter()、some()、every()；&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;1-数组方法forEach遍历数组&quot;&gt;&lt;a href=&quot;#1-数组方法forEach遍历数组&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="javascript" scheme="https://wuwuarandhg.github.io/categories/javascript/"/>
+    
+    
+    <category term="javascript" scheme="https://wuwuarandhg.github.io/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>javascript的使用</title>
     <link href="https://wuwuarandhg.github.io/2022/061160379.html"/>
     <id>https://wuwuarandhg.github.io/2022/061160379.html</id>
     <published>2022-06-10T23:07:26.000Z</published>
-    <updated>2022-06-10T23:13:39.246Z</updated>
+    <updated>2022-06-11T12:46:22.930Z</updated>
     
     
       
