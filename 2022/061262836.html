@@ -475,14 +475,14 @@ var fn = function(){}
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.8k
+                    3.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    11 分
+                    13 分
                 </div>
                 
 
@@ -551,6 +551,7 @@ o<span class="token punctuation">.</span><span class="token function">sayHi</spa
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="2-this"><a href="#2-this" class="headerlink" title="2.this"></a>2.this</h2><h3 id="2-1函数内部的this指向"><a href="#2-1函数内部的this指向" class="headerlink" title="2.1函数内部的this指向"></a>2.1函数内部的this指向</h3><p>这些 this 的指向，是当我们调用函数的时候确定的。调用方式的不同决定了this 的指向不同</p>
 <p>一般指向我们的调用者.</p>
+<p>​	<strong>function(){}()立即执行函数的this指向window</strong></p>
 <p><img src="https://s2.loli.net/2022/06/12/fpdND3HxhQ92OP6.png"></p>
 <h3 id="2-2改变函数内部-this-指向"><a href="#2-2改变函数内部-this-指向" class="headerlink" title="2.2改变函数内部 this 指向"></a>2.2改变函数内部 this 指向</h3><h4 id="2-2-1-call方法"><a href="#2-2-1-call方法" class="headerlink" title="2.2.1 call方法"></a>2.2.1 call方法</h4><p>call()方法调用一个对象。简单理解为调用函数的方式，但是它可以改变函数的 this 指向</p>
 <p><strong>fun.call(thisArg, arg1, arg2, …)</strong>  </p>
@@ -676,6 +677,13 @@ fn<span class="token punctuation">.</span><span class="token function">apply</sp
 </li>
 </ul>
 <h3 id="3-3严格模式中的变化"><a href="#3-3严格模式中的变化" class="headerlink" title="3.3严格模式中的变化"></a>3.3严格模式中的变化</h3><p>严格模式对 Javascript 的语法和行为，都做了一些改变。</p>
+<p>① 以前在全局作用域函数中的 this 指向 window 对象。</p>
+<p> ② 严格模式下全局作用域中函数中的 this 是 undefined。</p>
+<p> ③ 以前构造函数时不加 new也可以 调用,当普通函数，this 指向全局对象 </p>
+<p>④ 严格模式下,如果 构造函数不加new调用, this 指向的是undefined 如果给他赋值则 会报错</p>
+<p> ⑤ new 实例化的构造函数指向创建的对象实例。</p>
+<p> ⑥ 定时器 this 还是指向 window 。</p>
+<p> ⑦ 事件、对象还是指向调用者。</p>
 <pre class="line-numbers language-js"><code class="language-js"><span class="token string">'use strict'</span>
 num <span class="token operator">=</span> <span class="token number">10</span> 
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token comment" spellcheck="true">//严格模式后使用未声明的变量</span>
@@ -700,8 +708,39 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Strict_mode">更多严格模式要求参考</a></p>
+<h3 id="3-4严格模式中函数的变化"><a href="#3-4严格模式中函数的变化" class="headerlink" title="3.4严格模式中函数的变化"></a>3.4严格模式中函数的变化</h3><p>① 函数不能有重名的参数。 </p>
+<pre class="line-numbers language-js"><code class="language-js"> <span class="token comment" spellcheck="true">// 6. 严格模式下函数里面的参数不允许有重名</span>
+         <span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> a<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+             console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a <span class="token operator">+</span> a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+         <span class="token punctuation">}</span><span class="token punctuation">;</span>
+         <span class="token function">fn</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>② 函数必须声明在顶层.新版本的 JavaScript 会引入“块级作用域”（ ES6 中已引入）。为了与新版本接轨， 不允许在非函数的代码块内声明函数。</p>
+<pre><code>&quot;use strict&quot;;
+if (true) &#123;
+  function f() &#123; &#125; // !!! 语法错误
+  f();
+&#125;
+
+for (var i = 0; i &lt; 5; i++) &#123;
+  function f2() &#123; &#125; // !!! 语法错误
+  f2();
+&#125;
+
+function baz() &#123; // 合法
+  function eit() &#123; &#125; // 同样合法
+&#125;
+</code></pre>
 <h2 id="4-高阶函数"><a href="#4-高阶函数" class="headerlink" title="4.高阶函数"></a>4.高阶函数</h2><p>高阶函数是对其他函数进行操作的函数，它接收函数作为参数或将函数作为返回值输出。</p>
 <p><img src="https://s2.loli.net/2022/06/12/pfeuLArqD5nP7mx.png"></p>
+<pre class="line-numbers language-js"><code class="language-js">   <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"div"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">animate</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            left<span class="token punctuation">:</span> <span class="token number">500</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"div"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">"backgroundColor"</span><span class="token punctuation">,</span> <span class="token string">"purple"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>此时fn 就是一个高阶函数</p>
 <p>函数也是一种数据类型，同样可以作为参数，传递给另外一个参数使用。最典型的就是作为回调函数。</p>
 <p>同理函数也可以作为返回值传递回来</p>
@@ -712,8 +751,29 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <li>当函数执行完毕，本作用域内的局部变量会销毁。</li>
 </ol>
 <h3 id="5-2什么是闭包"><a href="#5-2什么是闭包" class="headerlink" title="5.2什么是闭包"></a>5.2什么是闭包</h3><p>闭包（closure）指有权访问另一个函数作用域中变量的函数。简单理解就是 ，一个作用域可以访问另外一个函数内部的局部变量。 </p>
+<hr>
+<p>python闭包的作用：可以保存外部函数的变量<br>python闭包的形成条件:</p>
+<ol>
+<li>函数镶套</li>
+<li>内部函数使用了外部函数的变量或者参数</li>
+<li>外部函数返回内部函数，这个使用了外部函数变量的内部函数称为闭包</li>
+</ol>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">fun_out</span><span class="token punctuation">(</span>num6<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    num<span class="token operator">=</span><span class="token number">10</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>num6<span class="token punctuation">)</span>
+    <span class="token keyword">def</span> <span class="token function">fun_inner</span><span class="token punctuation">(</span>num2<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        res<span class="token operator">=</span>num<span class="token operator">+</span>num2
+        <span class="token keyword">print</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> fun_inner
+
+
+<span class="token comment" spellcheck="true"># 获取闭包对象</span>
+ner<span class="token operator">=</span>fun_out<span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">)</span>
+ner<span class="token punctuation">(</span><span class="token number">12</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p> js 闭包（closure）指有权访问另一个函数作用域中变量的函数。<br> js 闭包: 我们fn2 这个函数作用域 访问了另外一个函数 fn1 里面的局部变量 num</p>
 <p><img src="https://s2.loli.net/2022/06/12/3aYB7fZU19It4Wy.png"></p>
-<h3 id="5-3闭包的作用"><a href="#5-3闭包的作用" class="headerlink" title="5.3闭包的作用"></a>5.3闭包的作用</h3><p>作用：延伸变量的作用范围。</p>
+<h3 id="5-3闭包的作用"><a href="#5-3闭包的作用" class="headerlink" title="5.3闭包的作用"></a>5.3闭包的作用</h3><p><strong>作用：延伸变量的作用范围。</strong></p>
 <pre class="line-numbers language-js"><code class="language-js"> <span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
    <span class="token keyword">var</span> num <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
    <span class="token keyword">function</span> <span class="token function">fun</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -1301,7 +1361,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">7.4k</span>
+                        class="white-color">7.9k</span>
             
             
             
