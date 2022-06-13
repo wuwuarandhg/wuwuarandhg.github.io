@@ -475,14 +475,14 @@ var fn = function(){}
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.6k
+                    2.8k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    10 分
+                    11 分
                 </div>
                 
 
@@ -553,6 +553,13 @@ o<span class="token punctuation">.</span><span class="token function">sayHi</spa
 <p>一般指向我们的调用者.</p>
 <p><img src="https://s2.loli.net/2022/06/12/fpdND3HxhQ92OP6.png"></p>
 <h3 id="2-2改变函数内部-this-指向"><a href="#2-2改变函数内部-this-指向" class="headerlink" title="2.2改变函数内部 this 指向"></a>2.2改变函数内部 this 指向</h3><h4 id="2-2-1-call方法"><a href="#2-2-1-call方法" class="headerlink" title="2.2.1 call方法"></a>2.2.1 call方法</h4><p>call()方法调用一个对象。简单理解为调用函数的方式，但是它可以改变函数的 this 指向</p>
+<p><strong>fun.call(thisArg, arg1, arg2, …)</strong>  </p>
+<ul>
+<li>thisArg：在 fun 函数运行时指定的 this 值 </li>
+<li>arg1，arg2：传递的其他参数 </li>
+<li>返回值就是函数的返回值，因为它就是调用函数</li>
+<li>因此当我们想改变 this 指向，同时想调用这个函数的时候，可以使用 call，比如继承</li>
+</ul>
 <p>应用场景:  经常做继承. </p>
 <pre class="line-numbers language-js"><code class="language-js"><span class="token keyword">var</span> o <span class="token operator">=</span> <span class="token punctuation">{</span>
     name<span class="token punctuation">:</span> <span class="token string">'andy'</span>
@@ -567,7 +574,14 @@ fn<span class="token punctuation">.</span><span class="token function">call</spa
 <p>以上代码运行结果为:</p>
 <p><img src="https://s2.loli.net/2022/06/12/iygC5u6RFcDOj4B.png"></p>
 <h4 id="2-2-2-apply方法"><a href="#2-2-2-apply方法" class="headerlink" title="2.2.2 apply方法"></a>2.2.2 apply方法</h4><p>apply() 方法调用一个函数。简单理解为调用函数的方式，但是它可以改变函数的 this 指向。</p>
-<p>应用场景:  经常跟数组有关系</p>
+<p><strong>fun.apply(thisArg, [argsArray])</strong> </p>
+<ul>
+<li>thisArg：在fun函数运行时指定的 this 值</li>
+<li>argsArray：传递的值，必须包含在数组里面 </li>
+<li>返回值就是函数的返回值，因为它就是调用函数</li>
+<li>因此 apply 主要跟数组有关系，比如使用 Math.max() 求数组的最大值</li>
+</ul>
+<p>应用场景:  经常跟数组有关系，如：Math.max.apply(null,数组)；</p>
 <pre class="line-numbers language-js"><code class="language-js"><span class="token keyword">var</span> o <span class="token operator">=</span> <span class="token punctuation">{</span>
     name<span class="token punctuation">:</span> <span class="token string">'andy'</span>
 <span class="token punctuation">}</span>
@@ -581,6 +595,13 @@ fn<span class="token punctuation">.</span><span class="token function">apply</sp
 <p><img src="https://s2.loli.net/2022/06/12/iygC5u6RFcDOj4B.png"></p>
 <h4 id="2-2-3-bind方法"><a href="#2-2-3-bind方法" class="headerlink" title="2.2.3 bind方法"></a>2.2.3 bind方法</h4><p>bind() 方法不会调用函数,但是能改变函数内部this 指向,返回的是原函数改变this之后产生的新函数</p>
 <p>如果只是想改变 this 指向，并且不想调用这个函数的时候，可以使用bind</p>
+<p><strong>fun.bind(thisArg, arg1, arg2, …)</strong> </p>
+<ul>
+<li>thisArg：在 fun 函数运行时指定的 this 值</li>
+<li>arg1，arg2：传递的其他参数 </li>
+<li>返回由指定的 this 值和初始化参数改造的原函数拷贝</li>
+<li>因此当我们只是想改变 this 指向，并且不想调用这个函数的时候，可以使用 bind</li>
+</ul>
 <p>应用场景:不调用函数,但是还想改变this指向</p>
 <pre class="line-numbers language-js"><code class="language-js"> <span class="token keyword">var</span> o <span class="token operator">=</span> <span class="token punctuation">{</span>
  name<span class="token punctuation">:</span> <span class="token string">'andy'</span>
@@ -1280,7 +1301,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">7.2k</span>
+                        class="white-color">7.4k</span>
             
             
             
