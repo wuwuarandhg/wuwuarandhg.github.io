@@ -475,7 +475,7 @@ var fn = function(){}
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.6k
+                    3.5k
                 </div>
                 
 
@@ -718,21 +718,21 @@ console<span class="token punctuation">.</span><span class="token function">log<
         <span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>② 函数必须声明在顶层.新版本的 JavaScript 会引入“块级作用域”（ ES6 中已引入）。为了与新版本接轨， 不允许在非函数的代码块内声明函数。</p>
-<pre><code>&quot;use strict&quot;;
-if (true) &#123;
-  function f() &#123; &#125; // !!! 语法错误
-  f();
-&#125;
+<pre class="line-numbers language-js"><code class="language-js"><span class="token string">"use strict"</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span> <span class="token comment" spellcheck="true">// !!! 语法错误</span>
+  <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-for (var i = 0; i &lt; 5; i++) &#123;
-  function f2() &#123; &#125; // !!! 语法错误
-  f2();
-&#125;
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">function</span> <span class="token function">f2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span> <span class="token comment" spellcheck="true">// !!! 语法错误</span>
+  <span class="token function">f2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-function baz() &#123; // 合法
-  function eit() &#123; &#125; // 同样合法
-&#125;
-</code></pre>
+<span class="token keyword">function</span> <span class="token function">baz</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// 合法</span>
+  <span class="token keyword">function</span> <span class="token function">eit</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span> <span class="token comment" spellcheck="true">// 同样合法</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="4-高阶函数"><a href="#4-高阶函数" class="headerlink" title="4.高阶函数"></a>4.高阶函数</h2><p>高阶函数是对其他函数进行操作的函数，它接收函数作为参数或将函数作为返回值输出。</p>
 <p><img src="https://s2.loli.net/2022/06/12/pfeuLArqD5nP7mx.png"></p>
 <pre class="line-numbers language-js"><code class="language-js">   <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"div"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">animate</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
@@ -1423,7 +1423,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">8.2k</span>
+                        class="white-color">8.1k</span>
             
             
             
