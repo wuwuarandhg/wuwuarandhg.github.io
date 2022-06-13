@@ -41,7 +41,8 @@ Django的管理模块, 需要按照如下步">
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
 <meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="悟然blog" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -534,15 +535,15 @@ Django的管理模块, 需要按照如下步">
 </ul>
 <h4 id="2-创建管理员"><a href="#2-创建管理员" class="headerlink" title="2 . 创建管理员"></a>2 . 创建管理员</h4><ol>
 <li><p>创建管理员的命令 :</p>
-<pre class=" language-python"><code class="language-python">python manage<span class="token punctuation">.</span>py createsuperuser
-</code></pre>
+<pre class="line-numbers language-python"><code class="language-python">python manage<span class="token punctuation">.</span>py createsuperuser
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
 <li><p>按提示输入用户名、邮箱、密码</p>
 <p><img src="https://s2.loli.net/2022/06/03/BgzstbfiIo2jrEN.png" alt="img"></p>
 </li>
 <li><p>重置密码</p>
-<pre class=" language-python"><code class="language-python">python manager<span class="token punctuation">.</span>py changepassword 用户名
-</code></pre>
+<pre class="line-numbers language-python"><code class="language-python">python manager<span class="token punctuation">.</span>py changepassword 用户名
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 </li>
 <li><p>登陆站点 :<code>http://127.0.0.1:8000/admin</code></p>
 <p>需要服务器是启动状态</p>
@@ -559,7 +560,7 @@ Django的管理模块, 需要按照如下步">
 <ul>
 <li>发布内容后，优化模型类展示</li>
 </ul>
-<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 准备书籍列表信息的模型类</span>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 准备书籍列表信息的模型类</span>
 <span class="token keyword">class</span> <span class="token class-name">BookInfo</span><span class="token punctuation">(</span>models<span class="token punctuation">.</span>Model<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token comment" spellcheck="true"># 创建字段，字段类型...</span>
     name <span class="token operator">=</span> models<span class="token punctuation">.</span>CharField<span class="token punctuation">(</span>max_length<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">)</span>
@@ -567,7 +568,7 @@ Django的管理模块, 需要按照如下步">
     <span class="token keyword">def</span> <span class="token function">__str__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
         <span class="token triple-quoted-string string">"""将模型类以字符串的方式输出"""</span>
         <span class="token keyword">return</span> self<span class="token punctuation">.</span>name
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><img src="https://s2.loli.net/2022/06/03/9FjULvonzdeHpr3.png" alt="img"></p>
 
                 

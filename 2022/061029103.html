@@ -37,7 +37,8 @@
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
 <meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="悟然blog" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -498,32 +499,32 @@
             <div id="articleContent">
                 <h1 id="Django"><a href="#Django" class="headerlink" title="Django"></a>Django</h1><h2 id="Django的使用"><a href="#Django的使用" class="headerlink" title="Django的使用"></a>Django的使用</h2><h3 id="1-MVT流程-掌握M-V-T的每个模块的功能-了解MVT的流程"><a href="#1-MVT流程-掌握M-V-T的每个模块的功能-了解MVT的流程" class="headerlink" title="1.MVT流程:掌握M,V,T的每个模块的功能,了解MVT的流程"></a>1.MVT流程:掌握M,V,T的每个模块的功能,了解MVT的流程</h3><img src="https://s2.loli.net/2022/05/30/Pr5eL4XWuD279JK.png#pic_center=" alt="image-20220530225441259" style="zoom:75%;" />
 
-<h3 id="2-创建Django项目和应用"><a href="#2-创建Django项目和应用" class="headerlink" title="2.创建Django项目和应用"></a>2.创建Django项目和应用</h3><h4 id="1-创建Django项目"><a href="#1-创建Django项目" class="headerlink" title="1.创建Django项目"></a>1.创建Django项目</h4><pre class=" language-tex"><code class="language-tex">django-admin startproject name    
-</code></pre>
+<h3 id="2-创建Django项目和应用"><a href="#2-创建Django项目和应用" class="headerlink" title="2.创建Django项目和应用"></a>2.创建Django项目和应用</h3><h4 id="1-创建Django项目"><a href="#1-创建Django项目" class="headerlink" title="1.创建Django项目"></a>1.创建Django项目</h4><pre class="line-numbers language-tex"><code class="language-tex">django-admin startproject name    
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>1.例如：想要在桌面的code目录中创建一个名为bookmanager的项目工程，可执行如下命令：</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">cd</span> ~/Desktop/Code
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">cd</span> ~/Desktop/Code
 django-admin startproject bookmanager
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>执行后，会多出一个新目录名为bookmanager，此即为新创建的工程目录。</p>
 <ol start="2">
 <li>工程目录说明</li>
 </ol>
 <p><img src="https://s2.loli.net/2022/05/30/jrf1MtiqlxepTws.png" alt="img"></p>
-<pre class=" language-tex"><code class="language-tex">与项目同名的目录，此处为bookmanager。
+<pre class="line-numbers language-tex"><code class="language-tex">与项目同名的目录，此处为bookmanager。
 settings.py是项目的整体配置文件。
 urls.py是项目的URL配置文件。
 wsgi.py是项目与WSGI兼容的Web服务器入口。
 manage.py是项目管理文件，通过它管理项目。
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <ol start="3">
 <li>运行开发服务器</li>
 </ol>
 <p>​	在开发阶段，为了能够快速预览到开发的效果，django提供了一个纯python编写的轻量级web服务器，仅在开发阶段使用。</p>
 <p>​	运行服务器命令如下：</p>
-<pre class=" language-python"><code class="language-python">python manage<span class="token punctuation">.</span>py runserver ip<span class="token punctuation">:</span>端口
+<pre class="line-numbers language-python"><code class="language-python">python manage<span class="token punctuation">.</span>py runserver ip<span class="token punctuation">:</span>端口
 或：
 python manage<span class="token punctuation">.</span>py runserver
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>​	<strong>可以不写IP和端口，默认IP是127.0.0.1，默认端口为8000</strong>。</p>
 <p>​	启动后可见如下信息：</p>
 <p>​	<img src="https://s2.loli.net/2022/05/30/sdpwLn2WCtzlVac.png" alt="img"></p>
@@ -534,15 +535,15 @@ python manage<span class="token punctuation">.</span>py runserver
 <li>按ctrl+c停止服务器。</li>
 </ul>
 <p>####2.创建当前Django子的应用</p>
-<pre class=" language-tex"><code class="language-tex">python manage.py startapp name  //
-</code></pre>
+<pre class="line-numbers language-tex"><code class="language-tex">python manage.py startapp name  //
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <ol>
 <li><strong>manage.py</strong>为上述创建工程时自动生成的管理文件。</li>
 </ol>
 <p>例如，在刚才创建的bookmanager工程中，想要创建一个用户book子应用模块，可执行：</p>
-<pre class=" language-bash"><code class="language-bash"><span class="token function">cd</span> ~/Desktop/code/book
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">cd</span> ~/Desktop/code/book
 python manage.py startapp book
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>执行后，可以看到工程目录中多出了一个名为book的子目录。</p>
 <p>2.子应用目录说明</p>
 <p>查看此时的工程目录，结构如下：</p>
