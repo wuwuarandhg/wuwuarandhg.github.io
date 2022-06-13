@@ -927,8 +927,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
    <span class="token keyword">return</span> o<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="7-拷贝"><a href="#7-拷贝" class="headerlink" title="7.拷贝"></a>7.拷贝</h2><p>###7.1 浅拷贝</p>
-<p>概念：浅拷贝只是拷贝一层, 更深层次对象级别的只拷贝引用.</p>
+<h2 id="7-拷贝"><a href="#7-拷贝" class="headerlink" title="7.拷贝"></a>7.拷贝</h2><h3 id="7-1-浅拷贝"><a href="#7-1-浅拷贝" class="headerlink" title="7.1 浅拷贝"></a>7.1 浅拷贝</h3><p>概念：浅拷贝只是拷贝一层, 更深层次对象级别的只拷贝引用.</p>
 <pre class="line-numbers language-js"><code class="language-js">    <span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
             id<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
             name<span class="token punctuation">:</span> <span class="token string">'andy'</span><span class="token punctuation">,</span>
@@ -951,8 +950,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
         o<span class="token punctuation">.</span>msg<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">;</span>
         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>###7.2 深拷贝</p>
-<p>概念： 深拷贝拷贝多层, 每一级别的数据都会拷贝.</p>
+<h3 id="7-2-深拷贝"><a href="#7-2-深拷贝" class="headerlink" title="7.2 深拷贝"></a>7.2 深拷贝</h3><p>概念： 深拷贝拷贝多层, 每一级别的数据都会拷贝.</p>
 <pre class="line-numbers language-js"><code class="language-js"> <span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
             id<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
             name<span class="token punctuation">:</span> <span class="token string">'andy'</span><span class="token punctuation">,</span>
