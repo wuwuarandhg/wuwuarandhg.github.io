@@ -6,7 +6,7 @@
   <link href="https://wuwuarandhg.github.io/atom.xml" rel="self"/>
   
   <link href="https://wuwuarandhg.github.io/"/>
-  <updated>2022-06-14T05:31:49.216Z</updated>
+  <updated>2022-06-14T09:29:13.929Z</updated>
   <id>https://wuwuarandhg.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ES6语法</title>
+    <link href="https://wuwuarandhg.github.io/2022/061436266.html"/>
+    <id>https://wuwuarandhg.github.io/2022/061436266.html</id>
+    <published>2022-06-14T07:30:37.000Z</published>
+    <updated>2022-06-14T09:29:13.929Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;目标&quot;&gt;&lt;a href=&quot;#目标&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="javascript" scheme="https://wuwuarandhg.github.io/categories/javascript/"/>
+    
+    
+    <category term="javascript" scheme="https://wuwuarandhg.github.io/tags/javascript/"/>
+    
+  </entry>
   
   <entry>
     <title>javascript面向过程和面向对象</title>
@@ -97,7 +122,7 @@
     <link href="https://wuwuarandhg.github.io/2022/061430328.html"/>
     <id>https://wuwuarandhg.github.io/2022/061430328.html</id>
     <published>2022-06-14T03:57:22.000Z</published>
-    <updated>2022-06-14T04:05:58.988Z</updated>
+    <updated>2022-06-14T07:05:48.596Z</updated>
     
     
       
