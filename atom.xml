@@ -6,7 +6,7 @@
   <link href="https://wuwuarandhg.github.io/atom.xml" rel="self"/>
   
   <link href="https://wuwuarandhg.github.io/"/>
-  <updated>2022-06-14T04:05:58.988Z</updated>
+  <updated>2022-06-14T05:31:49.216Z</updated>
   <id>https://wuwuarandhg.github.io/</id>
   
   <author>
@@ -15,6 +15,82 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>javascript面向过程和面向对象</title>
+    <link href="https://wuwuarandhg.github.io/2022/061439799.html"/>
+    <id>https://wuwuarandhg.github.io/2022/061439799.html</id>
+    <published>2022-06-14T05:27:40.000Z</published>
+    <updated>2022-06-14T05:31:49.216Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-面向过程与面向对象&quot;&gt;&lt;a href=&quot;#1-面向过程与面向对象&quot; class=&quot;headerlink&quot; title=&quot;1.面向过程与面向对象&quot;&gt;&lt;/a&gt;1.面向过程与面向对象&lt;/h2&gt;&lt;h3 id=&quot;1-1面向过程&quot;&gt;&lt;a href=&quot;#1-1面向过程&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="javascript" scheme="https://wuwuarandhg.github.io/categories/javascript/"/>
+    
+    
+    <category term="javascript" scheme="https://wuwuarandhg.github.io/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>javascriptDOM操作</title>
+    <link href="https://wuwuarandhg.github.io/2022/061426794.html"/>
+    <id>https://wuwuarandhg.github.io/2022/061426794.html</id>
+    <published>2022-06-14T05:06:14.000Z</published>
+    <updated>2022-06-14T05:34:42.898Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;1-获取元素的方法&quot;&gt;&lt;a href=&quot;#1-获取元素的方法&quot; class=&quot;headerlink&quot; title=&quot;1. 获取元素的方法&quot;&gt;&lt;/a&gt;1. 获取元素的方法&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;根据 ID</summary>
+        
+      
+    
+    
+    
+    <category term="javascript" scheme="https://wuwuarandhg.github.io/categories/javascript/"/>
+    
+    
+    <category term="javascript" scheme="https://wuwuarandhg.github.io/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>javascriptBOM操作</title>
+    <link href="https://wuwuarandhg.github.io/2022/061451329.html"/>
+    <id>https://wuwuarandhg.github.io/2022/061451329.html</id>
+    <published>2022-06-14T05:05:39.000Z</published>
+    <updated>2022-06-14T05:40:41.068Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;1-什么是-BOM&quot;&gt;&lt;a href=&quot;#1-什么是-BOM&quot; class=&quot;headerlink&quot; title=&quot;1.什么是 BOM&quot;&gt;&lt;/a&gt;1.什么是 BOM&lt;/h4&gt;&lt;p&gt;​     BOM（Browser Object</summary>
+        
+      
+    
+    
+    
+    <category term="javascript" scheme="https://wuwuarandhg.github.io/categories/javascript/"/>
+    
+    
+    <category term="javascript" scheme="https://wuwuarandhg.github.io/tags/javascript/"/>
+    
+  </entry>
   
   <entry>
     <title>javascript正则表达式的用法</title>

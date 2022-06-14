@@ -4,16 +4,19 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Django第三天, 悟然blog">
-    <meta name="description" content="Django第三天Django的站点
-站点: 分为内容发布和公共访问两部分
+    <meta name="keywords" content="javascriptDOM操作, 悟然blog">
+    <meta name="description" content="1. 获取元素的方法
+根据 ID 获取：
 
-内容发布的部分由网站的管理员负责查看、添加、修改、删除数据
+document.getElementById(‘id’);
 
-Django能够根据定义的模型类自动地生成管理模块
 
-使用
-Django的管理模块, 需要按照如下步">
+根据标签名获取：
+
+document.getElementsByTagName(‘标签名’);
+
+
+通过 HTML5 新增的方法获">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -27,7 +30,7 @@ Django的管理模块, 需要按照如下步">
 
     
 
-    <title>Django第三天 | 悟然blog</title>
+    <title>javascriptDOM操作 | 悟然blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -319,12 +322,12 @@ Django的管理模块, 需要按照如下步">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Django第三天</h1>
+                    <h1 class="description center-align post-title">javascriptDOM操作</h1>
                 </div>
             </div>
         </div>
@@ -440,8 +443,8 @@ Django的管理模块, 需要按照如下步">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Django/">
-                                <span class="chip bg-color">Django</span>
+                            <a href="/tags/javascript/">
+                                <span class="chip bg-color">javascript</span>
                             </a>
                         
                     </div>
@@ -452,8 +455,8 @@ Django的管理模块, 需要按照如下步">
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Django/" class="post-category">
-                                Django
+                            <a href="/categories/javascript/" class="post-category">
+                                javascript
                             </a>
                         
                     </div>
@@ -465,7 +468,7 @@ Django的管理模块, 需要按照如下步">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-06-10
+                    2022-06-14
                 </div>
                 
 
@@ -474,14 +477,14 @@ Django的管理模块, 需要按照如下步">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    389
+                    1.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    6 分
                 </div>
                 
 
@@ -501,75 +504,179 @@ Django的管理模块, 需要按照如下步">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Django第三天"><a href="#Django第三天" class="headerlink" title="Django第三天"></a>Django第三天</h2><h3 id="Django的站点"><a href="#Django的站点" class="headerlink" title="Django的站点"></a>Django的站点</h3><ul>
-<li><p><strong>站点</strong>: 分为内容发布和公共访问两部分</p>
-</li>
-<li><p><strong>内容发布</strong>的部分由网站的管理员负责查看、添加、修改、删除数据</p>
-</li>
-<li><p><code>Django</code>能够根据定义的模型类自动地生成管理模块</p>
-</li>
-<li><p>使用</p>
-<p>Django的管理模块, 需要按照如下步骤操作 :</p>
+                <h4 id="1-获取元素的方法"><a href="#1-获取元素的方法" class="headerlink" title="1. 获取元素的方法"></a>1. 获取元素的方法</h4><ol>
+<li><p>根据 ID 获取：</p>
 <ul>
-<li>1.管理界面本地化</li>
+<li>document.getElementById(‘id’);</li>
 </ul>
 </li>
-<li><p>2.创建管理员</p>
+<li><p>根据标签名获取：</p>
 <ul>
-<li>3.注册模型类</li>
+<li>document.getElementsByTagName(‘标签名’);</li>
 </ul>
 </li>
-<li><p>4.发布内容到数据库</p>
+<li><p>通过 HTML5 新增的方法获取：</p>
+<ol>
+<li><p>document.getElementsByClassName(‘类名’)；&#x2F;&#x2F; 根据类名返回元素对象集</p>
 </li>
-</ul>
-<h4 id="1-管理界面本地化"><a href="#1-管理界面本地化" class="headerlink" title="1 . 管理界面本地化"></a>1 . 管理界面本地化</h4><ul>
-<li>本地化是将显示的语言、时间等使用本地的习惯，这里的本地化就是进行中国化.</li>
-<li>中国大陆地区使用<code>简体中文</code>, 时区使用<code>亚洲/上海时区</code>, 注意这里不使用北京时区.</li>
-<li>本地化前</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/06/03/hgLFEWBicodCvKl.png" alt="img"></p>
-<ul>
-<li><p>本地化后</p>
-<p><img src="https://s2.loli.net/2022/06/03/vyIJsl2E4Qt5xnc.png" alt="img"></p>
+<li><p>document.querySelector(‘选择器’);        &#x2F;&#x2F; 根据指定选择器返回第一个元素对象</p>
 </li>
-</ul>
-<h4 id="2-创建管理员"><a href="#2-创建管理员" class="headerlink" title="2 . 创建管理员"></a>2 . 创建管理员</h4><ol>
-<li><p>创建管理员的命令 :</p>
-<pre class="line-numbers language-python"><code class="language-python">python manage<span class="token punctuation">.</span>py createsuperuser
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</li>
-<li><p>按提示输入用户名、邮箱、密码</p>
-<p><img src="https://s2.loli.net/2022/06/03/BgzstbfiIo2jrEN.png" alt="img"></p>
-</li>
-<li><p>重置密码</p>
-<pre class="line-numbers language-python"><code class="language-python">python manager<span class="token punctuation">.</span>py changepassword 用户名
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</li>
-<li><p>登陆站点 :<code>http://127.0.0.1:8000/admin</code></p>
-<p>需要服务器是启动状态</p>
-<p><img src="https://s2.loli.net/2022/06/03/Gc12RUhjEd6lwFW.png" alt="img"></p>
+<li><p>document.querySelectorAll(‘选择器’);     &#x2F;&#x2F; 根据指定选择器返回</p>
 </li>
 </ol>
-<h4 id="3-注册模型类"><a href="#3-注册模型类" class="headerlink" title="3.注册模型类"></a>3.注册模型类</h4><p>   在<code>应用</code>的<code>admin.py</code>文件中注册模型类</p>
+</li>
+<li><p>获取特殊元素（body，html):</p>
+<ol>
+<li><p>doucumnet.body  &#x2F;&#x2F; 返回body元素对象</p>
+</li>
+<li><p>document.documentElement  &#x2F;&#x2F; 返回html元素对象</p>
+</li>
+</ol>
+</li>
+</ol>
+<hr>
+<h4 id="2-事件基础"><a href="#2-事件基础" class="headerlink" title="2.事件基础"></a>2.事件基础</h4><ol>
+<li>常见的鼠标事件:<br>  <img src="https://s2.loli.net/2022/06/14/qvPuRSIY3DjmLJT.png"></li>
+</ol>
+<hr>
+<h4 id="3-操作元素"><a href="#3-操作元素" class="headerlink" title="3.操作元素"></a>3.操作元素</h4><ol>
+<li>改变元素内容:<ol>
+<li><p>element.innerText        &#x2F;&#x2F;从起始位置到终止位置的内容, 但它去除 html 标签， 同时空格和换行也会去掉</p>
+</li>
+<li><p>element.innerHTML    &#x2F;&#x2F;起始位置到终止位置的全部内容，包括 html 标签，同时保留空格和换行</p>
+</li>
+</ol>
+</li>
+<li>样式属性操作:<ol>
+<li>element.style     行内样式操作</li>
+<li>element.className 类名样式操作</li>
+</ol>
+</li>
+</ol>
+<p>3.操作元素总结</p>
+<p><img src="https://s2.loli.net/2022/06/14/CViom5W1hFHlN27.png"></p>
+<ol start="4">
+<li><p>自定义属性的操作</p>
+<ol>
+<li><p>设置属性值<br>   element.属性 &#x3D; ‘值’  设置内置属性值。<br>   element.setAttribute(‘属性’, ‘值’); </p>
+</li>
+<li><p>区别<br>   element.属性  设置内置属性值<br>   element.setAttribute(‘属性’);  主要设置自定义的属性 （标准）</p>
+</li>
+<li><p>移除属性<br>   element.removeAttribute(‘属性’);</p>
+</li>
+<li><p>获取H5自定义属性</p>
+<p>兼容性获取   element.getAttribute(‘data-index’);</p>
+</li>
+</ol>
+<p>   H5新增 element.dataset.index  或者 element.dataset[‘index’]   ie 11才开始支持</p>
+</li>
+</ol>
+<hr>
+<h4 id="4-节点操作"><a href="#4-节点操作" class="headerlink" title="4.节点操作"></a>4.节点操作</h4><h5 id="1-节点概述"><a href="#1-节点概述" class="headerlink" title="1.节点概述"></a>1.节点概述</h5><p>一般地，节点至少拥有nodeType（节点类型）、nodeName（节点名称）和nodeValue（节点值）这三个基本属性。</p>
 <ul>
-<li>需要导入模型模块 :<code>from book.models import BookInfo,PeopleInfo</code></li>
+<li><p>元素节点  nodeType  为 1</p>
+</li>
+<li><p>属性节点  nodeType  为 2</p>
+</li>
+<li><p>文本节点  nodeType  为 3 （文本节点包含文字、空格、换行等）</p>
+</li>
 </ul>
-<p>   <img src="https://s2.loli.net/2022/06/03/uS6QZMYiLsNTDCv.png" alt="img"></p>
-<p>   <strong>注册模型成功后, 就可以在站点管理界面方便快速的管理数据.</strong></p>
-<h4 id="4-发布内容到数据库"><a href="#4-发布内容到数据库" class="headerlink" title="4.发布内容到数据库"></a>4.发布内容到数据库</h4><p><img src="https://s2.loli.net/2022/06/03/kEmeILMaGDO7rtQ.gif" alt="img"></p>
+<h5 id="2-节点层级"><a href="#2-节点层级" class="headerlink" title="2.节点层级"></a>2.节点层级</h5><h6 id="1-父级节点"><a href="#1-父级节点" class="headerlink" title="1. 父级节点"></a>1. 父级节点</h6><p>   node.parentNode  </p>
 <ul>
-<li>发布内容后，优化模型类展示</li>
+<li><p>parentNode 属性可返回某节点的父节点，注意是最近的一个父节点</p>
+</li>
+<li><p>如果指定的节点没有父节点则返回 null</p>
+</li>
 </ul>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 准备书籍列表信息的模型类</span>
-<span class="token keyword">class</span> <span class="token class-name">BookInfo</span><span class="token punctuation">(</span>models<span class="token punctuation">.</span>Model<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token comment" spellcheck="true"># 创建字段，字段类型...</span>
-    name <span class="token operator">=</span> models<span class="token punctuation">.</span>CharField<span class="token punctuation">(</span>max_length<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">)</span>
+<h6 id="2-子节点"><a href="#2-子节点" class="headerlink" title="2.子节点"></a>2.子节点</h6><ol>
+<li>parentNode.childNodes（标准）</li>
+</ol>
+<ul>
+<li>parentNode.childNodes 返回包含指定节点的子节点的集合，该集合为即时更新的集合。注意：返回值里面包含了所有的子节点，包括元素节点，文本节点等。如果只想要获得里面的元素节点，则需要专门处理。 所以我们一般不提倡使用childNodes</li>
+</ul>
+<ol start="2">
+<li>parentNode.children（非标准）</li>
+</ol>
+<ul>
+<li>parentNode.children 是一个只读属性，返回所有的子元素节点。它只返回子元素节点，其余节点不返回 （这个是我们重点掌握的）。虽然children 是一个非标准，但是得到了各个浏览器的支持，因此我们可以放心使用</li>
+</ul>
+<ol start="3">
+<li>parentNode.firstChild</li>
+</ol>
+<ul>
+<li>firstChild 返回第一个子节点，找不到则返回null。同样，也是包含所有的节点。</li>
+</ul>
+<p>4.parentNode.lastChild</p>
+<ul>
+<li>lastChild 返回最后一个子节点，找不到则返回null。同样，也是包含所有的节点。</li>
+</ul>
+<p>5.parentNode.firstElementChild   </p>
+<ul>
+<li>firstElementChild  返回第一个子元素节点，找不到则返回null。</li>
+</ul>
+<ol start="6">
+<li>parentNode.lastElementChild</li>
+</ol>
+<ul>
+<li>lastElementChild 返回最后一个子元素节点，找不到则返回null。</li>
+</ul>
+<pre class="line-numbers language-tex"><code class="language-tex">总结：实际开发中，firstChild 和 lastChild 包含其他节点，操作不方便，而 firstElementChild 和 lastElementChild 又有兼容性问题，那么我们如何获取第一个子元素节点或最后一个子元素节点呢？
+解决方案：
+1.如果想要第一个子元素节点，可以使用 parentNode.chilren[0] 
+2.如果想要最后一个子元素节点，可以使用 parentNode.chilren[parentNode.chilren.length - 1] 
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h6 id="3-兄弟节点"><a href="#3-兄弟节点" class="headerlink" title="3. 兄弟节点"></a>3. 兄弟节点</h6><p>   1.node.nextElementSibling  &#x2F;&#x2F;nextElementSibling 返回当前元素下一个兄弟元素节点，找不到则返回null。 </p>
+<p>   2.node.previousElementSibling    &#x2F;&#x2F;previousElementSibling 返回当前元素上一个兄弟节点，找不到则返回null。 </p>
+<h6 id="4-创建节点"><a href="#4-创建节点" class="headerlink" title="4.创建节点"></a>4.创建节点</h6><ol>
+<li><p>document.createElement(‘tagName’)</p>
+<p>document.createElement() 方法创建由 tagName 指定的 HTML 元素。因为这些元素原先不存在，是根据我们的需求动态生成的，所以我们也称为动态创建元素节点。</p>
+</li>
+</ol>
+<h6 id="5-添加节点"><a href="#5-添加节点" class="headerlink" title="5.添加节点"></a>5.添加节点</h6><ol>
+<li><p>node.appendChild(child) </p>
+<p>node.appendChild() 方法将一个节点添加到指定父节点的子节点列表末尾。类似于 CSS 里面的 after 伪元素。</p>
+</li>
+</ol>
+<p>2.node.insertBefore(child, 指定元素) </p>
+<p>node.insertBefore() 方法将一个节点添加到父节点的指定子节点前面。类似于 CSS 里面的 before 伪元素。</p>
+<p><strong>3.node.insertAdjacentHTML(‘’)</strong></p>
+<p><strong>insertAdjacentHTML()</strong> 方法将指定的文本解析为 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Element"><code>Element</code></a> 元素，并将结果节点插入到DOM树中的指定位置。它不会重新解析它正在使用的元素，因此它不会破坏元素内的现有元素。这避免了额外的序列化步骤，使其比直接使用innerHTML操作更快。</p>
+<pre class="line-numbers language-tex"><code class="language-tex">element.insertAdjacentHTML(position, text);
 
-    <span class="token keyword">def</span> <span class="token function">__str__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        <span class="token triple-quoted-string string">"""将模型类以字符串的方式输出"""</span>
-        <span class="token keyword">return</span> self<span class="token punctuation">.</span>name
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><img src="https://s2.loli.net/2022/06/03/9FjULvonzdeHpr3.png" alt="img"></p>
+position
+一个 DOMString，表示插入内容相对于元素的位置，并且必须是以下字符串之一：
+'beforebegin'：元素自身的前面。
+'afterbegin'：插入元素内部的第一个子节点之前。
+'beforeend'：插入元素内部的最后一个子节点之后。
+'afterend'：元素自身的后面。
+text
+是要被解析为HTML或XML元素，并插入到DOM树中的 DOMString。
+使用 insertAdjacentHTML 插入用户输入的HTML内容的时候，需要转义之后才能使用。
+如果只是为了插入文本内容（而不是HTML节点），不建议使用这个方法，建议使用node.textContent 或者 node.insertAdjacentText()。因为这样不需要经过HTML解释器的转换，性能会好一点。
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-html"><code class="language-html">//示例
+// 原为 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>one<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>one<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+var d1 = document.getElementById('one');
+d1.insertAdjacentHTML('afterend', '<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>two<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>two<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>');
+
+// 此时，新结构变成：
+// <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>one<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>one<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>two<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>two<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>位置可视化 </p>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- beforebegin --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>
+  <span class="token comment" spellcheck="true">&lt;!-- afterbegin --></span>
+  foo
+  <span class="token comment" spellcheck="true">&lt;!-- beforeend --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token comment" spellcheck="true">&lt;!-- afterend --></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h6 id="6-删除节点"><a href="#6-删除节点" class="headerlink" title="6.删除节点"></a>6.删除节点</h6><p>1.node.removeChild(child) </p>
+<p>node.removeChild() 方法从 DOM 中删除一个子节点，返回删除的节点。</p>
+<p>2.node.remove()&#x2F;&#x2F;删除节点本身</p>
+<h6 id="7-复制节点-克隆节点"><a href="#7-复制节点-克隆节点" class="headerlink" title="7.复制节点(克隆节点)"></a>7.复制节点(克隆节点)</h6><p> 1.node.cloneNode() </p>
+<p>node.cloneNode() 方法返回调用该方法的节点的一个副本。 也称为克隆节点&#x2F;拷贝节点</p>
+<p>注意：1. 如果括号参数为空或者为 false ，则是浅拷贝，即只克隆复制节点本身，不克隆里面的子节点。2. 如果括号参数为 true ，则是深度拷贝，会复制节点本身以及里面所有的子节点。</p>
 
                 
             </div>
@@ -596,7 +703,7 @@ Django的管理模块, 需要按照如下步">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://wuwuarandhg.github.io/2022/061060844.html">https://wuwuarandhg.github.io/2022/061060844.html</a>
+                    <a href="https://wuwuarandhg.github.io/2022/061426794.html">https://wuwuarandhg.github.io/2022/061426794.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -634,8 +741,8 @@ Django的管理模块, 需要按照如下步">
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Django/">
-                                    <span class="chip bg-color">Django</span>
+                                <a href="/tags/javascript/">
+                                    <span class="chip bg-color">javascript</span>
                                 </a>
                             
                         </div>
@@ -687,13 +794,13 @@ Django的管理模块, 需要按照如下步">
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/061160379.html">
+                <a href="/2022/061439799.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="javascript的事件使用">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="javascript面向过程和面向对象">
                         
-                        <span class="card-title">javascript的事件使用</span>
+                        <span class="card-title">javascript面向过程和面向对象</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -704,7 +811,7 @@ Django的管理模块, 需要按照如下步">
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-06-11
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-06-14
                         </span>
                         <span class="publish-author">
                             
@@ -736,13 +843,13 @@ Django的管理模块, 需要按照如下步">
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/061029103.html">
+                <a href="/2022/061451329.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Django第一天">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="javascriptBOM操作">
                         
-                        <span class="card-title">Django第一天</span>
+                        <span class="card-title">javascriptBOM操作</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -753,14 +860,14 @@ Django的管理模块, 需要按照如下步">
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-14
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Django/" class="post-category">
-                                    Django
+                            <a href="/categories/javascript/" class="post-category">
+                                    javascript
                                 </a>
                             
                             
@@ -770,8 +877,8 @@ Django的管理模块, 需要按照如下步">
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/python/">
-                        <span class="chip bg-color">python</span>
+                    <a href="/tags/javascript/">
+                        <span class="chip bg-color">javascript</span>
                     </a>
                     
                 </div>

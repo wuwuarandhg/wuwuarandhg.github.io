@@ -4,16 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Django第三天, 悟然blog">
-    <meta name="description" content="Django第三天Django的站点
-站点: 分为内容发布和公共访问两部分
-
-内容发布的部分由网站的管理员负责查看、添加、修改、删除数据
-
-Django能够根据定义的模型类自动地生成管理模块
-
-使用
-Django的管理模块, 需要按照如下步">
+    <meta name="keywords" content="javascriptBOM操作, 悟然blog">
+    <meta name="description" content="1.什么是 BOM​     BOM（Browser Object Model）即浏览器对象模型，它提供了独立于内容而与浏览器窗口进行交互的对象，其核心对象是 window。BOM 由一系列相关的对象构成，并且每个对象都提供了很多方法与属性">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -27,7 +19,7 @@ Django的管理模块, 需要按照如下步">
 
     
 
-    <title>Django第三天 | 悟然blog</title>
+    <title>javascriptBOM操作 | 悟然blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -319,12 +311,12 @@ Django的管理模块, 需要按照如下步">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Django第三天</h1>
+                    <h1 class="description center-align post-title">javascriptBOM操作</h1>
                 </div>
             </div>
         </div>
@@ -440,8 +432,8 @@ Django的管理模块, 需要按照如下步">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Django/">
-                                <span class="chip bg-color">Django</span>
+                            <a href="/tags/javascript/">
+                                <span class="chip bg-color">javascript</span>
                             </a>
                         
                     </div>
@@ -452,8 +444,8 @@ Django的管理模块, 需要按照如下步">
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Django/" class="post-category">
-                                Django
+                            <a href="/categories/javascript/" class="post-category">
+                                javascript
                             </a>
                         
                     </div>
@@ -465,7 +457,7 @@ Django的管理模块, 需要按照如下步">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-06-10
+                    2022-06-14
                 </div>
                 
 
@@ -474,14 +466,14 @@ Django的管理模块, 需要按照如下步">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    389
+                    2.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    8 分
                 </div>
                 
 
@@ -501,75 +493,161 @@ Django的管理模块, 需要按照如下步">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Django第三天"><a href="#Django第三天" class="headerlink" title="Django第三天"></a>Django第三天</h2><h3 id="Django的站点"><a href="#Django的站点" class="headerlink" title="Django的站点"></a>Django的站点</h3><ul>
-<li><p><strong>站点</strong>: 分为内容发布和公共访问两部分</p>
-</li>
-<li><p><strong>内容发布</strong>的部分由网站的管理员负责查看、添加、修改、删除数据</p>
-</li>
-<li><p><code>Django</code>能够根据定义的模型类自动地生成管理模块</p>
-</li>
-<li><p>使用</p>
-<p>Django的管理模块, 需要按照如下步骤操作 :</p>
+                <h4 id="1-什么是-BOM"><a href="#1-什么是-BOM" class="headerlink" title="1.什么是 BOM"></a>1.什么是 BOM</h4><p>​     BOM（Browser Object Model）即浏览器对象模型，它提供了独立于内容而与浏览器窗口进行交互的对象，其核心对象是 window。BOM 由一系列相关的对象构成，并且每个对象都提供了很多方法与属性。BOM 缺乏标准，JavaScript 语法的标准化组织是 ECMA，DOM 的标准化组织是 W3C，BOM 最初是Netscape 浏览器标准的一部分。</p>
+<p>浏览器对象模型</p>
 <ul>
-<li>1.管理界面本地化</li>
-</ul>
+<li><p>把「浏览器」当做一个「对象」来看待</p>
 </li>
-<li><p>2.创建管理员</p>
-<ul>
-<li>3.注册模型类</li>
-</ul>
+<li><p>BOM 的顶级对象是 window</p>
 </li>
-<li><p>4.发布内容到数据库</p>
+<li><p>BOM 学习的是浏览器窗口交互的一些对象</p>
+</li>
+<li><p>BOM 是浏览器厂商在各自浏览器上定义的，兼容性较差</p>
 </li>
 </ul>
-<h4 id="1-管理界面本地化"><a href="#1-管理界面本地化" class="headerlink" title="1 . 管理界面本地化"></a>1 . 管理界面本地化</h4><ul>
-<li>本地化是将显示的语言、时间等使用本地的习惯，这里的本地化就是进行中国化.</li>
-<li>中国大陆地区使用<code>简体中文</code>, 时区使用<code>亚洲/上海时区</code>, 注意这里不使用北京时区.</li>
-<li>本地化前</li>
-</ul>
-<p><img src="https://s2.loli.net/2022/06/03/hgLFEWBicodCvKl.png" alt="img"></p>
-<ul>
-<li><p>本地化后</p>
-<p><img src="https://s2.loli.net/2022/06/03/vyIJsl2E4Qt5xnc.png" alt="img"></p>
+<h4 id="2-BOM-的构成"><a href="#2-BOM-的构成" class="headerlink" title="2.BOM 的构成"></a>2.BOM 的构成</h4><p><img src="https://s2.loli.net/2022/06/14/pP4QIOrRyjFwLfx.png"></p>
+<p>window 对象是浏览器的顶级对象，它具有双重角色。</p>
+<ol>
+<li>它是 JS 访问浏览器窗口的一个接口。</li>
+<li>它是一个全局对象。定义在全局作用域中的变量、函数都会变成 window 对象的属性和方法。在调用的时候可以省略 window，前面学习的对话框都属于 window 对象方法，如 alert()、prompt() 等。</li>
+<li>注意：window下的一个特殊属性 window.name</li>
+</ol>
+<h4 id="3-window-对象的常见事件"><a href="#3-window-对象的常见事件" class="headerlink" title="3.window 对象的常见事件"></a>3.window 对象的常见事件</h4><h5 id="1-窗口加载事件"><a href="#1-窗口加载事件" class="headerlink" title="1.窗口加载事件"></a>1.窗口加载事件</h5><pre class="line-numbers language-javascript"><code class="language-javascript">window<span class="token punctuation">.</span>onload <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+或者 
+window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">"load"</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+javs
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>window.onload 是窗口 (页面）加载事件,当文档内容完全加载完成会触发该事件(包括图像、脚本文件、CSS 文件等), 就调用的处理函数。</p>
+<p>注意：</p>
+<ol>
+<li><p>有了 window.onload 就可以把 JS 代码写到页面元素的上方，因为 onload 是等页面内容全部加载完毕，再去执行处理函数。</p>
 </li>
-</ul>
-<h4 id="2-创建管理员"><a href="#2-创建管理员" class="headerlink" title="2 . 创建管理员"></a>2 . 创建管理员</h4><ol>
-<li><p>创建管理员的命令 :</p>
-<pre class="line-numbers language-python"><code class="language-python">python manage<span class="token punctuation">.</span>py createsuperuser
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<li><p>window.onload 传统注册事件方式 只能写一次，如果有多个，会以最后一个 window.onload 为准。</p>
 </li>
-<li><p>按提示输入用户名、邮箱、密码</p>
-<p><img src="https://s2.loli.net/2022/06/03/BgzstbfiIo2jrEN.png" alt="img"></p>
-</li>
-<li><p>重置密码</p>
-<pre class="line-numbers language-python"><code class="language-python">python manager<span class="token punctuation">.</span>py changepassword 用户名
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-</li>
-<li><p>登陆站点 :<code>http://127.0.0.1:8000/admin</code></p>
-<p>需要服务器是启动状态</p>
-<p><img src="https://s2.loli.net/2022/06/03/Gc12RUhjEd6lwFW.png" alt="img"></p>
+<li><p>如果使用 addEventListener 则没有限制.</p>
 </li>
 </ol>
-<h4 id="3-注册模型类"><a href="#3-注册模型类" class="headerlink" title="3.注册模型类"></a>3.注册模型类</h4><p>   在<code>应用</code>的<code>admin.py</code>文件中注册模型类</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'DOMContentLoaded'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<ol>
+<li>DOMContentLoaded 事件触发时，仅当DOM加载完成，不包括样式表，图片，flash等等。</li>
+<li>Ie9以上才支持</li>
+<li>如果页面的图片很多的话, 从用户访问到onload触发可能需要较长的时间, 交互效果就不能实现，必然影响用户的体验，此时用 DOMContentLoaded 事件比较合适。</li>
+</ol>
+<h5 id="2-调整窗口大小事件"><a href="#2-调整窗口大小事件" class="headerlink" title="2.调整窗口大小事件"></a>2.调整窗口大小事件</h5><pre class="line-numbers language-javascript"><code class="language-javascript">window<span class="token punctuation">.</span>onresize <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+ window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">"resize"</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>window.onresize 是调整窗口大小加载事件,  当触发时就调用的处理函数。</p>
+<p>注意：</p>
+<ol>
+<li>只要窗口大小发生像素变化，就会触发这个事件。</li>
+<li>我们经常利用这个事件完成响应式布局。 window.innerWidth 当前屏幕的宽度</li>
+</ol>
+<h4 id="4-定时器"><a href="#4-定时器" class="headerlink" title="4.定时器"></a>4.定时器</h4><h5 id="1-两种定时器"><a href="#1-两种定时器" class="headerlink" title="1.两种定时器"></a>1.两种定时器</h5><p>window 对象给我们提供了 2 个非常好用的方法-定时器。</p>
 <ul>
-<li>需要导入模型模块 :<code>from book.models import BookInfo,PeopleInfo</code></li>
+<li>setTimeout()  </li>
+<li>setInterval()</li>
 </ul>
-<p>   <img src="https://s2.loli.net/2022/06/03/uS6QZMYiLsNTDCv.png" alt="img"></p>
-<p>   <strong>注册模型成功后, 就可以在站点管理界面方便快速的管理数据.</strong></p>
-<h4 id="4-发布内容到数据库"><a href="#4-发布内容到数据库" class="headerlink" title="4.发布内容到数据库"></a>4.发布内容到数据库</h4><p><img src="https://s2.loli.net/2022/06/03/kEmeILMaGDO7rtQ.gif" alt="img"></p>
-<ul>
-<li>发布内容后，优化模型类展示</li>
-</ul>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 准备书籍列表信息的模型类</span>
-<span class="token keyword">class</span> <span class="token class-name">BookInfo</span><span class="token punctuation">(</span>models<span class="token punctuation">.</span>Model<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token comment" spellcheck="true"># 创建字段，字段类型...</span>
-    name <span class="token operator">=</span> models<span class="token punctuation">.</span>CharField<span class="token punctuation">(</span>max_length<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">)</span>
-
-    <span class="token keyword">def</span> <span class="token function">__str__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        <span class="token triple-quoted-string string">"""将模型类以字符串的方式输出"""</span>
-        <span class="token keyword">return</span> self<span class="token punctuation">.</span>name
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><img src="https://s2.loli.net/2022/06/03/9FjULvonzdeHpr3.png" alt="img"></p>
+<h5 id="2-setTimeout-定时器"><a href="#2-setTimeout-定时器" class="headerlink" title="2.setTimeout() 定时器"></a>2.setTimeout() 定时器</h5><pre class="line-numbers language-js"><code class="language-js">window<span class="token punctuation">.</span><span class="token function">setTimeout</span><span class="token punctuation">(</span>调用函数<span class="token punctuation">,</span> <span class="token punctuation">[</span>延迟的毫秒数<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>setTimeout() 方法用于设置一个定时器，该定时器在定时器到期后执行调用函数。</p>
+<p>注意：</p>
+<ol>
+<li>window 可以省略。</li>
+<li>这个调用函数可以直接写函数，或者写函数名或者采取字符串‘函数名()’三种形式。第三种不推荐</li>
+<li>延迟的毫秒数省略默认是 0，如果写，必须是毫秒。</li>
+<li>因为定时器可能有很多，所以我们经常给定时器赋值一个标识符。</li>
+</ol>
+<h5 id="3-setTimeout-定时器"><a href="#3-setTimeout-定时器" class="headerlink" title="3.setTimeout() 定时器"></a>3.setTimeout() 定时器</h5><pre class="line-numbers language-js"><code class="language-js">window<span class="token punctuation">.</span><span class="token function">setTimeout</span><span class="token punctuation">(</span>调用函数<span class="token punctuation">,</span> <span class="token punctuation">[</span>延迟的毫秒数<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<ol>
+<li>setTimeout()  这个调用函数我们也称为回调函数 callback</li>
+<li>普通函数是按照代码顺序直接调用。</li>
+<li>而这个函数，需要等待时间，时间到了才去调用这个函数，因此称为回调函数。</li>
+<li>简单理解： 回调，就是回头调用的意思。上一件事干完，再回头再调用这个函数。</li>
+<li>以前我们讲的   element.onclick &#x3D; function(){}   或者  element.addEventListener(“click”, fn);   里面的 函数也是回调函数。</li>
+</ol>
+<h5 id="4-停止-setTimeout-定时器"><a href="#4-停止-setTimeout-定时器" class="headerlink" title="4.停止 setTimeout() 定时器"></a>4.停止 setTimeout() 定时器</h5><pre class="line-numbers language-js"><code class="language-js">window<span class="token punctuation">.</span><span class="token function">clearTimeout</span><span class="token punctuation">(</span>timeoutID<span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>clearTimeout()方法取消了先前通过调用 setTimeout() 建立的定时器。</p>
+<p>注意：</p>
+<ol>
+<li><p>window 可以省略。</p>
+</li>
+<li><p>里面的参数就是定时器的标识符 。</p>
+</li>
+<li><h5 id="setInterval-定时器"><a href="#setInterval-定时器" class="headerlink" title="setInterval() 定时器"></a>setInterval() 定时器</h5></li>
+</ol>
+<pre class="line-numbers language-js"><code class="language-js">   window<span class="token punctuation">.</span><span class="token function">setInterval</span><span class="token punctuation">(</span>回调函数<span class="token punctuation">,</span> <span class="token punctuation">[</span>间隔的毫秒数<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>   setInterval() 方法重复调用一个函数，每隔这个时间，就去调用一次回调函数。</p>
+<p>注意：</p>
+<ol>
+<li>window 可以省略。</li>
+<li>这个调用函数可以直接写函数，或者写函数名或者采取字符串 ‘函数名()’  三种形式。</li>
+<li>间隔的毫秒数省略默认是 0，如果写，必须是毫秒，表示每隔多少毫秒就自动调用这个函数。</li>
+<li>4.因为定时器可能有很多，所以我们经常给定时器赋值一个标识符。</li>
+<li>第一次执行也是间隔毫秒数之后执行，之后每隔毫秒数就执行一次。</li>
+</ol>
+<h5 id="4-停止-setInterval-定时器"><a href="#4-停止-setInterval-定时器" class="headerlink" title="4.停止 setInterval() 定时器"></a>4.停止 setInterval() 定时器</h5><pre class="line-numbers language-js"><code class="language-js">window<span class="token punctuation">.</span><span class="token function">clearInterval</span><span class="token punctuation">(</span>intervalID<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>clearInterval()方法取消了先前通过调用 setInterval()建立的定时器。</p>
+<p>注意：</p>
+<ol>
+<li>window 可以省略。</li>
+<li>里面的参数就是定时器的标识符 。</li>
+</ol>
+<h5 id="5-this"><a href="#5-this" class="headerlink" title="5.this"></a>5.this</h5><p>this的指向在函数定义的时候是确定不了的，只有函数执行的时候才能确定this到底指向谁，一般情况下this的最终指向的是那个调用它的对象</p>
+<p>现阶段，我们先了解一下几个this指向</p>
+<ol>
+<li>全局作用域或者普通函数中this指向全局对象window（注意定时器里面的this指向window）.</li>
+<li>方法调用中谁调用this指向谁.</li>
+<li>构造函数中this指向构造函数的实例.</li>
+</ol>
+<h4 id="5-JS-是单线程"><a href="#5-JS-是单线程" class="headerlink" title="5.JS 是单线程"></a>5.JS 是单线程</h4><p>JavaScript 语言的一大特点就是单线程，也就是说，同一个时间只能做一件事。这是因为 Javascript 这门脚本语言诞生的使命所致——JavaScript 是为处理页面中用户的交互，以及操作 DOM 而诞生的。比如我们对某个 DOM 元素进行添加和删除操作，不能同时进行。 应该先进行添加，之后再删除。</p>
+<p>单线程就意味着，所有任务需要排队，前一个任务结束，才会执行后一个任务。这样所导致的问题是： 如果 JS 执行的时间过长，这样就会造成页面的渲染不连贯，导致页面渲染加载阻塞的感觉。</p>
+<h5 id="1-同步和异步"><a href="#1-同步和异步" class="headerlink" title="1.同步和异步"></a>1.同步和异步</h5><p>为了解决这个问题，利用多核 CPU 的计算能力，HTML5 提出 Web Worker 标准，允许 JavaScript 脚本创建多个线程。于是，JS 中出现了同步和异步。</p>
+<p><strong>同步</strong></p>
+<p>前一个任务结束后再执行后一个任务，程序的执行顺序与任务的排列顺序是一致的、同步的。比如做饭的同步做法：我们要烧水煮饭，等水开了（10分钟之后），再去切菜，炒菜。</p>
+<p><strong>异步</strong></p>
+<p>你在做一件事情时，因为这件事情会花费很长时间，在做这件事的同时，你还可以去处理其他事情。比如做饭的异步做法，我们在烧水的同时，利用这10分钟，去切菜，炒菜。</p>
+<p><strong>同步任务</strong></p>
+<p>同步任务都在主线程上执行，形成一个执行栈。</p>
+<p><strong>异步任务</strong></p>
+<p>JS 的异步是通过回调函数实现的。<br><img src="https://s2.loli.net/2022/06/14/gikDQP3yKzZAnaq.png"></p>
+<p>一般而言，异步任务有以下三种类型:</p>
+<p>1、普通事件，如 click、resize 等</p>
+<p>2、资源加载，如 load、error 等</p>
+<p>3、定时器，包括 setInterval、setTimeout 等异步任务相关回调函数添加到任务队列中（任务队列也称为消息队列）。</p>
+<h5 id="2-JS-执行机制"><a href="#2-JS-执行机制" class="headerlink" title="2.JS 执行机制"></a>2.JS 执行机制</h5><ol>
+<li><p>先执行执行栈中的同步任务。</p>
+</li>
+<li><p>异步任务（回调函数）放入任务队列中。</p>
+</li>
+<li><p>一旦执行栈中的所有同步任务执行完毕，系统就会按次序读取任务队列中的异步任务，于是被读取的异步任务结束等待状态，进入执行栈，开始执行。</p>
+</li>
+</ol>
+<p><img src="E:\桌面\学习\前端\Javasript\javascript笔记\imges\12.png"></p>
+<p><img src="https://s2.loli.net/2022/06/14/qAZiNuIopjs37eL.png"></p>
+<p>由于主线程不断的重复获得任务、执行任务、再获取任务、再执行，所以这种机制被称为事件循环（ event loop）。</p>
+<h4 id="6-什么是-location-对象"><a href="#6-什么是-location-对象" class="headerlink" title="6.什么是 location 对象"></a>6.什么是 location 对象</h4><p>window 对象给我们提供了一个 location 属性用于获取或设置窗体的 URL，并且可以用于解析 URL 。 因为这个属性返回的是一个对象，所以我们将这个属性也称为 location 对象。</p>
+<h5 id="1-URL"><a href="#1-URL" class="headerlink" title="1.URL"></a>1.URL</h5><p>统一资源定位符 (Uniform Resource Locator, URL) 是互联网上标准资源的地址。互联网上的每个文件都有一个唯一的 URL，它包含的信息指出文件的位置以及浏览器应该怎么处理它。</p>
+<p>URL 的一般语法格式为：</p>
+<pre class="line-numbers language-tex"><code class="language-tex"> protocol://host[:port]/path/[?query]#fragment
+ http://www.itcast.cn/index.html?name=andy&age=18#link
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p><img src="https://s2.loli.net/2022/06/14/ox2nN1UXGjD9HWA.png"></p>
+<h5 id="2-location-对象的属性"><a href="#2-location-对象的属性" class="headerlink" title="2.location 对象的属性"></a>2.location 对象的属性</h5><p><img src="https://s2.loli.net/2022/06/14/vA9JhrF2lDREcxq.png"></p>
+<p>重点记住： href 和 search</p>
+<h5 id="3-location-对象的方法"><a href="#3-location-对象的方法" class="headerlink" title="3. location 对象的方法"></a>3. location 对象的方法</h5><h5 id=""><a href="#" class="headerlink" title=""></a><img src="https://s2.loli.net/2022/06/14/uGxKdPSYeclrVQz.png"></h5><h4 id="7-navigator-对象"><a href="#7-navigator-对象" class="headerlink" title="7.navigator 对象"></a>7.navigator 对象</h4><p>navigator 对象包含有关浏览器的信息，它有很多属性，我们最常用的是 userAgent，该属性可以返回由客户机发送服务器的 user-agent 头部的值。下面前端代码可以判断用户那个终端打开页面，实现跳转</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span>navigator<span class="token punctuation">.</span>userAgent<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token regex">/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>href <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>     <span class="token comment" spellcheck="true">//手机</span>
+ <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>href <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>     <span class="token comment" spellcheck="true">//电脑</span>
+ <span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="8-history-对象"><a href="#8-history-对象" class="headerlink" title="8.history 对象"></a>8.history 对象</h4><p>window 对象给我们提供了一个 history 对象，与浏览器历史记录进行交互。该对象包含用户（在浏览器窗口中）访问过的 URL。</p>
+<p><img src="https://s2.loli.net/2022/06/14/wp3NQ5JRBZLIu9v.png"></p>
 
                 
             </div>
@@ -596,7 +674,7 @@ Django的管理模块, 需要按照如下步">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://wuwuarandhg.github.io/2022/061060844.html">https://wuwuarandhg.github.io/2022/061060844.html</a>
+                    <a href="https://wuwuarandhg.github.io/2022/061451329.html">https://wuwuarandhg.github.io/2022/061451329.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -634,8 +712,8 @@ Django的管理模块, 需要按照如下步">
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Django/">
-                                    <span class="chip bg-color">Django</span>
+                                <a href="/tags/javascript/">
+                                    <span class="chip bg-color">javascript</span>
                                 </a>
                             
                         </div>
@@ -687,13 +765,13 @@ Django的管理模块, 需要按照如下步">
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/061160379.html">
+                <a href="/2022/061426794.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="javascript的事件使用">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="javascriptDOM操作">
                         
-                        <span class="card-title">javascript的事件使用</span>
+                        <span class="card-title">javascriptDOM操作</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -704,7 +782,7 @@ Django的管理模块, 需要按照如下步">
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-06-11
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-06-14
                         </span>
                         <span class="publish-author">
                             
@@ -736,13 +814,13 @@ Django的管理模块, 需要按照如下步">
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/061029103.html">
+                <a href="/2022/061430328.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Django第一天">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="javascript正则表达式的用法">
                         
-                        <span class="card-title">Django第一天</span>
+                        <span class="card-title">javascript正则表达式的用法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -753,14 +831,14 @@ Django的管理模块, 需要按照如下步">
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-14
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Django/" class="post-category">
-                                    Django
+                            <a href="/categories/javascript/" class="post-category">
+                                    javascript
                                 </a>
                             
                             
@@ -770,8 +848,8 @@ Django的管理模块, 需要按照如下步">
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/python/">
-                        <span class="chip bg-color">python</span>
+                    <a href="/tags/javascript/">
+                        <span class="chip bg-color">javascript</span>
                     </a>
                     
                 </div>
