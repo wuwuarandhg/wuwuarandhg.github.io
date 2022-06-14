@@ -6,7 +6,7 @@
   <link href="https://wuwuarandhg.github.io/atom.xml" rel="self"/>
   
   <link href="https://wuwuarandhg.github.io/"/>
-  <updated>2022-06-13T23:38:47.515Z</updated>
+  <updated>2022-06-14T04:05:58.988Z</updated>
   <id>https://wuwuarandhg.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>javascript正则表达式的用法</title>
+    <link href="https://wuwuarandhg.github.io/2022/061430328.html"/>
+    <id>https://wuwuarandhg.github.io/2022/061430328.html</id>
+    <published>2022-06-14T03:57:22.000Z</published>
+    <updated>2022-06-14T04:05:58.988Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-正则表达式概述&quot;&gt;&lt;a href=&quot;#1-正则表达式概述&quot; class=&quot;headerlink&quot; title=&quot;1.正则表达式概述&quot;&gt;&lt;/a&gt;1.正则表达式概述&lt;/h2&gt;&lt;h3 id=&quot;1-1什么是正则表达式&quot;&gt;&lt;a href=&quot;#1-1什么是正则表达式&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="javascript" scheme="https://wuwuarandhg.github.io/categories/javascript/"/>
+    
+    
+    <category term="javascript" scheme="https://wuwuarandhg.github.io/tags/javascript/"/>
+    
+  </entry>
   
   <entry>
     <title>javascript高级用法</title>
