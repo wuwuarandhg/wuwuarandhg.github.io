@@ -6,7 +6,7 @@
   <link href="https://wuwuarandhg.github.io/atom.xml" rel="self"/>
   
   <link href="https://wuwuarandhg.github.io/"/>
-  <updated>2022-06-14T09:29:13.929Z</updated>
+  <updated>2022-06-14T09:55:57.126Z</updated>
   <id>https://wuwuarandhg.github.io/</id>
   
   <author>
@@ -17,11 +17,24 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>node.js第一天</title>
+    <link href="https://wuwuarandhg.github.io/2022/061420882.html"/>
+    <id>https://wuwuarandhg.github.io/2022/061420882.html</id>
+    <published>2022-06-14T09:55:22.000Z</published>
+    <updated>2022-06-14T09:55:57.126Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>ES6语法</title>
     <link href="https://wuwuarandhg.github.io/2022/061436266.html"/>
     <id>https://wuwuarandhg.github.io/2022/061436266.html</id>
     <published>2022-06-14T07:30:37.000Z</published>
-    <updated>2022-06-14T09:29:13.929Z</updated>
+    <updated>2022-06-14T09:29:36.027Z</updated>
     
     
       
