@@ -6,7 +6,7 @@
   <link href="https://wuwuarandhg.github.io/atom.xml" rel="self"/>
   
   <link href="https://wuwuarandhg.github.io/"/>
-  <updated>2022-06-14T09:55:57.126Z</updated>
+  <updated>2022-06-15T14:10:07.595Z</updated>
   <id>https://wuwuarandhg.github.io/</id>
   
   <author>
@@ -17,15 +17,52 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>node.js第二天</title>
+    <link href="https://wuwuarandhg.github.io/2022/061549640.html"/>
+    <id>https://wuwuarandhg.github.io/2022/061549640.html</id>
+    <published>2022-06-15T13:19:59.000Z</published>
+    <updated>2022-06-15T14:10:07.595Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Node-js模块化&quot;&gt;&lt;a href=&quot;#Node-js模块化&quot; class=&quot;headerlink&quot; title=&quot;Node.js模块化&quot;&gt;&lt;/a&gt;Node.js模块化&lt;/h1&gt;&lt;h2 id=&quot;1-模块化的基本概念&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="node.js" scheme="https://wuwuarandhg.github.io/categories/node-js/"/>
+    
+    
+    <category term="node.js" scheme="https://wuwuarandhg.github.io/tags/node-js/"/>
+    
+  </entry>
+  
+  <entry>
     <title>node.js第一天</title>
     <link href="https://wuwuarandhg.github.io/2022/061420882.html"/>
     <id>https://wuwuarandhg.github.io/2022/061420882.html</id>
     <published>2022-06-14T09:55:22.000Z</published>
-    <updated>2022-06-14T09:55:57.126Z</updated>
+    <updated>2022-06-15T13:18:37.330Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-Node-js-简介&quot;&gt;&lt;a href=&quot;#1-Node-js-简介&quot; class=&quot;headerlink&quot; title=&quot;1.Node.js 简介&quot;&gt;&lt;/a&gt;1.Node.js 简介&lt;/h2&gt;&lt;img</summary>
+        
+      
     
     
     
+    <category term="node.js" scheme="https://wuwuarandhg.github.io/categories/node-js/"/>
     
+    
+    <category term="node.js" scheme="https://wuwuarandhg.github.io/tags/node-js/"/>
     
   </entry>
   
@@ -135,7 +172,7 @@
     <link href="https://wuwuarandhg.github.io/2022/061430328.html"/>
     <id>https://wuwuarandhg.github.io/2022/061430328.html</id>
     <published>2022-06-14T03:57:22.000Z</published>
-    <updated>2022-06-14T07:05:48.596Z</updated>
+    <updated>2022-06-15T07:56:41.165Z</updated>
     
     
       

@@ -467,14 +467,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.2k
+                    2.5k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    9 分
+                    10 分
                 </div>
                 
 
@@ -733,6 +733,47 @@ console<span class="token punctuation">.</span><span class="token function">log<
     <span class="token punctuation">}</span>
 <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="3-6正则的转义字符"><a href="#3-6正则的转义字符" class="headerlink" title="3.6正则的转义字符"></a>3.6正则的转义字符</h3><p><strong>一、转义符（\）介绍</strong></p>
+<p>代表除了换行符以外的任意字符，转义后，它代表之后就是一个点。</p>
+<p>转义是指：使这个“.”失去功能。如果不是写字符串1，而是写一个点，那么即为true。</p>
+<p><strong>二、类型总结</strong></p>
+<p><strong>1、|符号：|表或者</strong></p>
+<pre class="line-numbers language-js"><code class="language-js"><span class="token keyword">var</span> reg1<span class="token operator">=</span><span class="token regex">/javascript|php|java/g</span> <span class="token comment" spellcheck="true">//</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>2、点符号：、.啊+号a是特殊字符，原意匹配要加\转义</strong></p>
+<pre class="line-numbers language-js"><code class="language-js"><span class="token keyword">var</span> reg2<span class="token operator">=</span><span class="token regex">/img\.jpg/g</span> <span class="token comment" spellcheck="true">//转义字符 \n //</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>3、转义字符：特殊字符，都要加转义\</p>
+<pre class="line-numbers language-js"><code class="language-js"><span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">/</span> $ # <span class="token operator">&amp;</span> <span class="token operator">*</span> <span class="token punctuation">.</span> <span class="token operator">...</span><span class="token operator">...</span><span class="token punctuation">.</span> <span class="token comment" spellcheck="true">//j</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>三、使用实例：在查找特殊符号的时候需要用到转义字符</strong>\</p>
+<pre class="line-numbers language-js"><code class="language-js"><span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">"img1.jpg img2#jpg img+jpg"</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> reg <span class="token operator">=</span> <span class="token regex">/\.jpg/g</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//用\对.进行了转义之后</span>
+    <span class="token keyword">var</span> result <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span>reg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>输出</p>
+<pre class="line-numbers language-js"><code class="language-js">【<span class="token string">".jpg"</span>】j
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>以上就是js正则表达式转义字符的介绍，希望能帮助你理解。</p>
+<h3 id="3-7JavaScript-exec-方法"><a href="#3-7JavaScript-exec-方法" class="headerlink" title="3.7JavaScript exec() 方法"></a>3.7JavaScript exec() 方法</h3><p><a target="_blank" rel="noopener" href="https://www.runoob.com/jsref/jsref-obj-regexp.html"><img src="https://s2.loli.net/2022/06/15/HmR6y2CLBeYlMiF.gif" alt="RegExp 对象参考手册"> JavaScript RegExp 对象</a></p>
+<h4 id="定义和用法"><a href="#定义和用法" class="headerlink" title="定义和用法"></a>定义和用法</h4><p>exec() 方法用于检索字符串中的正则表达式的匹配。</p>
+<p>如果字符串中有匹配的值返回该匹配值，否则返回 null。</p>
+<p><strong>返回值是一个数组</strong></p>
+<h4 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h4><p>RegExpObject.exec(<em>string</em>)</p>
+<pre class="line-numbers language-js"><code class="language-js"><span class="token keyword">var</span> str<span class="token operator">=</span><span class="token string">"Hello world!"</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//查找"Hello"</span>
+<span class="token keyword">var</span> patt<span class="token operator">=</span><span class="token regex">/Hello/g</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> result<span class="token operator">=</span>patt<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"返回值: "</span> <span class="token operator">+</span>  result<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token comment" spellcheck="true">//查找 "RUNOOB"</span>
+patt<span class="token operator">=</span><span class="token regex">/RUNOOB/g</span><span class="token punctuation">;</span>
+result<span class="token operator">=</span>patt<span class="token punctuation">.</span><span class="token function">exec</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;br>返回值: "</span> <span class="token operator">+</span>  result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-tex"><code class="language-tex">Returned value: Hello
+Returned value: null
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -1165,7 +1206,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">21.1k</span>
+                        class="white-color">28k</span>
             
             
             

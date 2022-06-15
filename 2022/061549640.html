@@ -4,19 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="javascriptDOM操作, 悟然blog">
-    <meta name="description" content="1. 获取元素的方法
-根据 ID 获取：
-
-document.getElementById(‘id’);
-
-
-根据标签名获取：
-
-document.getElementsByTagName(‘标签名’);
-
-
-通过 HTML5 新增的方法获">
+    <meta name="keywords" content="node.js第二天, 悟然blog">
+    <meta name="description" content="Node.js模块化1. 模块化的基本概念1.1 什么是模块化模块化是指：解决一个复杂问题时，自顶向下逐层把系统划分成若干模块的过程。对于整个系统来说，模块是可组 合、分解和更换的单元。
+编程领域中的模块化，就是遵守固定的规则，把一个大文件">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -30,7 +20,7 @@ document.getElementsByTagName(‘标签名’);
 
     
 
-    <title>javascriptDOM操作 | 悟然blog</title>
+    <title>node.js第二天 | 悟然blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -327,7 +317,7 @@ document.getElementsByTagName(‘标签名’);
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">javascriptDOM操作</h1>
+                    <h1 class="description center-align post-title">node.js第二天</h1>
                 </div>
             </div>
         </div>
@@ -443,8 +433,8 @@ document.getElementsByTagName(‘标签名’);
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/javascript/">
-                                <span class="chip bg-color">javascript</span>
+                            <a href="/tags/node-js/">
+                                <span class="chip bg-color">node.js</span>
                             </a>
                         
                     </div>
@@ -455,8 +445,8 @@ document.getElementsByTagName(‘标签名’);
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/javascript/" class="post-category">
-                                javascript
+                            <a href="/categories/node-js/" class="post-category">
+                                node.js
                             </a>
                         
                     </div>
@@ -468,7 +458,7 @@ document.getElementsByTagName(‘标签名’);
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-06-14
+                    2022-06-15
                 </div>
                 
 
@@ -477,14 +467,14 @@ document.getElementsByTagName(‘标签名’);
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.6k
+                    3.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    11 分
                 </div>
                 
 
@@ -504,179 +494,123 @@ document.getElementsByTagName(‘标签名’);
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="1-获取元素的方法"><a href="#1-获取元素的方法" class="headerlink" title="1. 获取元素的方法"></a>1. 获取元素的方法</h4><ol>
-<li><p>根据 ID 获取：</p>
+                <h1 id="Node-js模块化"><a href="#Node-js模块化" class="headerlink" title="Node.js模块化"></a>Node.js模块化</h1><h2 id="1-模块化的基本概念"><a href="#1-模块化的基本概念" class="headerlink" title="1. 模块化的基本概念"></a>1. 模块化的基本概念</h2><h3 id="1-1-什么是模块化"><a href="#1-1-什么是模块化" class="headerlink" title="1.1 什么是模块化"></a>1.1 什么是模块化</h3><p>模块化是指：解决一个复杂问题时，自顶向下逐层把系统划分成若干模块的过程。对于整个系统来说，模块是可组 合、分解和更换的单元。</p>
+<p><strong>编程领域中的模块化</strong>，就是遵守固定的规则，把一个大文件拆成独立并互相依赖的多个小模块。 把代码进行模块化拆分的好处： </p>
+<p>① 提高了代码的复用性 </p>
+<p>② 提高了代码的可维护性 </p>
+<p>③ 可以实现按需加载</p>
+<h3 id="1-2-模块化规范"><a href="#1-2-模块化规范" class="headerlink" title="1.2 模块化规范"></a>1.2 模块化规范</h3><p>模块化规范就是对代码进行模块化的拆分与组合时，需要遵守的那些规则。</p>
+<h2 id="2-Node-js-中模块化"><a href="#2-Node-js-中模块化" class="headerlink" title="2.Node.js 中模块化"></a>2.Node.js 中模块化</h2><h3 id="2-1-Node-js-中模块的分类"><a href="#2-1-Node-js-中模块的分类" class="headerlink" title="2.1 Node.js 中模块的分类"></a>2.1 Node.js 中模块的分类</h3><p>Node.js 中根据模块来源的不同，将模块分为了 3 大类，分别是： </p>
 <ul>
-<li>document.getElementById(‘id’);</li>
+<li>内置模块（内置模块是由 Node.js 官方提供的，例如 fs、path、http 等）</li>
+<li>自定义模块（用户创建的每个 .js 文件，都是自定义模块） </li>
+<li>第三方模块（由第三方开发出来的模块，并非官方提供的内置模块，也不是用户创建的自定义模块，使用前需要先下载）</li>
 </ul>
-</li>
-<li><p>根据标签名获取：</p>
+<h3 id="2-2-加载模块"><a href="#2-2-加载模块" class="headerlink" title="2.2 加载模块"></a>2.2 加载模块</h3><p>使用强大的 require() 方法，可以加载需要的内置模块、用户自定义模块、第三方模块进行使用。例如</p>
+<p><img src="https://s2.loli.net/2022/06/15/2woRSmYZyIMitsU.png" alt="image-20220615213250658"></p>
+<h3 id="2-3-Node-js-中的模块作用域"><a href="#2-3-Node-js-中的模块作用域" class="headerlink" title="2.3 Node.js 中的模块作用域"></a>2.3 Node.js 中的模块作用域</h3><p>1.什么是模块作用域:</p>
+<p>  和函数作用域类似，在自定义模块中定义的变量、方法等成员，只能在当前模块内被访问，这种模块级别的访问限制，叫做模块 作用域</p>
+<p><img src="https://s2.loli.net/2022/06/15/GjIkPYqZ5DhzLpo.png" alt="image-20220615213424720"></p>
+<p>2.模块作用域的好处</p>
+<p>防止了全局变量污染的问题</p>
+<p><img src="https://s2.loli.net/2022/06/15/JUfpB95bFCxmeML.png" alt="image-20220615213600052"></p>
+<h3 id="2-4-向外共享模块作用域中的成员"><a href="#2-4-向外共享模块作用域中的成员" class="headerlink" title="2.4 向外共享模块作用域中的成员"></a>2.4 向外共享模块作用域中的成员</h3><p>1.module 对象</p>
+<p>在每个 .js 自定义模块中都有一个 module 对象，它里面存储了和当前模块有关的信息，打印如下</p>
+<p><img src="https://s2.loli.net/2022/06/15/abE5CG4XQd1TyYA.png" alt="image-20220615213710882"></p>
+<p>2.module.exports 对象</p>
+<p>在自定义模块中，可以使用 module.exports 对象，将模块内的成员共享出去，供外界使用。 外界用 require() 方法导入自定义模块时，得到的就是 module.exports 所指向的对象。</p>
+<p>3.共享成员时的注意点</p>
+<p><img src="https://s2.loli.net/2022/06/15/bKOQRVN3CtpTDG1.png" alt="image-20220615213832477"></p>
+<p>4.exports 对象</p>
+<p>由于 module.exports 单词写起来比较复杂，为了简化向外共享成员的代码，Node 提供了 exports 对象。默认情况 下，exports 和 module.exports 指向同一个对象。最终共享的结果，还是以 module.exports 指向的对象为准</p>
+<p><img src="https://s2.loli.net/2022/06/15/HhGve6MSAuywa9q.png" alt="image-20220615213953150"></p>
+<p>5.exports 和 module.exports 的使用误区</p>
+<p><img src="https://s2.loli.net/2022/06/15/WvenKr4xJAtUIsq.png" alt="image-20220615214047745"></p>
+<h3 id="2-5-Node-js-中的模块化规范"><a href="#2-5-Node-js-中的模块化规范" class="headerlink" title="2.5 Node.js 中的模块化规范"></a>2.5 Node.js 中的模块化规范</h3><p> Node.js 遵循了 CommonJS 模块化规范，CommonJS 规定了模块的特性和各模块之间如何相互依赖。 CommonJS 规定：</p>
+<p> ① 每个模块内部，module 变量代表当前模块。 </p>
+<p>② module 变量是一个对象，它的 exports 属性（即 module.exports）是对外的接口</p>
+<p> ③ 加载某个模块，其实是加载该模块的 module.exports 属性。require() 方法用于加载模块</p>
+<h2 id="3-npm与包"><a href="#3-npm与包" class="headerlink" title="3.npm与包"></a>3.npm与包</h2><h3 id="3-1包"><a href="#3-1包" class="headerlink" title="3.1包"></a>3.1包</h3><h4 id="1-什么是包"><a href="#1-什么是包" class="headerlink" title="1.什么是包"></a>1.什么是包</h4><p>Node.js 中的第三方模块又叫做包。 就像电脑和计算机指的是相同的东西，第三方模块和包指的是同一个概念，只不过叫法不同</p>
+<h4 id="2-包的来源"><a href="#2-包的来源" class="headerlink" title="2.包的来源"></a>2.包的来源</h4><p>不同于 Node.js 中的内置模块与自定义模块，包是由第三方个人或团队开发出来的，免费供所有人使用。 注意：Node.js 中的包都是免费且开源的，不需要付费即可免费下载使用</p>
+<h4 id="3-为什么需要包"><a href="#3-为什么需要包" class="headerlink" title="3.为什么需要包"></a>3.为什么需要包</h4><p>由于 Node.js 的内置模块仅提供了一些底层的 API，导致在基于内置模块进行项目开发的时，效率很低。 包是基于内置模块封装出来的，提供了更高级、更方便的 API，极大的提高了开发效率。 包和内置模块之间的关系，类似于 jQuery 和 浏览器内置 API 之间的关系.</p>
+<h4 id="4-从哪里下载包"><a href="#4-从哪里下载包" class="headerlink" title="4.从哪里下载包"></a>4.从哪里下载包</h4><p>国外有一家 IT 公司，叫做 npm, Inc. 这家公司旗下有一个非常著名的网站： <a target="_blank" rel="noopener" href="https://www.npmjs.com/">https://www.npmjs.com/</a> ，它是全球最 大的包共享平台，你可以从这个网站上搜索到任何你需要的包，只要你有足够的耐心！ 到目前位置，全球约 1100 多万的开发人员，通过这个包共享平台，开发并共享了超过 120 多万个包 供我们使用。 npm, Inc. 公司提供了一个地址为 <a target="_blank" rel="noopener" href="https://registry.npmjs.org/">https://registry.npmjs.org/</a> 的服务器，来对外共享所有的包，我们可以从这个服务 器上下载自己所需要的包。 </p>
+<p>注意：</p>
 <ul>
-<li>document.getElementsByTagName(‘标签名’);</li>
+<li>从 <a target="_blank" rel="noopener" href="https://www.npmjs.com/">https://www.npmjs.com/</a> 网站上搜索自己所需要的包 </li>
+<li>从 <a target="_blank" rel="noopener" href="https://registry.npmjs.org/">https://registry.npmjs.org/</a> 服务器上下载自己需要的包</li>
 </ul>
-</li>
-<li><p>通过 HTML5 新增的方法获取：</p>
-<ol>
-<li><p>document.getElementsByClassName(‘类名’)；&#x2F;&#x2F; 根据类名返回元素对象集</p>
-</li>
-<li><p>document.querySelector(‘选择器’);        &#x2F;&#x2F; 根据指定选择器返回第一个元素对象</p>
-</li>
-<li><p>document.querySelectorAll(‘选择器’);     &#x2F;&#x2F; 根据指定选择器返回</p>
-</li>
-</ol>
-</li>
-<li><p>获取特殊元素（body，html):</p>
-<ol>
-<li><p>doucumnet.body  &#x2F;&#x2F; 返回body元素对象</p>
-</li>
-<li><p>document.documentElement  &#x2F;&#x2F; 返回html元素对象</p>
-</li>
-</ol>
-</li>
-</ol>
-<hr>
-<h4 id="2-事件基础"><a href="#2-事件基础" class="headerlink" title="2.事件基础"></a>2.事件基础</h4><ol>
-<li>常见的鼠标事件:<br>  <img src="https://s2.loli.net/2022/06/14/qvPuRSIY3DjmLJT.png"></li>
-</ol>
-<hr>
-<h4 id="3-操作元素"><a href="#3-操作元素" class="headerlink" title="3.操作元素"></a>3.操作元素</h4><ol>
-<li>改变元素内容:<ol>
-<li><p>element.innerText        &#x2F;&#x2F;从起始位置到终止位置的内容, 但它去除 html 标签， 同时空格和换行也会去掉</p>
-</li>
-<li><p>element.innerHTML    &#x2F;&#x2F;起始位置到终止位置的全部内容，包括 html 标签，同时保留空格和换行</p>
-</li>
-</ol>
-</li>
-<li>样式属性操作:<ol>
-<li>element.style     行内样式操作</li>
-<li>element.className 类名样式操作</li>
-</ol>
-</li>
-</ol>
-<p>3.操作元素总结</p>
-<p><img src="https://s2.loli.net/2022/06/14/CViom5W1hFHlN27.png"></p>
-<ol start="4">
-<li><p>自定义属性的操作</p>
-<ol>
-<li><p>设置属性值<br>   element.属性 &#x3D; ‘值’  设置内置属性值。<br>   element.setAttribute(‘属性’, ‘值’); </p>
-</li>
-<li><p>区别<br>   element.属性  设置内置属性值<br>   element.setAttribute(‘属性’);  主要设置自定义的属性 （标准）</p>
-</li>
-<li><p>移除属性<br>   element.removeAttribute(‘属性’);</p>
-</li>
-<li><p>获取H5自定义属性</p>
-<p>兼容性获取   element.getAttribute(‘data-index’);</p>
-</li>
-</ol>
-<p>   H5新增 element.dataset.index  或者 element.dataset[‘index’]   ie 11才开始支持</p>
-</li>
-</ol>
-<hr>
-<h4 id="4-节点操作"><a href="#4-节点操作" class="headerlink" title="4.节点操作"></a>4.节点操作</h4><h5 id="1-节点概述"><a href="#1-节点概述" class="headerlink" title="1.节点概述"></a>1.节点概述</h5><p>一般地，节点至少拥有nodeType（节点类型）、nodeName（节点名称）和nodeValue（节点值）这三个基本属性。</p>
+<h4 id="5-如何下载包"><a href="#5-如何下载包" class="headerlink" title="5.如何下载包"></a>5.如何下载包</h4><p> npm, Inc. 公司提供了一个包管理工具，我们可以使用这个包管理工具，从 <a target="_blank" rel="noopener" href="https://registry.npmjs.org/">https://registry.npmjs.org/</a> 服务器把需要 的包下载到本地使用。 这个包管理工具的名字叫做 Node Package Manager（简称 npm 包管理工具），这个包管理工具随着 Node.js 的安 装包一起被安装到了用户的电脑上。 </p>
+<p>大家可以在终端中执行 npm -v 命令，来查看自己电脑上所安装的 npm 包管理工具的版本号：</p>
+<h3 id="3-2-npm-初体验"><a href="#3-2-npm-初体验" class="headerlink" title="3.2 npm 初体验"></a>3.2 npm 初体验</h3><h4 id="1-在项目中安装包的命令"><a href="#1-在项目中安装包的命令" class="headerlink" title="1. 在项目中安装包的命令"></a>1. 在项目中安装包的命令</h4><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> install包的完整名称
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="2-初次装包后多了哪些文件"><a href="#2-初次装包后多了哪些文件" class="headerlink" title="2.初次装包后多了哪些文件"></a>2.初次装包后多了哪些文件</h4><p>初次装包完成后，在项目文件夹下多一个叫做 node_modules 的文件夹和 package-lock.json 的配置文件。 其中： node_modules 文件夹用来存放所有已安装到项目中的包。require() 导入第三方包时，就是从这个目录中查找并加载包。 package-lock.json 配置文件用来记录 node_modules 目录下的每一个包的下载信息，例如包的名字、版本号、下载地址等。 注意：程序员不要手动修改 node_modules 或 package-lock.json 文件中的任何代码，npm 包管理工具会自动维护它们</p>
+<h4 id="3-安装指定版本的包"><a href="#3-安装指定版本的包" class="headerlink" title="3. 安装指定版本的包"></a>3. 安装指定版本的包</h4><pre class="line-numbers language-bash"><code class="language-bash">默认情况下，使用 <span class="token function">npm</span> <span class="token function">install</span> 命令安装包的时候，会自动安装最新版本的包。如果需要安装指定版本的包，可以在包
+名之后，通过 @ 符号指定具体的版本，例如
+<span class="token function">npm</span> i moment@2.22.2
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h4 id="4-包的语义化版本规范"><a href="#4-包的语义化版本规范" class="headerlink" title="4.包的语义化版本规范"></a>4.包的语义化版本规范</h4><p>包的版本号是以“点分十进制”形式进行定义的，总共有三位数字，例如 2.24.0 其中每一位数字所代表的的含义如下： </p>
+<p>第1位数字：大版本 </p>
+<p>第2位数字：功能版本 </p>
+<p>第3位数字：Bug修复版本 版本号提升的规则：只要前面的版本号增长了，则后面的版本号归零</p>
+<h3 id="3-3-包管理配置文件"><a href="#3-3-包管理配置文件" class="headerlink" title="3.3 包管理配置文件"></a>3.3 包管理配置文件</h3><h4 id="1-如何记录项目中安装了哪些包"><a href="#1-如何记录项目中安装了哪些包" class="headerlink" title="1.如何记录项目中安装了哪些包"></a>1.如何记录项目中安装了哪些包</h4><p>在项目根目录中，创建一个叫做 package.json 的配置文件，即可用来记录项目中安装了哪些包。从而方便剔除 node_modules 目录之后，在团队成员之间共享项目的源代码。 </p>
+<p>注意：今后在项目开发中，一定要把 node_modules 文件夹，添加到 .gitignore 忽略文件中。</p>
+<h4 id="2-快速创建-package-json"><a href="#2-快速创建-package-json" class="headerlink" title="2.快速创建 package.json"></a>2.快速创建 package.json</h4><p>npm 包管理工具提供了一个快捷命令，可以在执行命令时所处的目录中，快速创建 package.json 这个包管理 配置文件：</p>
+<pre class="line-numbers language-bash"><code class="language-bash">//作用:在执行命令所处的目录中，快速新建package.json文件
+<span class="token function">npm</span> init -y
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>注意：</p>
+<p> ① 上述命令只能在英文的目录下成功运行！所以，项目文件夹的名称一定要使用英文命名，不要使用中文，不能出现空格。 </p>
+<p>② 运行 npm install 命令安装包的时候，npm 包管理工具会自动把包的名称和版本号，记录到 package.json 中。</p>
+<h4 id="3-一次性安装所有的包"><a href="#3-一次性安装所有的包" class="headerlink" title="3.一次性安装所有的包"></a>3.一次性安装所有的包</h4><pre class="line-numbers language-tex"><code class="language-tex">可以运行 npm install 命令（或 npm i）一次性安装所有的依赖包
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="4-卸载包"><a href="#4-卸载包" class="headerlink" title="4.卸载包"></a>4.卸载包</h4><pre class="line-numbers language-bash"><code class="language-bash">可以运行 <span class="token function">npm</span> uninstall 命令，来卸载指定的包：
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>注意：npm uninstall 命令执行成功后，会把卸载的包，自动从 package.json 的 dependencies 中移除掉。</p>
+<h4 id="5-devDependencies-节点"><a href="#5-devDependencies-节点" class="headerlink" title="5.. devDependencies 节点"></a>5.. devDependencies 节点</h4><p>如果某些包只在项目开发阶段会用到，在项目上线之后不会用到，则建议把这些包记录到 devDependencies 节点中。 与之对应的，如果某些包在开发和项目上线之后都需要用到，则建议把这些包记录到 dependencies 节点中。 您可以使用如下的命令，将包记录到 devDependencies 节点中：</p>
+<p><img src="https://s2.loli.net/2022/06/15/FU6Od1B9ylDqTZR.png" alt="image-20220615215908618"></p>
+<h3 id="3-4-解决下包速度慢的问题"><a href="#3-4-解决下包速度慢的问题" class="headerlink" title="3.4 解决下包速度慢的问题"></a>3.4 解决下包速度慢的问题</h3><p><img src="https://s2.loli.net/2022/06/15/62Xha8E9F5STxN4.png" alt="image-20220615215956061"></p>
+<h4 id="1-切换-npm-的下包镜像源"><a href="#1-切换-npm-的下包镜像源" class="headerlink" title="1.切换 npm 的下包镜像源"></a>1.切换 npm 的下包镜像源</h4><p><img src="https://s2.loli.net/2022/06/15/kDnXqEVWwcHoeUT.png" alt="image-20220615220226059"></p>
+<p><strong>安装nrm</strong></p>
+<p><img src="https://s2.loli.net/2022/06/15/Mj2FPKGnUxr9Wsa.png" alt="image-20220615220148879"></p>
+<h3 id="3-5-包的分类"><a href="#3-5-包的分类" class="headerlink" title="3.5 包的分类"></a>3.5 包的分类</h3><h4 id="1-使用-npm-包管理工具下载的包，共分为两大类，分别是："><a href="#1-使用-npm-包管理工具下载的包，共分为两大类，分别是：" class="headerlink" title="1.使用 npm 包管理工具下载的包，共分为两大类，分别是："></a>1.使用 npm 包管理工具下载的包，共分为两大类，分别是：</h4><ul>
+<li>项目包 </li>
+<li>全局包</li>
+</ul>
+<h4 id="2-项目包"><a href="#2-项目包" class="headerlink" title="2.项目包"></a>2.项目包</h4><p>那些被安装到项目的 node_modules 目录中的包，都是项目包。 </p>
+<p>项目包又分为两类，分别是：</p>
 <ul>
-<li><p>元素节点  nodeType  为 1</p>
+<li><p>开发依赖包（被记录到 devDependencies 节点中的包，只在开发期间会用到）</p>
 </li>
-<li><p>属性节点  nodeType  为 2</p>
-</li>
-<li><p>文本节点  nodeType  为 3 （文本节点包含文字、空格、换行等）</p>
+<li><p>核心依赖包（被记录到 dependencies 节点中的包，在开发期间和项目上线之后都会用到）</p>
 </li>
 </ul>
-<h5 id="2-节点层级"><a href="#2-节点层级" class="headerlink" title="2.节点层级"></a>2.节点层级</h5><h6 id="1-父级节点"><a href="#1-父级节点" class="headerlink" title="1. 父级节点"></a>1. 父级节点</h6><p>   node.parentNode  </p>
-<ul>
-<li><p>parentNode 属性可返回某节点的父节点，注意是最近的一个父节点</p>
-</li>
-<li><p>如果指定的节点没有父节点则返回 null</p>
-</li>
-</ul>
-<h6 id="2-子节点"><a href="#2-子节点" class="headerlink" title="2.子节点"></a>2.子节点</h6><ol>
-<li>parentNode.childNodes（标准）</li>
-</ol>
-<ul>
-<li>parentNode.childNodes 返回包含指定节点的子节点的集合，该集合为即时更新的集合。注意：返回值里面包含了所有的子节点，包括元素节点，文本节点等。如果只想要获得里面的元素节点，则需要专门处理。 所以我们一般不提倡使用childNodes</li>
-</ul>
-<ol start="2">
-<li>parentNode.children（非标准）</li>
-</ol>
-<ul>
-<li>parentNode.children 是一个只读属性，返回所有的子元素节点。它只返回子元素节点，其余节点不返回 （这个是我们重点掌握的）。虽然children 是一个非标准，但是得到了各个浏览器的支持，因此我们可以放心使用</li>
-</ul>
-<ol start="3">
-<li>parentNode.firstChild</li>
-</ol>
-<ul>
-<li>firstChild 返回第一个子节点，找不到则返回null。同样，也是包含所有的节点。</li>
-</ul>
-<p>4.parentNode.lastChild</p>
-<ul>
-<li>lastChild 返回最后一个子节点，找不到则返回null。同样，也是包含所有的节点。</li>
-</ul>
-<p>5.parentNode.firstElementChild   </p>
-<ul>
-<li>firstElementChild  返回第一个子元素节点，找不到则返回null。</li>
-</ul>
-<ol start="6">
-<li>parentNode.lastElementChild</li>
-</ol>
-<ul>
-<li>lastElementChild 返回最后一个子元素节点，找不到则返回null。</li>
-</ul>
-<pre class="line-numbers language-tex"><code class="language-tex">总结：实际开发中，firstChild 和 lastChild 包含其他节点，操作不方便，而 firstElementChild 和 lastElementChild 又有兼容性问题，那么我们如何获取第一个子元素节点或最后一个子元素节点呢？
-解决方案：
-1.如果想要第一个子元素节点，可以使用 parentNode.chilren[0] 
-2.如果想要最后一个子元素节点，可以使用 parentNode.chilren[parentNode.chilren.length - 1] 
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h6 id="3-兄弟节点"><a href="#3-兄弟节点" class="headerlink" title="3. 兄弟节点"></a>3. 兄弟节点</h6><p>   1.node.nextElementSibling  &#x2F;&#x2F;nextElementSibling 返回当前元素下一个兄弟元素节点，找不到则返回null。 </p>
-<p>   2.node.previousElementSibling    &#x2F;&#x2F;previousElementSibling 返回当前元素上一个兄弟节点，找不到则返回null。 </p>
-<h6 id="4-创建节点"><a href="#4-创建节点" class="headerlink" title="4.创建节点"></a>4.创建节点</h6><ol>
-<li><p>document.createElement(‘tagName’)</p>
-<p>document.createElement() 方法创建由 tagName 指定的 HTML 元素。因为这些元素原先不存在，是根据我们的需求动态生成的，所以我们也称为动态创建元素节点。</p>
-</li>
-</ol>
-<h6 id="5-添加节点"><a href="#5-添加节点" class="headerlink" title="5.添加节点"></a>5.添加节点</h6><ol>
-<li><p>node.appendChild(child) </p>
-<p>node.appendChild() 方法将一个节点添加到指定父节点的子节点列表末尾。类似于 CSS 里面的 after 伪元素。</p>
-</li>
-</ol>
-<p>2.node.insertBefore(child, 指定元素) </p>
-<p>node.insertBefore() 方法将一个节点添加到父节点的指定子节点前面。类似于 CSS 里面的 before 伪元素。</p>
-<p><strong>3.node.insertAdjacentHTML(‘’)</strong></p>
-<p><strong>insertAdjacentHTML()</strong> 方法将指定的文本解析为 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Element"><code>Element</code></a> 元素，并将结果节点插入到DOM树中的指定位置。它不会重新解析它正在使用的元素，因此它不会破坏元素内的现有元素。这避免了额外的序列化步骤，使其比直接使用innerHTML操作更快。</p>
-<pre class="line-numbers language-tex"><code class="language-tex">element.insertAdjacentHTML(position, text);
-
-position
-一个 DOMString，表示插入内容相对于元素的位置，并且必须是以下字符串之一：
-'beforebegin'：元素自身的前面。
-'afterbegin'：插入元素内部的第一个子节点之前。
-'beforeend'：插入元素内部的最后一个子节点之后。
-'afterend'：元素自身的后面。
-text
-是要被解析为HTML或XML元素，并插入到DOM树中的 DOMString。
-使用 insertAdjacentHTML 插入用户输入的HTML内容的时候，需要转义之后才能使用。
-如果只是为了插入文本内容（而不是HTML节点），不建议使用这个方法，建议使用node.textContent 或者 node.insertAdjacentText()。因为这样不需要经过HTML解释器的转换，性能会好一点。
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-html"><code class="language-html">//示例
-// 原为 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>one<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>one<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-var d1 = document.getElementById('one');
-d1.insertAdjacentHTML('afterend', '<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>two<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>two<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>');
-
-// 此时，新结构变成：
-// <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>one<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>one<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>two<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>two<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>位置可视化 </p>
-<pre class="line-numbers language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- beforebegin --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>
-  <span class="token comment" spellcheck="true">&lt;!-- afterbegin --></span>
-  foo
-  <span class="token comment" spellcheck="true">&lt;!-- beforeend --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
-<span class="token comment" spellcheck="true">&lt;!-- afterend --></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h6 id="6-删除节点"><a href="#6-删除节点" class="headerlink" title="6.删除节点"></a>6.删除节点</h6><p>1.node.removeChild(child) </p>
-<p>node.removeChild() 方法从 DOM 中删除一个子节点，返回删除的节点。</p>
-<p>2.node.remove()&#x2F;&#x2F;删除节点本身</p>
-<h6 id="7-复制节点-克隆节点"><a href="#7-复制节点-克隆节点" class="headerlink" title="7.复制节点(克隆节点)"></a>7.复制节点(克隆节点)</h6><p> 1.node.cloneNode() </p>
-<p>node.cloneNode() 方法返回调用该方法的节点的一个副本。 也称为克隆节点&#x2F;拷贝节点</p>
-<p>注意：1. 如果括号参数为空或者为 false ，则是浅拷贝，即只克隆复制节点本身，不克隆里面的子节点。2. 如果括号参数为 true ，则是深度拷贝，会复制节点本身以及里面所有的子节点。</p>
+<p>  <img src="https://s2.loli.net/2022/06/15/XtJxTHONhjl3eGD.png" alt="image-20220615220511216"></p>
+<h4 id="3-全局包"><a href="#3-全局包" class="headerlink" title="3.全局包"></a>3.全局包</h4><p> 在执行 npm install 命令时，如果提供了 -g 参数，则会把包安装为全局包。</p>
+<p> 全局包会被安装到 C:\Users\用户目录\AppData\Roaming\npm\node_modules 目录下。</p>
+<p><img src="https://s2.loli.net/2022/06/15/TdcMl12hPWHXbBE.png" alt="image-20220615220615110"></p>
+<p>注意： </p>
+<p>① 只有工具性质的包，才有全局安装的必要性。因为它们提供了好用的终端命令。 </p>
+<p>② 判断某个包是否需要全局安装后才能使用，可以参考官方提供的使用说明即可。</p>
+<h2 id="4-模块的加载机制"><a href="#4-模块的加载机制" class="headerlink" title="4.模块的加载机制"></a>4.模块的加载机制</h2><h3 id="4-1-优先从缓存中加载"><a href="#4-1-优先从缓存中加载" class="headerlink" title="4.1 优先从缓存中加载"></a>4.1 优先从缓存中加载</h3><p>模块在第一次加载后会被缓存。 这也意味着多次调用 require() 不会导致模块的代码被执行多次。 注意：不论是内置模块、用户自定义模块、还是第三方模块，它们都会优先从缓存中加载，从而提高模块的加载效率。</p>
+<h3 id="4-2-内置模块的加载机制"><a href="#4-2-内置模块的加载机制" class="headerlink" title="4.2 内置模块的加载机制"></a>4.2 内置模块的加载机制</h3><p>内置模块是由 Node.js 官方提供的模块，内置模块的加载优先级最高。 例如，require(‘fs’) 始终返回内置的 fs 模块，即使在 node_modules 目录下有名字相同的包也叫做 fs。</p>
+<h3 id="4-3-自定义模块的加载机制"><a href="#4-3-自定义模块的加载机制" class="headerlink" title="4.3 自定义模块的加载机制"></a>4.3 自定义模块的加载机制</h3><p> 使用 require() 加载自定义模块时，必须指定以 .&#x2F; 或 ..&#x2F; 开头的路径标识符。在加载自定义模块时，如果没有指定 .&#x2F; 或 ..&#x2F;  这样的路径标识符，则 node 会把它当作内置模块或第三方模块进行加载。</p>
+<p> 同时，在使用 require() 导入自定义模块时，如果省略了文件的扩展名，则 Node.js 会按顺序分别尝试加载以下的文件：</p>
+<p> ① 按照确切的文件名进行加载 </p>
+<p>② 补全 .js 扩展名进行加载 </p>
+<p>③ 补全 .json 扩展名进行加载 </p>
+<p>④ 补全 .node 扩展名进行加载 </p>
+<p>⑤ 加载失败，终端报错</p>
+<h3 id="4-4-第三方模块的加载机制"><a href="#4-4-第三方模块的加载机制" class="headerlink" title="4.4 第三方模块的加载机制"></a>4.4 第三方模块的加载机制</h3><p> 如果传递给 require() 的模块标识符不是一个内置模块，也没有以 ‘.&#x2F;’ 或 ‘..&#x2F;’ 开头，则 Node.js 会从当前模块的父 目录开始，尝试从 &#x2F;node_modules 文件夹中加载第三方模块。</p>
+<p> 如果没有找到对应的第三方模块，则移动到再上一层父目录中，进行加载，直到文件系统的根目录。 例如，</p>
+<p>假设在 ‘C:\Users\itheima\project\foo.js’ 文件里调用了 require(‘tools’)，则 Node.js 会按以下顺序查找：</p>
+<p> ① C:\Users\itheima\project\node_modules\tools </p>
+<p>② C:\Users\itheima\node_modules\tools </p>
+<p>③ C:\Users\node_modules\tools </p>
+<p>④ C:\node_modules\tools</p>
+<h3 id="4-5-目录作为模块"><a href="#4-5-目录作为模块" class="headerlink" title="4.5 目录作为模块"></a>4.5 目录作为模块</h3><p> 当把目录作为模块标识符，传递给 require() 进行加载的时候，有三种加载方式：</p>
+<p> ① 在被加载的目录下查找一个叫做 package.json 的文件，并寻找 main 属性，作为 require() 加载的入口</p>
+<p> ② 如果目录里没有 package.json 文件，或者 main 入口不存在或无法解析，则 Node.js 将会试图加载目录下的 index.js 文件。</p>
+<p> ③ 如果以上两步都失败了，则 Node.js 会在终端打印错误消息，报告模块的缺失：Error: Cannot find module ‘xxx</p>
 
                 
             </div>
@@ -703,7 +637,7 @@ d1.insertAdjacentHTML('afterend', '<span class="token tag"><span class="token ta
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://wuwuarandhg.github.io/2022/061426794.html">https://wuwuarandhg.github.io/2022/061426794.html</a>
+                    <a href="https://wuwuarandhg.github.io/2022/061549640.html">https://wuwuarandhg.github.io/2022/061549640.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -741,8 +675,8 @@ d1.insertAdjacentHTML('afterend', '<span class="token tag"><span class="token ta
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/javascript/">
-                                    <span class="chip bg-color">javascript</span>
+                                <a href="/tags/node-js/">
+                                    <span class="chip bg-color">node.js</span>
                                 </a>
                             
                         </div>
@@ -790,17 +724,18 @@ d1.insertAdjacentHTML('afterend', '<span class="token tag"><span class="token ta
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/061439799.html">
+                <a href="/2022/061549640.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="javascript面向过程和面向对象">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="node.js第二天">
                         
-                        <span class="card-title">javascript面向过程和面向对象</span>
+                        <span class="card-title">node.js第二天</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -810,26 +745,27 @@ d1.insertAdjacentHTML('afterend', '<span class="token tag"><span class="token ta
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-06-14
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/javascript/" class="post-category">
-                                    javascript
+                            <a href="/categories/node-js/" class="post-category">
+                                    node.js
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/javascript/">
-                        <span class="chip bg-color">javascript</span>
+                    <a href="/tags/node-js/">
+                        <span class="chip bg-color">node.js</span>
                     </a>
                     
                 </div>
@@ -843,13 +779,13 @@ d1.insertAdjacentHTML('afterend', '<span class="token tag"><span class="token ta
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/061451329.html">
+                <a href="/2022/061420882.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="javascriptBOM操作">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="node.js第一天">
                         
-                        <span class="card-title">javascriptBOM操作</span>
+                        <span class="card-title">node.js第一天</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -866,8 +802,8 @@ d1.insertAdjacentHTML('afterend', '<span class="token tag"><span class="token ta
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/javascript/" class="post-category">
-                                    javascript
+                            <a href="/categories/node-js/" class="post-category">
+                                    node.js
                                 </a>
                             
                             
@@ -877,8 +813,8 @@ d1.insertAdjacentHTML('afterend', '<span class="token tag"><span class="token ta
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/javascript/">
-                        <span class="chip bg-color">javascript</span>
+                    <a href="/tags/node-js/">
+                        <span class="chip bg-color">node.js</span>
                     </a>
                     
                 </div>
