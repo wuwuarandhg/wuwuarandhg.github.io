@@ -6,7 +6,7 @@
   <link href="https://wuwuarandhg.github.io/atom.xml" rel="self"/>
   
   <link href="https://wuwuarandhg.github.io/"/>
-  <updated>2022-06-15T14:10:07.595Z</updated>
+  <updated>2022-06-16T15:16:57.384Z</updated>
   <id>https://wuwuarandhg.github.io/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ajax总结</title>
+    <link href="https://wuwuarandhg.github.io/2022/061644042.html"/>
+    <id>https://wuwuarandhg.github.io/2022/061644042.html</id>
+    <published>2022-06-16T12:34:47.000Z</published>
+    <updated>2022-06-16T15:16:57.384Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-ajax&quot;&gt;&lt;a href=&quot;#1-ajax&quot; class=&quot;headerlink&quot; title=&quot;1.ajax&quot;&gt;&lt;/a&gt;1.ajax&lt;/h2&gt;&lt;h3 id=&quot;1-什么是Ajax&quot;&gt;&lt;a href=&quot;#1-什么是Ajax&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="ajax" scheme="https://wuwuarandhg.github.io/categories/ajax/"/>
+    
+    
+    <category term="ajax" scheme="https://wuwuarandhg.github.io/tags/ajax/"/>
+    
+  </entry>
+  
+  <entry>
     <title>node.js第二天</title>
     <link href="https://wuwuarandhg.github.io/2022/061549640.html"/>
     <id>https://wuwuarandhg.github.io/2022/061549640.html</id>
     <published>2022-06-15T13:19:59.000Z</published>
-    <updated>2022-06-15T14:10:07.595Z</updated>
+    <updated>2022-06-15T14:10:28.442Z</updated>
     
     
       
