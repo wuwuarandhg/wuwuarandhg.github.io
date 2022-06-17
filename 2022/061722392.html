@@ -4,19 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="javascriptDOM操作, 悟然blog">
-    <meta name="description" content="1. 获取元素的方法
-根据 ID 获取：
-
-document.getElementById(‘id’);
-
-
-根据标签名获取：
-
-document.getElementsByTagName(‘标签名’);
-
-
-通过 HTML5 新增的方法获">
+    <meta name="keywords" content="mysql与身份认证, 悟然blog">
+    <meta name="description" content="1.node.js在项目中操作 MySQL1.在项目中操作数据库的步骤① 安装操作 MySQL 数据库的第三方模块（mysql） 
+② 通过 mysql 模块连接到 MySQL 数据库 
+③ 通过 mysql 模块执行 SQL 语句
+2.安">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -30,7 +22,7 @@ document.getElementsByTagName(‘标签名’);
 
     
 
-    <title>javascriptDOM操作 | 悟然blog</title>
+    <title>mysql与身份认证 | 悟然blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -322,12 +314,12 @@ document.getElementsByTagName(‘标签名’);
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">javascriptDOM操作</h1>
+                    <h1 class="description center-align post-title">mysql与身份认证</h1>
                 </div>
             </div>
         </div>
@@ -443,12 +435,16 @@ document.getElementsByTagName(‘标签名’);
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/javascript/">
-                                <span class="chip bg-color">javascript</span>
+                            <a href="/tags/mysql/">
+                                <span class="chip bg-color">mysql</span>
                             </a>
                         
-                            <a href="/tags/DOM%E6%93%8D%E4%BD%9C/">
-                                <span class="chip bg-color">DOM操作</span>
+                            <a href="/tags/%E8%BA%AB%E4%BB%BD%E8%AE%A4%E8%AF%81/">
+                                <span class="chip bg-color">身份认证</span>
+                            </a>
+                        
+                            <a href="/tags/JavaScript/">
+                                <span class="chip bg-color">JavaScript</span>
                             </a>
                         
                     </div>
@@ -472,7 +468,7 @@ document.getElementsByTagName(‘标签名’);
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-06-14
+                    2022-06-17
                 </div>
                 
 
@@ -481,14 +477,14 @@ document.getElementsByTagName(‘标签名’);
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.6k
+                    2.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    8 分
                 </div>
                 
 
@@ -508,179 +504,96 @@ document.getElementsByTagName(‘标签名’);
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="1-获取元素的方法"><a href="#1-获取元素的方法" class="headerlink" title="1. 获取元素的方法"></a>1. 获取元素的方法</h4><ol>
-<li><p>根据 ID 获取：</p>
+                <h2 id="1-node-js在项目中操作-MySQL"><a href="#1-node-js在项目中操作-MySQL" class="headerlink" title="1.node.js在项目中操作 MySQL"></a>1.node.js在项目中操作 MySQL</h2><h3 id="1-在项目中操作数据库的步骤"><a href="#1-在项目中操作数据库的步骤" class="headerlink" title="1.在项目中操作数据库的步骤"></a>1.在项目中操作数据库的步骤</h3><p>① 安装操作 MySQL 数据库的第三方模块（mysql） </p>
+<p>② 通过 mysql 模块连接到 MySQL 数据库 </p>
+<p>③ 通过 mysql 模块执行 SQL 语句</p>
+<h3 id="2-安装与配置-mysql-模块"><a href="#2-安装与配置-mysql-模块" class="headerlink" title="2.安装与配置 mysql 模块"></a>2.安装与配置 mysql 模块</h3><h4 id="1-安装-mysql-模块"><a href="#1-安装-mysql-模块" class="headerlink" title="1.安装 mysql 模块"></a>1.安装 mysql 模块</h4><p>mysql 模块是托管于 npm 上的第三方模块。它提供了在 Node.js 项目中连接和操作 MySQL 数据库的能力。 想要在项目中使用它，需要先运行如下命令，将 mysql 安装为项目的依赖包</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> mysql
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="2-配置-mysql-模块"><a href="#2-配置-mysql-模块" class="headerlink" title="2.配置 mysql 模块"></a>2.配置 mysql 模块</h4><p>在使用 mysql 模块操作 MySQL 数据库之前，必须先对 mysql 模块进行必要的配置，主要的配置步骤如下：</p>
+<p><img src="https://s2.loli.net/2022/06/17/4DKVELFohxMw97i.png" alt="image-20220617202507294"></p>
+<h4 id="3-测试-mysql-模块能否正常工作"><a href="#3-测试-mysql-模块能否正常工作" class="headerlink" title="3.测试 mysql 模块能否正常工作"></a>3.测试 mysql 模块能否正常工作</h4><p>调用 db.query() 函数，指定要执行的 SQL 语句，通过回调函数拿到执行的结果：</p>
+<p><img src="https://s2.loli.net/2022/06/17/MyfJxP7FoTcULkr.png" alt="image-20220617202758301"></p>
+<h3 id="3-使用-mysql-模块操作-MySQL-数据库"><a href="#3-使用-mysql-模块操作-MySQL-数据库" class="headerlink" title="3. 使用 mysql 模块操作 MySQL 数据库"></a>3. 使用 mysql 模块操作 MySQL 数据库</h3><h4 id="1-查询数据"><a href="#1-查询数据" class="headerlink" title="1. 查询数据"></a>1. 查询数据</h4><p><img src="https://s2.loli.net/2022/06/17/oRQqHjwtKpFgAXM.png" alt="image-20220617202844439"></p>
+<h4 id="2-插入数据"><a href="#2-插入数据" class="headerlink" title="2.插入数据"></a>2.插入数据</h4><p><img src="https://s2.loli.net/2022/06/17/pRgcYOzV2xMkalh.png" alt="image-20220617202925683"></p>
+<h4 id="3-插入数据的便捷方式"><a href="#3-插入数据的便捷方式" class="headerlink" title="3.插入数据的便捷方式"></a>3.插入数据的便捷方式</h4><p><img src="https://s2.loli.net/2022/06/17/RpTJujrsMNzGtOB.png" alt="image-20220617203027241"></p>
+<h4 id="4-更新数据"><a href="#4-更新数据" class="headerlink" title="4.更新数据"></a>4.更新数据</h4><p><img src="https://s2.loli.net/2022/06/17/DnIrGhON3i7ELv2.png" alt="image-20220617203108585"></p>
+<h4 id="5-更新数据的便捷方式"><a href="#5-更新数据的便捷方式" class="headerlink" title="5.更新数据的便捷方式"></a>5.更新数据的便捷方式</h4><p><img src="https://s2.loli.net/2022/06/17/2BOMws6EfTWrI5C.png" alt="image-20220617203145964"></p>
+<h4 id="6-删除数据"><a href="#6-删除数据" class="headerlink" title="6.删除数据"></a>6.删除数据</h4><p><img src="https://s2.loli.net/2022/06/17/MX5Ah6ioSObQYcq.png" alt="image-20220617203214229"></p>
+<h4 id="7-标记删除"><a href="#7-标记删除" class="headerlink" title="7.标记删除"></a>7.标记删除</h4><p>使用 DELETE 语句，会把真正的把数据从表中删除掉。为了保险起见，推荐使用标记删除的形式，来模拟删除的动作。 所谓的标记删除，就是在表中设置类似于 status 这样的状态字段，来标记当前这条数据是否被删除。 当用户执行了删除的动作时，我们并没有执行 DELETE 语句把数据删除掉，而是执行了 UPDATE 语句，将这条数据对应 的 status 字段标记为删除即可。</p>
+<p><img src="https://s2.loli.net/2022/06/17/4WqcVAayj7BOYlP.png" alt="image-20220617203249399"></p>
+<h2 id="2-前后端的身份认证"><a href="#2-前后端的身份认证" class="headerlink" title="2.前后端的身份认证"></a>2.前后端的身份认证</h2><h3 id="1-Web-开发模式"><a href="#1-Web-开发模式" class="headerlink" title="1.Web 开发模式"></a>1.Web 开发模式</h3><p>目前主流的 Web 开发模式有两种，分别是： ① 基于服务端渲染的传统 Web 开发模式 ② 基于前后端分离的新型 Web 开发模式</p>
+<h4 id="1-1服务端渲染的-Web-开发模式"><a href="#1-1服务端渲染的-Web-开发模式" class="headerlink" title="1.1服务端渲染的 Web 开发模式"></a>1.1服务端渲染的 Web 开发模式</h4><p>服务端渲染的概念：服务器发送给客户端的 HTML 页面，是在服务器通过字符串的拼接，动态生成的。因此，客户端不 需要使用 Ajax 这样的技术额外请求页面的数据。代码示例如下</p>
+<p><img src="https://s2.loli.net/2022/06/17/tfZwBugih7FVceD.png" alt="image-20220617203417697"></p>
+<h4 id="1-2服务端渲染的优缺点"><a href="#1-2服务端渲染的优缺点" class="headerlink" title="1.2服务端渲染的优缺点"></a>1.2服务端渲染的优缺点</h4><p>优点： ① 前端耗时少。因为服务器端负责动态生成 HTML 内容，浏览器只需要直接渲染页面即可。尤其是移动端，更省电。 ② 有利于SEO。因为服务器端响应的是完整的 HTML 页面内容，所以爬虫更容易爬取获得信息，更有利于 SEO。 </p>
+<p>缺点： ① 占用服务器端资源。即服务器端完成 HTML 页面内容的拼接，如果请求较多，会对服务器造成一定的访问压力。 ② 不利于前后端分离，开发效率低。使用服务器端渲染，则无法进行分工合作，尤其对于前端复杂度高的项目，不利于 项目高效开发。</p>
+<h4 id="1-3前后端分离的-Web-开发模式"><a href="#1-3前后端分离的-Web-开发模式" class="headerlink" title="1.3前后端分离的 Web 开发模式"></a>1.3前后端分离的 Web 开发模式</h4><p>前后端分离的概念：前后端分离的开发模式，依赖于 Ajax 技术的广泛应用。简而言之，前后端分离的 Web 开发模式， 就是后端只负责提供 API 接口，前端使用 Ajax 调用接口的开发模式。</p>
+<h4 id="1-4前后端分离的优缺点"><a href="#1-4前后端分离的优缺点" class="headerlink" title="1.4前后端分离的优缺点"></a>1.4前后端分离的优缺点</h4><p>优点： ① 开发体验好。前端专注于 UI 页面的开发，后端专注于api 的开发，且前端有更多的选择性。 ② 用户体验好。Ajax 技术的广泛应用，极大的提高了用户的体验，可以轻松实现页面的局部刷新。 ③ 减轻了服务器端的渲染压力。因为页面最终是在每个用户的浏览器中生成的。</p>
+<p> 缺点： ① 不利于 SEO。因为完整的 HTML 页面需要在客户端动态拼接完成，所以爬虫对无法爬取页面的有效信息。（解决方 案：利用 Vue、React 等前端框架的 SSR （server side render）技术能够很好的解决 SEO 问题！）</p>
+<h4 id="1-5-如何选择-Web-开发模式"><a href="#1-5-如何选择-Web-开发模式" class="headerlink" title="1.5 如何选择 Web 开发模式"></a>1.5 如何选择 Web 开发模式</h4><p>不谈业务场景而盲目选择使用何种开发模式都是耍流氓。</p>
 <ul>
-<li>document.getElementById(‘id’);</li>
+<li>比如企业级网站，主要功能是展示而没有复杂的交互，并且需要良好的 SEO，则这时我们就需要使用服务器端渲染； </li>
+<li>而类似后台管理项目，交互性比较强，不需要考虑 SEO，那么就可以使用前后端分离的开发模式。</li>
 </ul>
-</li>
-<li><p>根据标签名获取：</p>
+<blockquote>
+<p>另外，具体使用何种开发模式并不是绝对的，为了同时兼顾了首页的渲染速度和前后端分离的开发效率，一些网站采用了 首屏服务器端渲染 + 其他页面前后端分离的开发模式。</p>
+</blockquote>
+<h3 id="2-身份认证"><a href="#2-身份认证" class="headerlink" title="2.身份认证"></a>2.身份认证</h3><h4 id="1-不同开发模式下的身份认证"><a href="#1-不同开发模式下的身份认证" class="headerlink" title="1.不同开发模式下的身份认证"></a>1.不同开发模式下的身份认证</h4><p>对于服务端渲染和前后端分离这两种开发模式来说，分别有着不同的身份认证方案：</p>
+<p> ① 服务端渲染推荐使用 Session 认证机制</p>
+<p> ② 前后端分离推荐使用 JWT 认证机制</p>
+<h3 id="3-Session-认证机制"><a href="#3-Session-认证机制" class="headerlink" title="3.Session 认证机制"></a>3.Session 认证机制</h3><blockquote>
+<p>Session 的工作原理</p>
+</blockquote>
+<p><img src="https://s2.loli.net/2022/06/17/HtEK76RqwN4sUpF.png" alt="image-20220617203929309"></p>
+<h4 id="1-在-Express-中使用-Session-认证"><a href="#1-在-Express-中使用-Session-认证" class="headerlink" title="1.在 Express 中使用 Session 认证"></a>1.在 Express 中使用 Session 认证</h4><blockquote>
+<p>1.安装 express-session 中间件</p>
+<p>在 Express 项目中，只需要安装 express-session 中间件，即可在项目中使用 Session 认证：</p>
+</blockquote>
+<p><img src="https://s2.loli.net/2022/06/17/Ixd6Vh4pTle9B3y.png" alt="image-20220617204141687"></p>
+<blockquote>
+<p>2.配置 express-session 中间件</p>
+<p>express-session 中间件安装成功后，需要通过 app.use() 来注册 session 中间件，示例代码如下：</p>
+</blockquote>
+<p><img src="https://s2.loli.net/2022/06/17/ZpihHDXB7NmfnGa.png" alt="image-20220617204245130"></p>
+<h4 id="2-向-session-中存数据"><a href="#2-向-session-中存数据" class="headerlink" title="2. 向 session 中存数据"></a>2. 向 session 中存数据</h4><p>当 express-session 中间件配置成功后，即可通过 req.session 来访问和使用 session 对象，从而存储用户的关键信息：</p>
+<p><img src="https://s2.loli.net/2022/06/17/643wXvtRrWIfT2L.png" alt="image-20220617204345270"></p>
+<h4 id="3-从-session-中取数据"><a href="#3-从-session-中取数据" class="headerlink" title="3.从 session 中取数据"></a>3.从 session 中取数据</h4><p>可以直接从 req.session 对象上获取之前存储的数据，示例代码如下</p>
+<p><img src="https://s2.loli.net/2022/06/17/Tjv1x9uBt78sMDn.png" alt="image-20220617204421202"></p>
+<h4 id="4-清空-session"><a href="#4-清空-session" class="headerlink" title="4.清空 session"></a>4.清空 session</h4><p>调用 req.session.destroy() 函数，即可清空服务器保存的 session 信息</p>
+<p><img src="https://s2.loli.net/2022/06/17/vhlzj9rwKMfbs2p.png" alt="image-20220617204456589"></p>
+<h3 id="4-JWT-认证机制"><a href="#4-JWT-认证机制" class="headerlink" title="4. JWT 认证机制"></a>4. JWT 认证机制</h3><h4 id="1-了解-Session-认证的局限性"><a href="#1-了解-Session-认证的局限性" class="headerlink" title="1.了解 Session 认证的局限性"></a>1.了解 Session 认证的局限性</h4><p>Session 认证机制需要配合 Cookie 才能实现。由于 Cookie 默认不支持跨域访问，所以，当涉及到前端跨域请求后端接 口的时候，需要做很多额外的配置，才能实现跨域 Session 认证</p>
+<blockquote>
+<p>注意：</p>
 <ul>
-<li>document.getElementsByTagName(‘标签名’);</li>
+<li>当前端请求后端接口不存在跨域问题的时候，推荐使用 Session 身份认证机制。</li>
+<li>当前端需要跨域请求后端接口的时候，不推荐使用 Session 身份认证机制，推荐使用 JWT 认证机制。</li>
 </ul>
-</li>
-<li><p>通过 HTML5 新增的方法获取：</p>
-<ol>
-<li><p>document.getElementsByClassName(‘类名’)；&#x2F;&#x2F; 根据类名返回元素对象集</p>
-</li>
-<li><p>document.querySelector(‘选择器’);        &#x2F;&#x2F; 根据指定选择器返回第一个元素对象</p>
-</li>
-<li><p>document.querySelectorAll(‘选择器’);     &#x2F;&#x2F; 根据指定选择器返回</p>
-</li>
-</ol>
-</li>
-<li><p>获取特殊元素（body，html):</p>
-<ol>
-<li><p>doucumnet.body  &#x2F;&#x2F; 返回body元素对象</p>
-</li>
-<li><p>document.documentElement  &#x2F;&#x2F; 返回html元素对象</p>
-</li>
-</ol>
-</li>
-</ol>
-<hr>
-<h4 id="2-事件基础"><a href="#2-事件基础" class="headerlink" title="2.事件基础"></a>2.事件基础</h4><ol>
-<li>常见的鼠标事件:<br>  <img src="https://s2.loli.net/2022/06/14/qvPuRSIY3DjmLJT.png"></li>
-</ol>
-<hr>
-<h4 id="3-操作元素"><a href="#3-操作元素" class="headerlink" title="3.操作元素"></a>3.操作元素</h4><ol>
-<li>改变元素内容:<ol>
-<li><p>element.innerText        &#x2F;&#x2F;从起始位置到终止位置的内容, 但它去除 html 标签， 同时空格和换行也会去掉</p>
-</li>
-<li><p>element.innerHTML    &#x2F;&#x2F;起始位置到终止位置的全部内容，包括 html 标签，同时保留空格和换行</p>
-</li>
-</ol>
-</li>
-<li>样式属性操作:<ol>
-<li>element.style     行内样式操作</li>
-<li>element.className 类名样式操作</li>
-</ol>
-</li>
-</ol>
-<p>3.操作元素总结</p>
-<p><img src="https://s2.loli.net/2022/06/14/CViom5W1hFHlN27.png"></p>
-<ol start="4">
-<li><p>自定义属性的操作</p>
-<ol>
-<li><p>设置属性值<br>   element.属性 &#x3D; ‘值’  设置内置属性值。<br>   element.setAttribute(‘属性’, ‘值’); </p>
-</li>
-<li><p>区别<br>   element.属性  设置内置属性值<br>   element.setAttribute(‘属性’);  主要设置自定义的属性 （标准）</p>
-</li>
-<li><p>移除属性<br>   element.removeAttribute(‘属性’);</p>
-</li>
-<li><p>获取H5自定义属性</p>
-<p>兼容性获取   element.getAttribute(‘data-index’);</p>
-</li>
-</ol>
-<p>   H5新增 element.dataset.index  或者 element.dataset[‘index’]   ie 11才开始支持</p>
-</li>
-</ol>
-<hr>
-<h4 id="4-节点操作"><a href="#4-节点操作" class="headerlink" title="4.节点操作"></a>4.节点操作</h4><h5 id="1-节点概述"><a href="#1-节点概述" class="headerlink" title="1.节点概述"></a>1.节点概述</h5><p>一般地，节点至少拥有nodeType（节点类型）、nodeName（节点名称）和nodeValue（节点值）这三个基本属性。</p>
+</blockquote>
+<h4 id="2-JWT-的工作原理"><a href="#2-JWT-的工作原理" class="headerlink" title="2.JWT 的工作原理"></a>2.JWT 的工作原理</h4><p><img src="https://s2.loli.net/2022/06/17/91MbcQRgTnmd7HE.png" alt="image-20220617204759650"></p>
+<blockquote>
+<p>总结：用户的信息通过 Token 字符串的形式，保存在客户端浏览器中。服务器通过还原 Token 字符串的形式来认证用户的身份</p>
+</blockquote>
+<h4 id="3-JWT-的组成部分"><a href="#3-JWT-的组成部分" class="headerlink" title="3.JWT 的组成部分"></a>3.JWT 的组成部分</h4><p>JWT 通常由三部分组成，分别是 Header（头部）、Payload（有效荷载）、Signature（签名）。 三者之间使用英文的“.”分隔，格式如下：</p>
+<p><img src="https://s2.loli.net/2022/06/17/RdIAmB2onXvrTUJ.png" alt="image-20220617204850995"></p>
+<h4 id="4-JWT-的三个部分各自代表的含义"><a href="#4-JWT-的三个部分各自代表的含义" class="headerlink" title="4.JWT 的三个部分各自代表的含义"></a>4.JWT 的三个部分各自代表的含义</h4><p>JWT 的三个组成部分，从前到后分别是 Header、Payload、Signature。 其中：</p>
 <ul>
-<li><p>元素节点  nodeType  为 1</p>
-</li>
-<li><p>属性节点  nodeType  为 2</p>
-</li>
-<li><p>文本节点  nodeType  为 3 （文本节点包含文字、空格、换行等）</p>
-</li>
+<li>Payload 部分才是真正的用户信息，它是用户信息经过加密之后生成的字符串。</li>
+<li>Header 和 Signature 是安全性相关的部分，只是为了保证 Token 的安全性</li>
 </ul>
-<h5 id="2-节点层级"><a href="#2-节点层级" class="headerlink" title="2.节点层级"></a>2.节点层级</h5><h6 id="1-父级节点"><a href="#1-父级节点" class="headerlink" title="1. 父级节点"></a>1. 父级节点</h6><p>   node.parentNode  </p>
-<ul>
-<li><p>parentNode 属性可返回某节点的父节点，注意是最近的一个父节点</p>
-</li>
-<li><p>如果指定的节点没有父节点则返回 null</p>
-</li>
-</ul>
-<h6 id="2-子节点"><a href="#2-子节点" class="headerlink" title="2.子节点"></a>2.子节点</h6><ol>
-<li>parentNode.childNodes（标准）</li>
-</ol>
-<ul>
-<li>parentNode.childNodes 返回包含指定节点的子节点的集合，该集合为即时更新的集合。注意：返回值里面包含了所有的子节点，包括元素节点，文本节点等。如果只想要获得里面的元素节点，则需要专门处理。 所以我们一般不提倡使用childNodes</li>
-</ul>
-<ol start="2">
-<li>parentNode.children（非标准）</li>
-</ol>
-<ul>
-<li>parentNode.children 是一个只读属性，返回所有的子元素节点。它只返回子元素节点，其余节点不返回 （这个是我们重点掌握的）。虽然children 是一个非标准，但是得到了各个浏览器的支持，因此我们可以放心使用</li>
-</ul>
-<ol start="3">
-<li>parentNode.firstChild</li>
-</ol>
-<ul>
-<li>firstChild 返回第一个子节点，找不到则返回null。同样，也是包含所有的节点。</li>
-</ul>
-<p>4.parentNode.lastChild</p>
-<ul>
-<li>lastChild 返回最后一个子节点，找不到则返回null。同样，也是包含所有的节点。</li>
-</ul>
-<p>5.parentNode.firstElementChild   </p>
-<ul>
-<li>firstElementChild  返回第一个子元素节点，找不到则返回null。</li>
-</ul>
-<ol start="6">
-<li>parentNode.lastElementChild</li>
-</ol>
-<ul>
-<li>lastElementChild 返回最后一个子元素节点，找不到则返回null。</li>
-</ul>
-<pre class="line-numbers language-tex"><code class="language-tex">总结：实际开发中，firstChild 和 lastChild 包含其他节点，操作不方便，而 firstElementChild 和 lastElementChild 又有兼容性问题，那么我们如何获取第一个子元素节点或最后一个子元素节点呢？
-解决方案：
-1.如果想要第一个子元素节点，可以使用 parentNode.chilren[0] 
-2.如果想要最后一个子元素节点，可以使用 parentNode.chilren[parentNode.chilren.length - 1] 
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h6 id="3-兄弟节点"><a href="#3-兄弟节点" class="headerlink" title="3. 兄弟节点"></a>3. 兄弟节点</h6><p>   1.node.nextElementSibling  &#x2F;&#x2F;nextElementSibling 返回当前元素下一个兄弟元素节点，找不到则返回null。 </p>
-<p>   2.node.previousElementSibling    &#x2F;&#x2F;previousElementSibling 返回当前元素上一个兄弟节点，找不到则返回null。 </p>
-<h6 id="4-创建节点"><a href="#4-创建节点" class="headerlink" title="4.创建节点"></a>4.创建节点</h6><ol>
-<li><p>document.createElement(‘tagName’)</p>
-<p>document.createElement() 方法创建由 tagName 指定的 HTML 元素。因为这些元素原先不存在，是根据我们的需求动态生成的，所以我们也称为动态创建元素节点。</p>
-</li>
-</ol>
-<h6 id="5-添加节点"><a href="#5-添加节点" class="headerlink" title="5.添加节点"></a>5.添加节点</h6><ol>
-<li><p>node.appendChild(child) </p>
-<p>node.appendChild() 方法将一个节点添加到指定父节点的子节点列表末尾。类似于 CSS 里面的 after 伪元素。</p>
-</li>
-</ol>
-<p>2.node.insertBefore(child, 指定元素) </p>
-<p>node.insertBefore() 方法将一个节点添加到父节点的指定子节点前面。类似于 CSS 里面的 before 伪元素。</p>
-<p><strong>3.node.insertAdjacentHTML(‘’)</strong></p>
-<p><strong>insertAdjacentHTML()</strong> 方法将指定的文本解析为 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Element"><code>Element</code></a> 元素，并将结果节点插入到DOM树中的指定位置。它不会重新解析它正在使用的元素，因此它不会破坏元素内的现有元素。这避免了额外的序列化步骤，使其比直接使用innerHTML操作更快。</p>
-<pre class="line-numbers language-tex"><code class="language-tex">element.insertAdjacentHTML(position, text);
-
-position
-一个 DOMString，表示插入内容相对于元素的位置，并且必须是以下字符串之一：
-'beforebegin'：元素自身的前面。
-'afterbegin'：插入元素内部的第一个子节点之前。
-'beforeend'：插入元素内部的最后一个子节点之后。
-'afterend'：元素自身的后面。
-text
-是要被解析为HTML或XML元素，并插入到DOM树中的 DOMString。
-使用 insertAdjacentHTML 插入用户输入的HTML内容的时候，需要转义之后才能使用。
-如果只是为了插入文本内容（而不是HTML节点），不建议使用这个方法，建议使用node.textContent 或者 node.insertAdjacentText()。因为这样不需要经过HTML解释器的转换，性能会好一点。
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-html"><code class="language-html">//示例
-// 原为 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>one<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>one<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-var d1 = document.getElementById('one');
-d1.insertAdjacentHTML('afterend', '<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>two<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>two<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>');
-
-// 此时，新结构变成：
-// <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>one<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>one<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>two<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>two<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>位置可视化 </p>
-<pre class="line-numbers language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- beforebegin --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>
-  <span class="token comment" spellcheck="true">&lt;!-- afterbegin --></span>
-  foo
-  <span class="token comment" spellcheck="true">&lt;!-- beforeend --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
-<span class="token comment" spellcheck="true">&lt;!-- afterend --></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h6 id="6-删除节点"><a href="#6-删除节点" class="headerlink" title="6.删除节点"></a>6.删除节点</h6><p>1.node.removeChild(child) </p>
-<p>node.removeChild() 方法从 DOM 中删除一个子节点，返回删除的节点。</p>
-<p>2.node.remove()&#x2F;&#x2F;删除节点本身</p>
-<h6 id="7-复制节点-克隆节点"><a href="#7-复制节点-克隆节点" class="headerlink" title="7.复制节点(克隆节点)"></a>7.复制节点(克隆节点)</h6><p> 1.node.cloneNode() </p>
-<p>node.cloneNode() 方法返回调用该方法的节点的一个副本。 也称为克隆节点&#x2F;拷贝节点</p>
-<p>注意：1. 如果括号参数为空或者为 false ，则是浅拷贝，即只克隆复制节点本身，不克隆里面的子节点。2. 如果括号参数为 true ，则是深度拷贝，会复制节点本身以及里面所有的子节点。</p>
+<h4 id="5-JWT-的使用方式"><a href="#5-JWT-的使用方式" class="headerlink" title="5.JWT 的使用方式"></a>5.JWT 的使用方式</h4><p>客户端收到服务器返回的 JWT 之后，通常会将它储存在 localStorage 或 sessionStorage 中。 此后，客户端每次与服务器通信，都要带上这个 JWT 的字符串，从而进行身份认证。推荐的做法是把 JWT 放在 HTTP  请求头的 Authorization 字段中，格式如下：</p>
+<p><img src="https://s2.loli.net/2022/06/17/9TZkSusXDbEcoRM.png" alt="image-20220617205022737"></p>
+<h4 id="6-在-Express-中使用-JWT"><a href="#6-在-Express-中使用-JWT" class="headerlink" title="6.在 Express 中使用 JWT"></a>6.在 Express 中使用 JWT</h4><p>1.安装 JWT 相关的包</p>
+<p><img src="https://s2.loli.net/2022/06/17/2IrtQPa415CAnw9.png" alt="image-20220617205115400"></p>
+<h4 id="7-导入-JWT-相关的包"><a href="#7-导入-JWT-相关的包" class="headerlink" title="7.导入 JWT 相关的包"></a>7.导入 JWT 相关的包</h4><p><img src="https://s2.loli.net/2022/06/17/l7ASXjBzn3b6DKm.png" alt="image-20220617205144010"></p>
+<h4 id="8-定义-secret-密钥"><a href="#8-定义-secret-密钥" class="headerlink" title="8.定义 secret 密钥"></a>8.定义 secret 密钥</h4><p>为了保证 JWT 字符串的安全性，防止 JWT 字符串在网络传输过程中被别人破解，我们需要专门定义一个用于加密和解密 的 secret 密钥： ① 当生成 JWT 字符串的时候，需要使用 secret 密钥对用户的信息进行加密，最终得到加密好的 JWT 字符串 ② 当把 JWT 字符串解析还原成 JSON 对象的时候，需要使用 secret 密钥进行解密</p>
+<p><img src="https://s2.loli.net/2022/06/17/gqRYlKsuN1hFrkS.png" alt="image-20220617205219541"></p>
+<h4 id="9-在登录成功后生成-JWT-字符串"><a href="#9-在登录成功后生成-JWT-字符串" class="headerlink" title="9.在登录成功后生成 JWT 字符串"></a>9.在登录成功后生成 JWT 字符串</h4><p><img src="https://s2.loli.net/2022/06/17/wz6XdcANusIx9r3.png" alt="image-20220617205303169"></p>
+<h4 id="10将-JWT-字符串还原为-JSON-对象"><a href="#10将-JWT-字符串还原为-JSON-对象" class="headerlink" title="10将 JWT 字符串还原为 JSON 对象"></a>10将 JWT 字符串还原为 JSON 对象</h4><p>客户端每次在访问那些有权限接口的时候，都需要主动通过请求头中的 Authorization 字段，将 Token 字符串发 送到服务器进行身份认证。 此时，服务器可以通过 express-jwt 这个中间件，自动将客户端发送过来的 Token 解析还原成 JSON 对象</p>
+<p><img src="https://s2.loli.net/2022/06/17/ScH9GJtIMVf7muW.png" alt="image-20220617205339559"></p>
+<h4 id="11-使用-req-user-获取用户信息"><a href="#11-使用-req-user-获取用户信息" class="headerlink" title="11.使用 req.user 获取用户信息"></a>11.使用 req.user 获取用户信息</h4><p>当 express-jwt 这个中间件配置成功之后，即可在那些有权限的接口中，使用 req.user 对象，来访问从 JWT 字符串 中解析出来的用户信息了，示例代码如下：</p>
+<p><img src="https://s2.loli.net/2022/06/17/9S2u153adebiNYE.png" alt="image-20220617205408678"></p>
+<h4 id="12-捕获解析-JWT-失败后产生的错误"><a href="#12-捕获解析-JWT-失败后产生的错误" class="headerlink" title="12 捕获解析 JWT 失败后产生的错误"></a>12 捕获解析 JWT 失败后产生的错误</h4><p>当使用 express-jwt 解析 Token 字符串时，如果客户端发送过来的 Token 字符串过期或不合法，会产生一个解析失败 的错误，影响项目的正常运行。我们可以通过 Express 的错误中间件，捕获这个错误并进行相关的处理，示例代码如下</p>
+<p><img src="https://s2.loli.net/2022/06/17/A9i4qMDWwhJKjY3.png" alt="image-20220617205445555"></p>
 
                 
             </div>
@@ -707,7 +620,7 @@ d1.insertAdjacentHTML('afterend', '<span class="token tag"><span class="token ta
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://wuwuarandhg.github.io/2022/061426794.html">https://wuwuarandhg.github.io/2022/061426794.html</a>
+                    <a href="https://wuwuarandhg.github.io/2022/061722392.html">https://wuwuarandhg.github.io/2022/061722392.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -745,12 +658,16 @@ d1.insertAdjacentHTML('afterend', '<span class="token tag"><span class="token ta
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/javascript/">
-                                    <span class="chip bg-color">javascript</span>
+                                <a href="/tags/mysql/">
+                                    <span class="chip bg-color">mysql</span>
                                 </a>
                             
-                                <a href="/tags/DOM%E6%93%8D%E4%BD%9C/">
-                                    <span class="chip bg-color">DOM操作</span>
+                                <a href="/tags/%E8%BA%AB%E4%BB%BD%E8%AE%A4%E8%AF%81/">
+                                    <span class="chip bg-color">身份认证</span>
+                                </a>
+                            
+                                <a href="/tags/JavaScript/">
+                                    <span class="chip bg-color">JavaScript</span>
                                 </a>
                             
                         </div>
@@ -798,17 +715,18 @@ d1.insertAdjacentHTML('afterend', '<span class="token tag"><span class="token ta
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/061439799.html">
+                <a href="/2022/061722392.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="javascript面向过程和面向对象">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="mysql与身份认证">
                         
-                        <span class="card-title">javascript面向过程和面向对象</span>
+                        <span class="card-title">mysql与身份认证</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -818,9 +736,9 @@ d1.insertAdjacentHTML('afterend', '<span class="token tag"><span class="token ta
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-06-14
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-17
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -833,15 +751,20 @@ d1.insertAdjacentHTML('afterend', '<span class="token tag"><span class="token ta
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/javascript/">
-                        <span class="chip bg-color">javascript</span>
+                    <a href="/tags/mysql/">
+                        <span class="chip bg-color">mysql</span>
                     </a>
                     
-                    <a href="/tags/%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B%E5%92%8C%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
-                        <span class="chip bg-color">面向过程和面向对象</span>
+                    <a href="/tags/%E8%BA%AB%E4%BB%BD%E8%AE%A4%E8%AF%81/">
+                        <span class="chip bg-color">身份认证</span>
+                    </a>
+                    
+                    <a href="/tags/JavaScript/">
+                        <span class="chip bg-color">JavaScript</span>
                     </a>
                     
                 </div>
@@ -855,13 +778,13 @@ d1.insertAdjacentHTML('afterend', '<span class="token tag"><span class="token ta
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/061451329.html">
+                <a href="/2022/061715266.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="javascriptBOM操作">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="express的使用">
                         
-                        <span class="card-title">javascriptBOM操作</span>
+                        <span class="card-title">express的使用</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -872,7 +795,7 @@ d1.insertAdjacentHTML('afterend', '<span class="token tag"><span class="token ta
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-14
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-17
                             </span>
                         <span class="publish-author">
                             
@@ -893,8 +816,8 @@ d1.insertAdjacentHTML('afterend', '<span class="token tag"><span class="token ta
                         <span class="chip bg-color">javascript</span>
                     </a>
                     
-                    <a href="/tags/BOM%E6%93%8D%E4%BD%9C/">
-                        <span class="chip bg-color">BOM操作</span>
+                    <a href="/tags/express/">
+                        <span class="chip bg-color">express</span>
                     </a>
                     
                 </div>

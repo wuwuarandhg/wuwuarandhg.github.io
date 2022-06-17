@@ -6,7 +6,7 @@
   <link href="https://wuwuarandhg.github.io/atom.xml" rel="self"/>
   
   <link href="https://wuwuarandhg.github.io/"/>
-  <updated>2022-06-17T09:34:45.290Z</updated>
+  <updated>2022-06-17T13:01:06.671Z</updated>
   <id>https://wuwuarandhg.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mysql与身份认证</title>
+    <link href="https://wuwuarandhg.github.io/2022/061722392.html"/>
+    <id>https://wuwuarandhg.github.io/2022/061722392.html</id>
+    <published>2022-06-17T12:59:08.000Z</published>
+    <updated>2022-06-17T13:01:06.671Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-node-js在项目中操作-MySQL&quot;&gt;&lt;a href=&quot;#1-node-js在项目中操作-MySQL&quot; class=&quot;headerlink&quot; title=&quot;1.node.js在项目中操作 MySQL&quot;&gt;&lt;/a&gt;1.node.js在项目中操作</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://wuwuarandhg.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="mysql" scheme="https://wuwuarandhg.github.io/tags/mysql/"/>
+    
+    <category term="身份认证" scheme="https://wuwuarandhg.github.io/tags/%E8%BA%AB%E4%BB%BD%E8%AE%A4%E8%AF%81/"/>
+    
+    <category term="JavaScript" scheme="https://wuwuarandhg.github.io/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>express的使用</title>
