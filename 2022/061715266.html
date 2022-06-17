@@ -4,12 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Django第一天, 悟然blog">
-    <meta name="description" content="DjangoDjango的使用1.MVT流程:掌握M,V,T的每个模块的功能,了解MVT的流程
-
-2.创建Django项目和应用1.创建Django项目django-admin startproject name    
-
-1.例如：想要在">
+    <meta name="keywords" content="express的使用, 悟然blog">
+    <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -23,7 +19,7 @@
 
     
 
-    <title>Django第一天 | 悟然blog</title>
+    <title>express的使用 | 悟然blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -315,12 +311,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Django第一天</h1>
+                    <h1 class="description center-align post-title">express的使用</h1>
                 </div>
             </div>
         </div>
@@ -436,12 +432,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/python/">
-                                <span class="chip bg-color">python</span>
+                            <a href="/tags/javascript/">
+                                <span class="chip bg-color">javascript</span>
                             </a>
                         
-                            <a href="/tags/Django/">
-                                <span class="chip bg-color">Django</span>
+                            <a href="/tags/express/">
+                                <span class="chip bg-color">express</span>
                             </a>
                         
                     </div>
@@ -452,8 +448,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%90%8E%E7%AB%AF/" class="post-category">
-                                后端
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                前端
                             </a>
                         
                     </div>
@@ -465,7 +461,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-06-10
+                    2022-06-17
                 </div>
                 
 
@@ -474,14 +470,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    709
+                    0
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    1 分
                 </div>
                 
 
@@ -501,76 +497,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Django"><a href="#Django" class="headerlink" title="Django"></a>Django</h1><h2 id="Django的使用"><a href="#Django的使用" class="headerlink" title="Django的使用"></a>Django的使用</h2><h3 id="1-MVT流程-掌握M-V-T的每个模块的功能-了解MVT的流程"><a href="#1-MVT流程-掌握M-V-T的每个模块的功能-了解MVT的流程" class="headerlink" title="1.MVT流程:掌握M,V,T的每个模块的功能,了解MVT的流程"></a>1.MVT流程:掌握M,V,T的每个模块的功能,了解MVT的流程</h3><img src="https://s2.loli.net/2022/05/30/Pr5eL4XWuD279JK.png#pic_center=" alt="image-20220530225441259" style="zoom:75%;" />
-
-<h3 id="2-创建Django项目和应用"><a href="#2-创建Django项目和应用" class="headerlink" title="2.创建Django项目和应用"></a>2.创建Django项目和应用</h3><h4 id="1-创建Django项目"><a href="#1-创建Django项目" class="headerlink" title="1.创建Django项目"></a>1.创建Django项目</h4><pre class="line-numbers language-tex"><code class="language-tex">django-admin startproject name    
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>1.例如：想要在桌面的code目录中创建一个名为bookmanager的项目工程，可执行如下命令：</p>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">cd</span> ~/Desktop/Code
-django-admin startproject bookmanager
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>执行后，会多出一个新目录名为bookmanager，此即为新创建的工程目录。</p>
-<ol start="2">
-<li>工程目录说明</li>
-</ol>
-<p><img src="https://s2.loli.net/2022/05/30/jrf1MtiqlxepTws.png" alt="img"></p>
-<pre class="line-numbers language-tex"><code class="language-tex">与项目同名的目录，此处为bookmanager。
-settings.py是项目的整体配置文件。
-urls.py是项目的URL配置文件。
-wsgi.py是项目与WSGI兼容的Web服务器入口。
-manage.py是项目管理文件，通过它管理项目。
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ol start="3">
-<li>运行开发服务器</li>
-</ol>
-<p>​	在开发阶段，为了能够快速预览到开发的效果，django提供了一个纯python编写的轻量级web服务器，仅在开发阶段使用。</p>
-<p>​	运行服务器命令如下：</p>
-<pre class="line-numbers language-python"><code class="language-python">python manage<span class="token punctuation">.</span>py runserver ip<span class="token punctuation">:</span>端口
-或：
-python manage<span class="token punctuation">.</span>py runserver
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>​	<strong>可以不写IP和端口，默认IP是127.0.0.1，默认端口为8000</strong>。</p>
-<p>​	启动后可见如下信息：</p>
-<p>​	<img src="https://s2.loli.net/2022/05/30/sdpwLn2WCtzlVac.png" alt="img"></p>
-<p>在浏览器中输入网址“127.0.0.1:8000”便可看到效果。</p>
-<p><img src="https://s2.loli.net/2022/05/30/A36jc8eRpbFznMf.png" alt="img"></p>
-<ul>
-<li>django默认工作在调式Debug模式下，如果增加、修改、删除文件，服务器会自动重启。</li>
-<li>按ctrl+c停止服务器。</li>
-</ul>
-<p>####2.创建当前Django子的应用</p>
-<pre class="line-numbers language-tex"><code class="language-tex">python manage.py startapp name  //
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<ol>
-<li><strong>manage.py</strong>为上述创建工程时自动生成的管理文件。</li>
-</ol>
-<p>例如，在刚才创建的bookmanager工程中，想要创建一个用户book子应用模块，可执行：</p>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">cd</span> ~/Desktop/code/book
-python manage.py startapp book
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>执行后，可以看到工程目录中多出了一个名为book的子目录。</p>
-<p>2.子应用目录说明</p>
-<p>查看此时的工程目录，结构如下：</p>
-<p><img src="https://s2.loli.net/2022/05/30/JX6vBKbgqaQSmej.png" alt="img"></p>
-<ul>
-<li><strong>admin.py</strong>文件跟网站的后台管理站点配置相关。</li>
-<li><strong>apps.py</strong>文件用于配置当前子应用的相关信息。</li>
-<li><strong>migrations</strong>目录用于存放数据库迁移历史文件。</li>
-<li><strong>models.py</strong>文件用户保存数据库模型类。</li>
-<li><strong>tests.py</strong>文件用于开发测试用例，编写单元测试。</li>
-<li><strong>views.py</strong>文件用于编写Web应用视图。</li>
-</ul>
-<ol start="3">
-<li><p>注册安装子应用</p>
-<p>创建出来的子应用目录文件虽然被放到了工程项目目录中，但是django工程并不能立即直接使用该子应用，需要注册安装后才能使用。</p>
-<p>在工程配置文件settings.py中，<strong>INSTALLED_APPS</strong>项保存了工程中已经注册安装的子应用，初始工程中的INSTALLED_APPS如下：</p>
-<p><img src="https://s2.loli.net/2022/06/03/Uc4gCahGqxtz6He.png" alt="img"></p>
-</li>
-</ol>
-<p>​	<strong>注册安装一个子应用的方法，即是将子应用的配置信息文件apps.py中的Config类添加到INSTALLED_APPS列表中。</strong></p>
-<p>​	例如，将刚创建的book子应用添加到工程中，可在INSTALLED_APPS列表中添加**’book.apps.BookConfig’**。</p>
-<p>​	   															<img src="https://s2.loli.net/2022/06/03/aq5PuDGJvpZUr29.png"></p>
-
+                
                 
             </div>
             <hr/>
@@ -596,7 +523,7 @@ python manage.py startapp book
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://wuwuarandhg.github.io/2022/061029103.html">https://wuwuarandhg.github.io/2022/061029103.html</a>
+                    <a href="https://wuwuarandhg.github.io/2022/061715266.html">https://wuwuarandhg.github.io/2022/061715266.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -634,12 +561,12 @@ python manage.py startapp book
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/python/">
-                                    <span class="chip bg-color">python</span>
+                                <a href="/tags/javascript/">
+                                    <span class="chip bg-color">javascript</span>
                                 </a>
                             
-                                <a href="/tags/Django/">
-                                    <span class="chip bg-color">Django</span>
+                                <a href="/tags/express/">
+                                    <span class="chip bg-color">express</span>
                                 </a>
                             
                         </div>
@@ -687,17 +614,18 @@ python manage.py startapp book
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/061060844.html">
+                <a href="/2022/061715266.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Django第三天">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="express的使用">
                         
-                        <span class="card-title">Django第三天</span>
+                        <span class="card-title">express的使用</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -707,30 +635,31 @@ python manage.py startapp book
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-06-10
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-17
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%90%8E%E7%AB%AF/" class="post-category">
-                                    后端
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/python/">
-                        <span class="chip bg-color">python</span>
+                    <a href="/tags/javascript/">
+                        <span class="chip bg-color">javascript</span>
                     </a>
                     
-                    <a href="/tags/Django/">
-                        <span class="chip bg-color">Django</span>
+                    <a href="/tags/express/">
+                        <span class="chip bg-color">express</span>
                     </a>
                     
                 </div>
@@ -744,13 +673,13 @@ python manage.py startapp book
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/061016107.html">
+                <a href="/2022/061644042.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="ajax总结">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">ajax总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -761,14 +690,14 @@ python manage.py startapp book
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-16
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/" class="post-category">
-                                    编程之道
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
                                 </a>
                             
                             
@@ -778,8 +707,12 @@ python manage.py startapp book
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/python/">
-                        <span class="chip bg-color">python</span>
+                    <a href="/tags/javascript/">
+                        <span class="chip bg-color">javascript</span>
+                    </a>
+                    
+                    <a href="/tags/ajax/">
+                        <span class="chip bg-color">ajax</span>
                     </a>
                     
                 </div>

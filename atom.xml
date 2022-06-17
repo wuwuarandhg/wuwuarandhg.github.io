@@ -6,7 +6,7 @@
   <link href="https://wuwuarandhg.github.io/atom.xml" rel="self"/>
   
   <link href="https://wuwuarandhg.github.io/"/>
-  <updated>2022-06-16T15:16:57.384Z</updated>
+  <updated>2022-06-17T03:53:35.367Z</updated>
   <id>https://wuwuarandhg.github.io/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>express的使用</title>
+    <link href="https://wuwuarandhg.github.io/2022/061715266.html"/>
+    <id>https://wuwuarandhg.github.io/2022/061715266.html</id>
+    <published>2022-06-17T03:22:35.000Z</published>
+    <updated>2022-06-17T03:53:35.367Z</updated>
+    
+    
+    
+    
+    <category term="前端" scheme="https://wuwuarandhg.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="javascript" scheme="https://wuwuarandhg.github.io/tags/javascript/"/>
+    
+    <category term="express" scheme="https://wuwuarandhg.github.io/tags/express/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ajax总结</title>
     <link href="https://wuwuarandhg.github.io/2022/061644042.html"/>
     <id>https://wuwuarandhg.github.io/2022/061644042.html</id>
     <published>2022-06-16T12:34:47.000Z</published>
-    <updated>2022-06-16T15:16:57.384Z</updated>
+    <updated>2022-06-17T03:55:14.520Z</updated>
     
     
       
@@ -34,8 +53,10 @@
     
     
     
-    <category term="ajax" scheme="https://wuwuarandhg.github.io/categories/ajax/"/>
+    <category term="前端" scheme="https://wuwuarandhg.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
+    
+    <category term="javascript" scheme="https://wuwuarandhg.github.io/tags/javascript/"/>
     
     <category term="ajax" scheme="https://wuwuarandhg.github.io/tags/ajax/"/>
     
@@ -46,7 +67,7 @@
     <link href="https://wuwuarandhg.github.io/2022/061549640.html"/>
     <id>https://wuwuarandhg.github.io/2022/061549640.html</id>
     <published>2022-06-15T13:19:59.000Z</published>
-    <updated>2022-06-15T14:10:28.442Z</updated>
+    <updated>2022-06-17T04:04:34.552Z</updated>
     
     
       
@@ -59,8 +80,10 @@
     
     
     
-    <category term="node.js" scheme="https://wuwuarandhg.github.io/categories/node-js/"/>
+    <category term="前端" scheme="https://wuwuarandhg.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
+    
+    <category term="javascript" scheme="https://wuwuarandhg.github.io/tags/javascript/"/>
     
     <category term="node.js" scheme="https://wuwuarandhg.github.io/tags/node-js/"/>
     
@@ -71,7 +94,7 @@
     <link href="https://wuwuarandhg.github.io/2022/061420882.html"/>
     <id>https://wuwuarandhg.github.io/2022/061420882.html</id>
     <published>2022-06-14T09:55:22.000Z</published>
-    <updated>2022-06-15T13:18:37.330Z</updated>
+    <updated>2022-06-17T04:05:17.616Z</updated>
     
     
       
@@ -84,8 +107,10 @@
     
     
     
-    <category term="node.js" scheme="https://wuwuarandhg.github.io/categories/node-js/"/>
+    <category term="前端" scheme="https://wuwuarandhg.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
+    
+    <category term="javascript" scheme="https://wuwuarandhg.github.io/tags/javascript/"/>
     
     <category term="node.js" scheme="https://wuwuarandhg.github.io/tags/node-js/"/>
     
@@ -96,7 +121,7 @@
     <link href="https://wuwuarandhg.github.io/2022/061436266.html"/>
     <id>https://wuwuarandhg.github.io/2022/061436266.html</id>
     <published>2022-06-14T07:30:37.000Z</published>
-    <updated>2022-06-14T09:29:36.027Z</updated>
+    <updated>2022-06-17T03:57:04.803Z</updated>
     
     
       
@@ -109,10 +134,12 @@
     
     
     
-    <category term="javascript" scheme="https://wuwuarandhg.github.io/categories/javascript/"/>
+    <category term="前端" scheme="https://wuwuarandhg.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
     <category term="javascript" scheme="https://wuwuarandhg.github.io/tags/javascript/"/>
+    
+    <category term="ES6" scheme="https://wuwuarandhg.github.io/tags/ES6/"/>
     
   </entry>
   
@@ -121,7 +148,7 @@
     <link href="https://wuwuarandhg.github.io/2022/061439799.html"/>
     <id>https://wuwuarandhg.github.io/2022/061439799.html</id>
     <published>2022-06-14T05:27:40.000Z</published>
-    <updated>2022-06-14T05:31:49.216Z</updated>
+    <updated>2022-06-17T04:01:31.930Z</updated>
     
     
       
@@ -134,10 +161,12 @@
     
     
     
-    <category term="javascript" scheme="https://wuwuarandhg.github.io/categories/javascript/"/>
+    <category term="前端" scheme="https://wuwuarandhg.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
     <category term="javascript" scheme="https://wuwuarandhg.github.io/tags/javascript/"/>
+    
+    <category term="面向过程和面向对象" scheme="https://wuwuarandhg.github.io/tags/%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B%E5%92%8C%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
     
   </entry>
   
@@ -146,7 +175,7 @@
     <link href="https://wuwuarandhg.github.io/2022/061426794.html"/>
     <id>https://wuwuarandhg.github.io/2022/061426794.html</id>
     <published>2022-06-14T05:06:14.000Z</published>
-    <updated>2022-06-14T05:34:42.898Z</updated>
+    <updated>2022-06-17T04:03:59.122Z</updated>
     
     
       
@@ -160,10 +189,12 @@
     
     
     
-    <category term="javascript" scheme="https://wuwuarandhg.github.io/categories/javascript/"/>
+    <category term="前端" scheme="https://wuwuarandhg.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
     <category term="javascript" scheme="https://wuwuarandhg.github.io/tags/javascript/"/>
+    
+    <category term="DOM操作" scheme="https://wuwuarandhg.github.io/tags/DOM%E6%93%8D%E4%BD%9C/"/>
     
   </entry>
   
@@ -172,7 +203,7 @@
     <link href="https://wuwuarandhg.github.io/2022/061451329.html"/>
     <id>https://wuwuarandhg.github.io/2022/061451329.html</id>
     <published>2022-06-14T05:05:39.000Z</published>
-    <updated>2022-06-14T05:40:41.068Z</updated>
+    <updated>2022-06-17T04:03:08.710Z</updated>
     
     
       
@@ -185,10 +216,12 @@
     
     
     
-    <category term="javascript" scheme="https://wuwuarandhg.github.io/categories/javascript/"/>
+    <category term="前端" scheme="https://wuwuarandhg.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
     <category term="javascript" scheme="https://wuwuarandhg.github.io/tags/javascript/"/>
+    
+    <category term="BOM操作" scheme="https://wuwuarandhg.github.io/tags/BOM%E6%93%8D%E4%BD%9C/"/>
     
   </entry>
   
@@ -197,7 +230,7 @@
     <link href="https://wuwuarandhg.github.io/2022/061430328.html"/>
     <id>https://wuwuarandhg.github.io/2022/061430328.html</id>
     <published>2022-06-14T03:57:22.000Z</published>
-    <updated>2022-06-15T07:56:41.165Z</updated>
+    <updated>2022-06-17T04:02:24.727Z</updated>
     
     
       
@@ -210,10 +243,12 @@
     
     
     
-    <category term="javascript" scheme="https://wuwuarandhg.github.io/categories/javascript/"/>
+    <category term="前端" scheme="https://wuwuarandhg.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
     <category term="javascript" scheme="https://wuwuarandhg.github.io/tags/javascript/"/>
+    
+    <category term="正则表达式" scheme="https://wuwuarandhg.github.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
     
   </entry>
   
@@ -222,7 +257,7 @@
     <link href="https://wuwuarandhg.github.io/2022/061262836.html"/>
     <id>https://wuwuarandhg.github.io/2022/061262836.html</id>
     <published>2022-06-12T11:19:05.000Z</published>
-    <updated>2022-06-13T23:38:47.515Z</updated>
+    <updated>2022-06-17T04:00:50.496Z</updated>
     
     
       
@@ -235,7 +270,7 @@
     
     
     
-    <category term="javascript" scheme="https://wuwuarandhg.github.io/categories/javascript/"/>
+    <category term="前端" scheme="https://wuwuarandhg.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
     <category term="javascript" scheme="https://wuwuarandhg.github.io/tags/javascript/"/>
@@ -247,7 +282,7 @@
     <link href="https://wuwuarandhg.github.io/2022/061251457.html"/>
     <id>https://wuwuarandhg.github.io/2022/061251457.html</id>
     <published>2022-06-12T08:25:00.000Z</published>
-    <updated>2022-06-14T04:44:02.620Z</updated>
+    <updated>2022-06-17T03:59:58.833Z</updated>
     
     
       
@@ -260,7 +295,7 @@
     
     
     
-    <category term="javascript" scheme="https://wuwuarandhg.github.io/categories/javascript/"/>
+    <category term="前端" scheme="https://wuwuarandhg.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
     <category term="javascript" scheme="https://wuwuarandhg.github.io/tags/javascript/"/>
@@ -272,7 +307,7 @@
     <link href="https://wuwuarandhg.github.io/2022/061160379.html"/>
     <id>https://wuwuarandhg.github.io/2022/061160379.html</id>
     <published>2022-06-10T23:07:26.000Z</published>
-    <updated>2022-06-14T04:52:29.460Z</updated>
+    <updated>2022-06-17T04:00:03.122Z</updated>
     
     
       
@@ -285,7 +320,7 @@
     
     
     
-    <category term="javascript" scheme="https://wuwuarandhg.github.io/categories/javascript/"/>
+    <category term="前端" scheme="https://wuwuarandhg.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
     <category term="javascript" scheme="https://wuwuarandhg.github.io/tags/javascript/"/>
@@ -297,7 +332,7 @@
     <link href="https://wuwuarandhg.github.io/2022/061060844.html"/>
     <id>https://wuwuarandhg.github.io/2022/061060844.html</id>
     <published>2022-06-10T05:02:58.000Z</published>
-    <updated>2022-06-10T05:08:10.868Z</updated>
+    <updated>2022-06-17T03:55:54.959Z</updated>
     
     
       
@@ -310,8 +345,10 @@
     
     
     
-    <category term="Django" scheme="https://wuwuarandhg.github.io/categories/Django/"/>
+    <category term="后端" scheme="https://wuwuarandhg.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
     
+    
+    <category term="python" scheme="https://wuwuarandhg.github.io/tags/python/"/>
     
     <category term="Django" scheme="https://wuwuarandhg.github.io/tags/Django/"/>
     
@@ -322,7 +359,7 @@
     <link href="https://wuwuarandhg.github.io/2022/061029103.html"/>
     <id>https://wuwuarandhg.github.io/2022/061029103.html</id>
     <published>2022-06-10T04:38:29.000Z</published>
-    <updated>2022-06-10T05:47:23.439Z</updated>
+    <updated>2022-06-17T03:56:20.065Z</updated>
     
     
       
@@ -335,10 +372,12 @@
     
     
     
-    <category term="Django" scheme="https://wuwuarandhg.github.io/categories/Django/"/>
+    <category term="后端" scheme="https://wuwuarandhg.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
     
     
     <category term="python" scheme="https://wuwuarandhg.github.io/tags/python/"/>
+    
+    <category term="Django" scheme="https://wuwuarandhg.github.io/tags/Django/"/>
     
   </entry>
   
@@ -347,7 +386,7 @@
     <link href="https://wuwuarandhg.github.io/2022/061016107.html"/>
     <id>https://wuwuarandhg.github.io/2022/061016107.html</id>
     <published>2022-06-10T01:58:11.783Z</published>
-    <updated>2022-06-10T05:47:41.125Z</updated>
+    <updated>2022-06-17T04:19:22.483Z</updated>
     
     
       
@@ -360,7 +399,7 @@
     
     
     
-    <category term="Django" scheme="https://wuwuarandhg.github.io/categories/Django/"/>
+    <category term="编程之道" scheme="https://wuwuarandhg.github.io/categories/%E7%BC%96%E7%A8%8B%E4%B9%8B%E9%81%93/"/>
     
     
     <category term="python" scheme="https://wuwuarandhg.github.io/tags/python/"/>

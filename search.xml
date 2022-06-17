@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>express的使用</title>
+      <link href="/2022/061715266.html"/>
+      <url>/2022/061715266.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> javascript </tag>
+            
+            <tag> express </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ajax总结</title>
       <link href="/2022/061644042.html"/>
       <url>/2022/061644042.html</url>
@@ -13,12 +40,14 @@
       
       <categories>
           
-          <category> ajax </category>
+          <category> 前端 </category>
           
       </categories>
       
       
         <tags>
+            
+            <tag> javascript </tag>
             
             <tag> ajax </tag>
             
@@ -38,12 +67,14 @@
       
       <categories>
           
-          <category> node.js </category>
+          <category> 前端 </category>
           
       </categories>
       
       
         <tags>
+            
+            <tag> javascript </tag>
             
             <tag> node.js </tag>
             
@@ -63,12 +94,14 @@
       
       <categories>
           
-          <category> node.js </category>
+          <category> 前端 </category>
           
       </categories>
       
       
         <tags>
+            
+            <tag> javascript </tag>
             
             <tag> node.js </tag>
             
@@ -88,7 +121,7 @@
       
       <categories>
           
-          <category> javascript </category>
+          <category> 前端 </category>
           
       </categories>
       
@@ -96,6 +129,8 @@
         <tags>
             
             <tag> javascript </tag>
+            
+            <tag> ES6 </tag>
             
         </tags>
       
@@ -113,7 +148,7 @@
       
       <categories>
           
-          <category> javascript </category>
+          <category> 前端 </category>
           
       </categories>
       
@@ -121,6 +156,8 @@
         <tags>
             
             <tag> javascript </tag>
+            
+            <tag> 面向过程和面向对象 </tag>
             
         </tags>
       
@@ -138,7 +175,7 @@
       
       <categories>
           
-          <category> javascript </category>
+          <category> 前端 </category>
           
       </categories>
       
@@ -146,6 +183,8 @@
         <tags>
             
             <tag> javascript </tag>
+            
+            <tag> DOM操作 </tag>
             
         </tags>
       
@@ -163,7 +202,7 @@
       
       <categories>
           
-          <category> javascript </category>
+          <category> 前端 </category>
           
       </categories>
       
@@ -171,6 +210,8 @@
         <tags>
             
             <tag> javascript </tag>
+            
+            <tag> BOM操作 </tag>
             
         </tags>
       
@@ -188,7 +229,7 @@
       
       <categories>
           
-          <category> javascript </category>
+          <category> 前端 </category>
           
       </categories>
       
@@ -196,6 +237,8 @@
         <tags>
             
             <tag> javascript </tag>
+            
+            <tag> 正则表达式 </tag>
             
         </tags>
       
@@ -213,7 +256,7 @@
       
       <categories>
           
-          <category> javascript </category>
+          <category> 前端 </category>
           
       </categories>
       
@@ -238,7 +281,7 @@
       
       <categories>
           
-          <category> javascript </category>
+          <category> 前端 </category>
           
       </categories>
       
@@ -263,7 +306,7 @@
       
       <categories>
           
-          <category> javascript </category>
+          <category> 前端 </category>
           
       </categories>
       
@@ -288,12 +331,14 @@
       
       <categories>
           
-          <category> Django </category>
+          <category> 后端 </category>
           
       </categories>
       
       
         <tags>
+            
+            <tag> python </tag>
             
             <tag> Django </tag>
             
@@ -313,7 +358,7 @@
       
       <categories>
           
-          <category> Django </category>
+          <category> 后端 </category>
           
       </categories>
       
@@ -321,6 +366,8 @@
         <tags>
             
             <tag> python </tag>
+            
+            <tag> Django </tag>
             
         </tags>
       
@@ -338,7 +385,7 @@
       
       <categories>
           
-          <category> Django </category>
+          <category> 编程之道 </category>
           
       </categories>
       
