@@ -643,7 +643,7 @@ app<span class="token punctuation">.</span><span class="token function">use</spa
 <li>③ express.urlencoded 解析 URL-encoded 格式的请求体数据（有兼容性，仅在 4.16.0+ 版本中可用）</li>
 </ul>
 <p><img src="https://s2.loli.net/2022/06/17/9nLHG1srjv5mNV3.png" alt="image-20220617134719814"></p>
-<h4 id="3-5第三方的中间件"><a href="#3-5第三方的中间件" class="headerlink" title="3.5第三方的中间件"></a>3.5第三方的中间件</h4><p>非 Express 官方内置的，而是由第三方开发出来的中间件，叫做第三方中间件。在项目中，大家可以按需下载并配置 第三方中间件，从而提高项目的开发效率。 例如：在 <a href="mailto:&#101;&#x78;&#112;&#114;&#101;&#x73;&#x73;&#64;&#52;&#x2e;&#49;&#54;&#46;&#48;">&#101;&#x78;&#112;&#114;&#101;&#x73;&#x73;&#64;&#52;&#x2e;&#49;&#54;&#46;&#48;</a> 之前的版本中，经常使用 body-parser 这个第三方中间件，来解析请求体数据。使用步 骤如下：</p>
+<h4 id="3-5第三方的中间件"><a href="#3-5第三方的中间件" class="headerlink" title="3.5第三方的中间件"></a>3.5第三方的中间件</h4><p>非 Express 官方内置的，而是由第三方开发出来的中间件，叫做第三方中间件。在项目中，大家可以按需下载并配置 第三方中间件，从而提高项目的开发效率。 例如：在 <a href="mailto:&#101;&#x78;&#112;&#x72;&#101;&#115;&#115;&#64;&#52;&#x2e;&#x31;&#x36;&#46;&#48;">&#101;&#x78;&#112;&#x72;&#101;&#115;&#115;&#64;&#52;&#x2e;&#x31;&#x36;&#46;&#48;</a> 之前的版本中，经常使用 body-parser 这个第三方中间件，来解析请求体数据。使用步 骤如下：</p>
 <p>① 运行 npm install body-parser 安装中间件 </p>
 <p>② 使用 require 导入中间件 </p>
 <p>③ 调用 app.use() 注册并使用中间件</p>
@@ -767,13 +767,22 @@ module<span class="token punctuation">.</span>exports <span class="token operato
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="1-CORS-跨域资源共享"><a href="#1-CORS-跨域资源共享" class="headerlink" title="1. CORS 跨域资源共享"></a>1. CORS 跨域资源共享</h3><h4 id="1-1接口的跨域问题"><a href="#1-1接口的跨域问题" class="headerlink" title="1.1接口的跨域问题"></a>1.1接口的跨域问题</h4><p>刚才编写的 GET 和 POST接口，存在一个很严重的问题：不支持跨域请求。 解决接口跨域问题的方案主要有两种： ① CORS（主流的解决方案，推荐使用） ② JSONP（有缺陷的解决方案：只支持 GET 请求）</p>
 <h4 id="1-2使用-cors-中间件解决跨域问题"><a href="#1-2使用-cors-中间件解决跨域问题" class="headerlink" title="1.2使用 cors 中间件解决跨域问题"></a>1.2使用 cors 中间件解决跨域问题</h4><p>cors 是 Express 的一个第三方中间件。通过安装和配置 cors 中间件，可以很方便地解决跨域问题。 使用步骤分为如下 3 步： </p>
-<p>① 运行 npm install cors 安装中间件</p>
-<p> ② 使用 const cors &#x3D; require(‘cors’) <code>导入中间件</code> </p>
-<p>③ 在路由之前调用 app.use(cors()) <code>配置中间件</code></p>
+<ul>
+<li><p>① 运行 npm install cors 安装中间件</p>
+</li>
+<li><p>② 使用 const cors &#x3D; require(‘cors’) <code>导入中间件</code> </p>
+</li>
+<li><p>③ 在路由之前调用 app.use(cors()) <code>配置中间件</code></p>
+</li>
+</ul>
 <h4 id="1-3什么是-CORS"><a href="#1-3什么是-CORS" class="headerlink" title="1.3什么是 CORS"></a>1.3什么是 CORS</h4><p>CORS （Cross-Origin Resource Sharing，跨域资源共享）由一系列 HTTP 响应头组成，这些 HTTP 响应头决定 浏览器是否阻止前端 JS 代码跨域获取资源。 浏览器的同源安全策略默认会阻止网页“跨域”获取资源。但如果接口服务器配置了 CORS 相关的 HTTP 响应头， 就可以解除浏览器端的跨域访问限制</p>
 <p><img src="https://s2.loli.net/2022/06/17/c93WNyBFq5JjnGx.png" alt="image-20220617143905681"></p>
-<h4 id="1-4CORS-的注意事项"><a href="#1-4CORS-的注意事项" class="headerlink" title="1.4CORS 的注意事项"></a>1.4CORS 的注意事项</h4><p>① CORS 主要在服务器端进行配置。客户端浏览器无须做任何额外的配置，即可请求开启了 CORS 的接口。</p>
-<p> ② CORS 在浏览器中有兼容性。只有支持 XMLHttpRequest Level2 的浏览器，才能正常访问开启了 CORS 的服 务端接口（例如：IE10+、Chrome4+、FireFox3.5+）</p>
+<h4 id="1-4CORS-的注意事项"><a href="#1-4CORS-的注意事项" class="headerlink" title="1.4CORS 的注意事项"></a>1.4CORS 的注意事项</h4><ul>
+<li><p>① CORS 主要在服务器端进行配置。客户端浏览器无须做任何额外的配置，即可请求开启了 CORS 的接口。</p>
+</li>
+<li><p>② CORS 在浏览器中有兼容性。只有支持 XMLHttpRequest Level2 的浏览器，才能正常访问开启了 CORS 的服 务端接口（例如：IE10+、Chrome4+、FireFox3.5+）</p>
+</li>
+</ul>
 <h4 id="1-5CORS-响应头部-Access-Control-Allow-Origin"><a href="#1-5CORS-响应头部-Access-Control-Allow-Origin" class="headerlink" title="1.5CORS 响应头部 - Access-Control-Allow-Origin"></a>1.5CORS 响应头部 - Access-Control-Allow-Origin</h4><p><img src="https://s2.loli.net/2022/06/17/gBqumOVW2DbiNFC.png" alt="image-20220617144010691"></p>
 <h4 id="1-6CORS-响应头部-Access-Control-Allow-Origin"><a href="#1-6CORS-响应头部-Access-Control-Allow-Origin" class="headerlink" title="1.6CORS 响应头部 - Access-Control-Allow-Origin"></a>1.6CORS 响应头部 - Access-Control-Allow-Origin</h4><p>如果指定了 Access-Control-Allow-Origin 字段的值为通配符 *，表示允许来自任何域的请求，示例代码如下：</p>
 <pre class="line-numbers language-js"><code class="language-js">res<span class="token punctuation">.</span><span class="token function">setHeader</span><span class="token punctuation">(</span> <span class="token string">' Access-Control-Allow-Origin '</span><span class="token punctuation">,</span> <span class="token string">'*'</span><span class="token punctuation">)</span>
@@ -783,20 +792,31 @@ module<span class="token punctuation">.</span>exports <span class="token operato
 <h4 id="1-8CORS-响应头部-Access-Control-Allow-Methods"><a href="#1-8CORS-响应头部-Access-Control-Allow-Methods" class="headerlink" title="1.8CORS 响应头部 - Access-Control-Allow-Methods"></a>1.8CORS 响应头部 - Access-Control-Allow-Methods</h4><p>默认情况下，CORS 仅支持客户端发起 GET、POST、HEAD 请求。 如果客户端希望通过 PUT、DELETE 等方式请求服务器的资源，则需要在服务器端，通过 Access-Control-Alow-Methods 来指明实际请求所允许使用的 HTTP 方法。 示例代码如下：</p>
 <p><img src="https://s2.loli.net/2022/06/17/Yfhp4iLnkvrqJI5.png" alt="image-20220617144244211"></p>
 <h4 id="1-9-CORS请求的分类"><a href="#1-9-CORS请求的分类" class="headerlink" title="1.9. CORS请求的分类"></a>1.9. CORS请求的分类</h4><p> 客户端在请求 CORS 接口时，根据请求方式和请求头的不同，可以将 CORS 的请求分为两大类，分别是：</p>
-<p> ① 简单请求 ② 预检请求</p>
+<ul>
+<li>① 简单请求 ② 预检请求</li>
+</ul>
 <h4 id="1-10简单请求"><a href="#1-10简单请求" class="headerlink" title="1.10简单请求"></a>1.10简单请求</h4><p>同时满足以下两大条件的请求，就属于简单请求：</p>
-<p> ① 请求方式：GET、POST、HEAD 三者之一 </p>
-<p>② HTTP 头部信息不超过以下几种字段：无自定义头部字段、Accept、Accept-Language、Content-Language、DPR、 Downlink、Save-Data、Viewport-Width、Width 、Content-Type（只有三个值application&#x2F;x-www-formurlencoded、multipart&#x2F;form-data、text&#x2F;plain</p>
+<ul>
+<li><p>① 请求方式：GET、POST、HEAD 三者之一 </p>
+</li>
+<li><p>② HTTP 头部信息不超过以下几种字段：无自定义头部字段、Accept、Accept-Language、Content-Language、DPR、 Downlink、Save-Data、Viewport-Width、Width 、Content-Type（只有三个值application&#x2F;x-www-formurlencoded、multipart&#x2F;form-data、text&#x2F;plain</p>
+</li>
+</ul>
 <h4 id="1-11预检请求"><a href="#1-11预检请求" class="headerlink" title="1.11预检请求"></a>1.11预检请求</h4><p>只要符合以下任何一个条件的请求，都需要进行预检请求： </p>
-<p>① 请求方式为 GET、POST、HEAD 之外的请求 Method 类型</p>
-<p>② 请求头中包含自定义头部字段 </p>
-<p>③ 向服务器发送了 application&#x2F;json 格式的数据</p>
+<ul>
+<li><p>① 请求方式为 GET、POST、HEAD 之外的请求 Method 类型</p>
+</li>
+<li><p>② 请求头中包含自定义头部字段 </p>
+</li>
+<li><p>③ 向服务器发送了 application&#x2F;json 格式的数据</p>
+</li>
+</ul>
 <blockquote>
 <p>在浏览器与服务器正式通信之前，浏览器会先发送 OPTION 请求进行预检，以获知服务器是否允许该实际请求，所以这一 次的 OPTION 请求称为“预检请求”。服务器成功响应预检请求后，才会发送真正的请求，并且携带真实数据</p>
 </blockquote>
 <h4 id="1-12-简单请求和预检请求的区别"><a href="#1-12-简单请求和预检请求的区别" class="headerlink" title="1.12 简单请求和预检请求的区别"></a>1.12 简单请求和预检请求的区别</h4><p><code>简单请求的特点</code>：客户端与服务器之间只会发生一次请求。</p>
 <p> <code>预检请求的特点</code>：客户端与服务器之间会发生两次请求，OPTION 预检请求成功之后，才会发起真正的请求</p>
-<h3 id="2-JSONP-接口"><a href="#2-JSONP-接口" class="headerlink" title="2.JSONP 接口"></a>2.JSONP 接口</h3><h4 id="2-1回顾-JSONP-的概念与特点"><a href="#2-1回顾-JSONP-的概念与特点" class="headerlink" title="2.1回顾 JSONP 的概念与特点"></a>2.1回顾 JSONP 的概念与特点</h4><p>概念：浏览器端通过 <script> 标签的 src 属性，请求服务器上的数据，同时，服务器返回一个函数的调用。这种请求数据的方式叫做 JSONP。</p>
+<h3 id="2-JSONP-接口"><a href="#2-JSONP-接口" class="headerlink" title="2.JSONP 接口"></a>2.JSONP 接口</h3><h4 id="2-1回顾-JSONP-的概念与特点"><a href="#2-1回顾-JSONP-的概念与特点" class="headerlink" title="2.1回顾 JSONP 的概念与特点"></a>2.1回顾 JSONP 的概念与特点</h4><p>概念：浏览器端通过  标签的 src 属性，请求服务器上的数据，同时，服务器返回一个函数的调用。这种请求数据的方式叫做 JSONP。</p>
 <p>特点：</p>
 <ul>
 <li>① JSONP 不属于真正的 Ajax 请求，因为它没有使用 XMLHttpRequest 这个对象。</li>
@@ -804,10 +824,16 @@ module<span class="token punctuation">.</span>exports <span class="token operato
 </ul>
 <h4 id="2-2创建-JSONP-接口的注意事项"><a href="#2-2创建-JSONP-接口的注意事项" class="headerlink" title="2.2创建 JSONP 接口的注意事项"></a>2.2创建 JSONP 接口的注意事项</h4><p>如果项目中已经配置了 CORS 跨域资源共享，为了防止冲突，必须在配置 CORS 中间件之前声明 JSONP 的接口。否则 JSONP 接口会被处理成开启了 CORS 的接口。示例代码如下</p>
 <p><img src="https://s2.loli.net/2022/06/17/gLTjuzDGZNIrnYq.png" alt="image-20220617145300724"></p>
-<h4 id="2-3实现-JSONP-接口的步骤"><a href="#2-3实现-JSONP-接口的步骤" class="headerlink" title="2.3实现 JSONP 接口的步骤"></a>2.3实现 JSONP 接口的步骤</h4><p>① 获取客户端发送过来的回调函数的名字</p>
-<p> ② 得到要通过 JSONP 形式发送给客户端的数据 </p>
-<p>③ 根据前两步得到的数据，拼接出一个函数调用的字符串 </p>
-<p>④ 把上一步拼接得到的字符串，响应给客户端的 </p>
+<h4 id="2-3实现-JSONP-接口的步骤"><a href="#2-3实现-JSONP-接口的步骤" class="headerlink" title="2.3实现 JSONP 接口的步骤"></a>2.3实现 JSONP 接口的步骤</h4><ul>
+<li><p>① 获取客户端发送过来的回调函数的名字</p>
+</li>
+<li><p>② 得到要通过 JSONP 形式发送给客户端的数据 </p>
+</li>
+<li><p>③ 根据前两步得到的数据，拼接出一个函数调用的字符串 </p>
+</li>
+<li><p>④ 把上一步拼接得到的字符串，响应给客户端的</p>
+</li>
+</ul>
 <p>2.4. 实现 JSONP 接口的具体代码</p>
 <p><img src="https://s2.loli.net/2022/06/17/t4UK9S8fENFQDwc.png" alt="image-20220617145427690"></p>
 <h4 id="2-5在网页中使用-jQuery-发起-JSONP-请求"><a href="#2-5在网页中使用-jQuery-发起-JSONP-请求" class="headerlink" title="2.5在网页中使用 jQuery 发起 JSONP 请求"></a>2.5在网页中使用 jQuery 发起 JSONP 请求</h4><p>调用 $.ajax() 函数，提供 JSONP 的配置选项，从而发起 JSONP 请求，示例代码如下</p>
