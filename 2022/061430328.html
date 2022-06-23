@@ -471,14 +471,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.5k
+                    2.8k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    10 分
+                    11 分
                 </div>
                 
 
@@ -708,6 +708,25 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <span class="token comment" spellcheck="true">//再次输入密码只需匹配与上次输入的密码值 是否一致</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h3 id="3-5正则替换replace"><a href="#3-5正则替换replace" class="headerlink" title="3.5正则替换replace"></a>3.5正则替换replace</h3><p>replace() 方法可以实现替换字符串操作，用来替换的参数可以是一个字符串或是一个正则表达式。</p>
+<p>replace第一个参数一般放置的是正则表达式或字符串，用来匹配想要替换的文本；第二个参数一般我们放入的是字符串，用来替换掉正则匹配到的文本。</p>
+<p>第一种方法一般是放一个字符串在第二个参数中，直接用于替换所匹配到的字符；</p>
+<p>第二种方法比较高阶的技巧，第一个参数为正则表达式，第二个参数使用$字符可以取得捕获括号中的内容，再进行相关操作。</p>
+<pre class="line-numbers language-tex"><code class="language-tex">   字符替换文本：
+
+   $& 与正则相匹配的字符串
+
+   $` 匹配字符串左边的字符
+
+   $’ 匹配字符串右边的字符
+
+   $1,$2,$,3,…,$n 匹配结果中对应的分组匹配结果  
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>还有第三种方法， 给第二个参数传入匿名函数，函数的返回值用做替换的字符。</p>
+<p>匿名函数有4个参数可以传入，当然，这些参数都不是必须要传的。</p>
+<p>　　第一个参数：正则所匹配到的字符；</p>
+<p>　　第二个参数：捕获到的字符；</p>
+<p>　　第三个参数：正则匹配到的每段字符的第一个字符的索引；</p>
+<p>　　第四个参数：用于匹配的字符串主体；<br><img src="https://s2.loli.net/2022/06/19/j7qHsN5aOXzLCpm.png" alt="image-20220619133224727"></p>
 <pre class="line-numbers language-js"><code class="language-js"><span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">'andy和red'</span><span class="token punctuation">;</span>
 <span class="token keyword">var</span> newStr <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string">'andy'</span><span class="token punctuation">,</span> <span class="token string">'baby'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>newStr<span class="token punctuation">)</span><span class="token comment" spellcheck="true">//baby和red</span>
@@ -1218,7 +1237,7 @@ Returned value: null
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">43.5k</span>
+                        class="white-color">63k</span>
             
             
             
