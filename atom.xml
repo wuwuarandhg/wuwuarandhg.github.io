@@ -6,7 +6,7 @@
   <link href="https://wuwuarandhg.github.io/atom.xml" rel="self"/>
   
   <link href="https://wuwuarandhg.github.io/"/>
-  <updated>2022-06-28T03:40:50.910Z</updated>
+  <updated>2022-07-17T02:48:36.165Z</updated>
   <id>https://wuwuarandhg.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue第六天-前端化工程</title>
+    <link href="https://wuwuarandhg.github.io/2022/071711576.html"/>
+    <id>https://wuwuarandhg.github.io/2022/071711576.html</id>
+    <published>2022-07-17T02:26:37.000Z</published>
+    <updated>2022-07-17T02:48:36.165Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;今日目标&quot;&gt;&lt;a href=&quot;#今日目标&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://wuwuarandhg.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="javascript" scheme="https://wuwuarandhg.github.io/tags/javascript/"/>
+    
+    <category term="Vue" scheme="https://wuwuarandhg.github.io/tags/Vue/"/>
+    
+  </entry>
   
   <entry>
     <title>Vue第五天--Vue路由</title>
@@ -515,33 +542,6 @@
         
         
     <summary type="html">&lt;h2 id=&quot;Django第三天&quot;&gt;&lt;a href=&quot;#Django第三天&quot; class=&quot;headerlink&quot; title=&quot;Django第三天&quot;&gt;&lt;/a&gt;Django第三天&lt;/h2&gt;&lt;h3 id=&quot;Django的站点&quot;&gt;&lt;a href=&quot;#Django的站点&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="后端" scheme="https://wuwuarandhg.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
-    
-    
-    <category term="python" scheme="https://wuwuarandhg.github.io/tags/python/"/>
-    
-    <category term="Django" scheme="https://wuwuarandhg.github.io/tags/Django/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Django第一天</title>
-    <link href="https://wuwuarandhg.github.io/2022/061029103.html"/>
-    <id>https://wuwuarandhg.github.io/2022/061029103.html</id>
-    <published>2022-06-10T04:38:29.000Z</published>
-    <updated>2022-06-17T03:56:20.065Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Django&quot;&gt;&lt;a href=&quot;#Django&quot; class=&quot;headerlink&quot; title=&quot;Django&quot;&gt;&lt;/a&gt;Django&lt;/h1&gt;&lt;h2 id=&quot;Django的使用&quot;&gt;&lt;a href=&quot;#Django的使用&quot;</summary>
         
       
     
