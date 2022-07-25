@@ -6,7 +6,7 @@
   <link href="https://wuwuarandhg.github.io/atom.xml" rel="self"/>
   
   <link href="https://wuwuarandhg.github.io/"/>
-  <updated>2022-07-17T02:48:36.165Z</updated>
+  <updated>2022-07-25T08:15:03.538Z</updated>
   <id>https://wuwuarandhg.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue-配置的修改</title>
+    <link href="https://wuwuarandhg.github.io/2022/072534375.html"/>
+    <id>https://wuwuarandhg.github.io/2022/072534375.html</id>
+    <published>2022-07-25T08:10:49.000Z</published>
+    <updated>2022-07-25T08:15:03.538Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;今日目标&quot;&gt;&lt;a href=&quot;#今日目标&quot; class=&quot;headerlink&quot; title=&quot;今日目标&quot;&gt;&lt;/a&gt;今日目标&lt;/h3&gt;&lt;p&gt;1.完成项目优化&lt;br&gt;2.完成项目上线&lt;/p&gt;
+&lt;h3 id=&quot;1-项目优化&quot;&gt;&lt;a href=&quot;#1-项目优化&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://wuwuarandhg.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="javascript" scheme="https://wuwuarandhg.github.io/tags/javascript/"/>
+    
+    <category term="Vue" scheme="https://wuwuarandhg.github.io/tags/Vue/"/>
+    
+  </entry>
   
   <entry>
     <title>Vue第六天-前端化工程</title>
@@ -526,33 +554,6 @@
     
     
     <category term="javascript" scheme="https://wuwuarandhg.github.io/tags/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Django第三天</title>
-    <link href="https://wuwuarandhg.github.io/2022/061060844.html"/>
-    <id>https://wuwuarandhg.github.io/2022/061060844.html</id>
-    <published>2022-06-10T05:02:58.000Z</published>
-    <updated>2022-06-17T03:55:54.959Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;Django第三天&quot;&gt;&lt;a href=&quot;#Django第三天&quot; class=&quot;headerlink&quot; title=&quot;Django第三天&quot;&gt;&lt;/a&gt;Django第三天&lt;/h2&gt;&lt;h3 id=&quot;Django的站点&quot;&gt;&lt;a href=&quot;#Django的站点&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="后端" scheme="https://wuwuarandhg.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
-    
-    
-    <category term="python" scheme="https://wuwuarandhg.github.io/tags/python/"/>
-    
-    <category term="Django" scheme="https://wuwuarandhg.github.io/tags/Django/"/>
     
   </entry>
   
